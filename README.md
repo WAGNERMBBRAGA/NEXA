@@ -12,7 +12,7 @@ O projeto começou a ser desenvolvido há pouco tempo e ainda precisa de melhori
 
 O agente pode trabalhar com IA local ou API na nuvem. A interface permite alternar provedores, consultar a adequação dos modelos ao computador e habilitar ou desabilitar skills por conversa com um clique.
 
-**[Veja a galeria com as sete telas explicadas](docs/GALERIA.md)** — projetos, configurações, modelos, skills e edição com API na nuvem.
+**[Veja a galeria com as dez telas explicadas](docs/GALERIA.md)** — projetos, configurações, modelos, skills, edição com API na nuvem e busca e download pelo Hugging Face.
 
 ## Modelos locais
 
