@@ -70,6 +70,35 @@ Essa captura mostra o download em andamento, não sua conclusão nem o carregame
 
 ![Downloads Ativos no NEXA com arquivo GGUF sendo transferido e progresso de 2,5 por cento](imagens/10-download-em-andamento.png)
 
+## 11. Seleção de um modelo de grande porte
+
+A captura destaca `Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive-Q8_K_P.gguf`, listado com **40,61 GB**. Nesse momento, o campo superior ainda mostra o modelo anterior: a lista aberta registra a escolha, não comprova por si só o carregamento.
+
+![Seleção de um GGUF de 40,61 GB no NEXA, com aviso de uso extremo](imagens/11-modelo-grande-selecao.png)
+
+## 12. Trabalho local com o modelo selecionado
+
+Na captura seguinte, o seletor já exibe o nome iniciado por **Qwen3.6-35B-A3B-Uncensored**, com **NEXA Local (llama.cpp)** ativo. A interface acompanha a criação de `backend/services/restaurante_service.py`, mostrando código Python e o estado **CRIANDO**. É o registro visual fornecido pelo autor do NEXA trabalhando com esse modelo local.
+
+![NEXA Local com Qwen3.6-35B-A3B selecionado e criação de restaurante_service.py em andamento](imagens/12-modelo-grande-agente-local.png)
+
+### Notebook utilizado
+
+Configuração consultada diretamente no computador em 14/09/2026:
+
+| Componente | Configuração |
+|---|---|
+| Fabricante e modelo | Positivo Tecnologia SA — N8450 |
+| Processador | Intel Core Ultra 5 135H |
+| Núcleos e processadores lógicos | 14 núcleos, 18 processadores lógicos |
+| Memória instalada | 16 GB, em dois módulos de 8 GB; velocidade informada: 5600 MT/s |
+| Memória utilizável informada pelo sistema | Aproximadamente 15,39 GiB |
+| Gráficos | Intel Arc Graphics |
+| Armazenamento | Dois SSDs NVMe: Micron 3400 de aproximadamente 1 TB e CL4-8D512 de 512 GB |
+| Sistema operacional | Windows 11 Pro, 64 bits, build 26100 |
+
+O arquivo de 40,61 GB supera a RAM física deste notebook. As capturas não medem velocidade, memória efetivamente utilizada, paginação ou uso da GPU, nem comprovam a conclusão e os testes do projeto. O aviso de **USO EXTREMO** é uma estimativa do aplicativo; esta demonstração não deve ser interpretada como garantia de execução fluida em qualquer máquina de 16 GB.
+
 ## Sobre as imagens
 
-As duas remessas somam treze capturas, das quais dez são únicas. As três repetições da primeira remessa foram identificadas por comparação SHA-256 e não foram incluídas na galeria. Os arquivos publicados preservam o conteúdo e a resolução dos originais, inclusive as marcações adicionadas pelo autor.
+As três remessas somam quinze capturas, das quais doze são únicas. As três repetições da primeira remessa foram identificadas por comparação SHA-256 e não foram incluídas na galeria. Os arquivos publicados preservam o conteúdo e a resolução dos originais, inclusive as marcações adicionadas pelo autor.
