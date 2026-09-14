@@ -6,6 +6,14 @@ O NEXA AI interpreta pedidos em linguagem natural e oferece ferramentas para ana
 
 O projeto começou a ser desenvolvido há pouco tempo e ainda precisa de melhorias, testes e amadurecimento. Abrimos o repositório para compartilhar conhecimentos e construir o NEXA junto com a comunidade, com a intenção de mantê-lo aberto para todos. Código, documentação, sugestões e relatos de experiência são bem-vindos.
 
+## Veja o NEXA em funcionamento
+
+![NEXA AI com projeto vinculado e alterações de código](docs/imagens/01-visao-geral-agente.png)
+
+O agente pode trabalhar com IA local ou API na nuvem. A interface permite alternar provedores, consultar a adequação dos modelos ao computador e habilitar ou desabilitar skills por conversa com um clique.
+
+**[Veja a galeria com as sete telas explicadas](docs/GALERIA.md)** — projetos, configurações, modelos, skills e edição com API na nuvem.
+
 ## Modelos locais
 
 O NEXA consulta o Hugging Face e baixa modelos GGUF para uso local. No pacote desktop completo, **llama.cpp vem integrado**, dispensando a instalação de um servidor de IA separado. Baixe um modelo compatível, selecione a IA e aguarde o carregamento. O NEXA aplica os parâmetros de execução automaticamente.

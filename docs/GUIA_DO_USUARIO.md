@@ -2,6 +2,8 @@
 
 [Índice](INDEX.md) · [Resolver problemas](SOLUCAO_DE_PROBLEMAS.md)
 
+**[Veja o guia visual com capturas do NEXA](GALERIA.md)**: troca entre IA local e nuvem, modelos, skills e agente editando código.
+
 ## Disponibilidade e preparação
 
 O fluxo simplificado usa o aplicativo desktop completo para Windows, empacotado com llama.cpp. Não é necessário instalar Ollama ou LM Studio para esse fluxo. Em 14/09/2026 não havia instalador publicado nas [Releases](https://github.com/WAGNERMBBRAGA/NEXA/releases); consulte essa página para futuras versões.

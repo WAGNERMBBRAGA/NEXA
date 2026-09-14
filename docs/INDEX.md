@@ -4,6 +4,7 @@
 
 ## Para usuários
 
+- [Galeria: NEXA em funcionamento](GALERIA.md)
 - [Guia do usuário](GUIA_DO_USUARIO.md)
 - [Solução de problemas](SOLUCAO_DE_PROBLEMAS.md)
 - [Visão e evolução](VISAO_E_EVOLUCAO.md)
