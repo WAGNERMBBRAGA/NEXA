@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "diagnostics": [],
+  "astDump": {
+    "imports": [],
+    "items": [],
+    "kind": "SourceUnit",
+    "module": {
+      "kind": "ModuleDeclaration",
+      "name": "app",
+      "span": {
+        "endByte": 10,
+        "startByte": 0
+      }
+    },
+    "span": {
+      "endByte": 10,
+      "startByte": 0
+    }
+  }
+}

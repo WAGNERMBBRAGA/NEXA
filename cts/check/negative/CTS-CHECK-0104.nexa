@@ -1,0 +1,5 @@
+module main
+
+function mismatch() -> Int {
+    return "not a number"
+}

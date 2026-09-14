@@ -1,0 +1,30 @@
+{
+  "criteria": [
+    {
+      "name": "SQL injection identified",
+      "description": "Agent identifies SQL injection vulnerabilities in the string-formatted SQL queries (at minimum the INSERT and SELECT statements)",
+      "points": 30
+    },
+    {
+      "name": "Plaintext password storage flagged",
+      "description": "Agent identifies that passwords are stored in plaintext without hashing",
+      "points": 20
+    },
+    {
+      "name": "Missing authentication on admin endpoint",
+      "description": "Agent identifies the /admin/delete endpoint has no authentication or authorization check",
+      "points": 20
+    },
+    {
+      "name": "Correct output format used",
+      "description": "Findings use the specified format with Severity, Confidence (>=8), Description, Exploit Scenario, and Recommendation fields",
+      "points": 15
+    },
+    {
+      "name": "No false positives reported",
+      "description": "Agent does not report theoretical, low-confidence, or noise findings (e.g., no rate limiting warnings, no DoS concerns)",
+      "points": 15
+    }
+  ],
+  "total_points": 100
+}

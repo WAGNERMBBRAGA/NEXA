@@ -1,0 +1,7 @@
+"hello"
+"a\nb"
+"\u{1F600}"
+r"raw \n"
+b"byte"
+"""line1
+line2"""

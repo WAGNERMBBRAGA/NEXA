@@ -1,0 +1,11 @@
+module main
+
+action main() -> Unit effects [console::write] {
+    if 40 + 2 == 42 {
+        Console::write("then")
+    } else {
+        Console::write("else")
+    }
+    Console::write("-done")
+    return
+}

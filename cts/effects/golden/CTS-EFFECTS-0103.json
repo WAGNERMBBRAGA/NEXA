@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "source": "CTS-EFFECTS-0103.nexa",
+  "parseDiagnostics": [],
+  "semanticDiagnostics": [],
+  "typeDiagnostics": [],
+  "flowDiagnostics": [],
+  "effectDiagnostics": [
+    {
+      "code": "NEXA-EFFECT-0002",
+      "message": "inferred effects exceed declared effects (extra: 1 effects)",
+      "severity": "error",
+      "span": {
+        "end": 89,
+        "source": 0,
+        "start": 82
+      }
+    }
+  ],
+  "summary": {
+    "effectCallEdges": 1,
+    "errors": 1,
+    "flowCfgs": 2,
+    "symbols": 46,
+    "typedExpressions": 1,
+    "warnings": 0
+  }
+}

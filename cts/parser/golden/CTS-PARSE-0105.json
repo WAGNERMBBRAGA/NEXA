@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "diagnostics": [
+    {
+      "code": "NEXA-PARSE-0003",
+      "severity": "Error",
+      "category": "parser",
+      "messageKey": "parser.invalid_top_level_let",
+      "message": "`let`/`var` are not allowed at module level (§427)",
+      "primarySpan": {
+        "source": 0,
+        "start": 11,
+        "end": 14
+      },
+      "related": [],
+      "arguments": [],
+      "help": null,
+      "fixes": []
+    }
+  ],
+  "astDump": {
+    "imports": [],
+    "items": [
+      {
+        "exported": false,
+        "init": {
+          "kind": "Underscore",
+          "span": {
+            "endByte": 14,
+            "startByte": 11
+          }
+        },
+        "kind": "ConstDeclaration",
+        "name": "_",
+        "span": {
+          "endByte": 14,
+          "startByte": 11
+        },
+        "type": null
+      }
+    ],
+    "kind": "SourceUnit",
+    "module": {
+      "kind": "ModuleDeclaration",
+      "name": "app",
+      "span": {
+        "endByte": 10,
+        "startByte": 0
+      }
+    },
+    "span": {
+      "endByte": 25,
+      "startByte": 0
+    }
+  }
+}

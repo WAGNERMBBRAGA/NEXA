@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "source": "CTS-FLOW-0102.nexa",
+  "parseDiagnostics": [],
+  "semanticDiagnostics": [],
+  "typeDiagnostics": [],
+  "flowDiagnostics": [
+    {
+      "code": "NEXA-FLOW-0008",
+      "message": "match arm 2 is unreachable (wildcard already matched)",
+      "severity": "error",
+      "span": {
+        "end": 114,
+        "source": 0,
+        "start": 104
+      }
+    }
+  ],
+  "effectDiagnostics": [],
+  "summary": {
+    "effectCallEdges": 0,
+    "errors": 1,
+    "flowCfgs": 1,
+    "symbols": 46,
+    "typedExpressions": 7,
+    "warnings": 0
+  }
+}

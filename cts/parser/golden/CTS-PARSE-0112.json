@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 1,
+  "diagnostics": [
+    {
+      "code": "NEXA-PARSE-0007",
+      "severity": "Error",
+      "category": "parser",
+      "messageKey": "parser.invalid_assignment_target",
+      "message": "expression is not a valid assignment target (§244-245)",
+      "primarySpan": {
+        "source": 0,
+        "start": 41,
+        "end": 42
+      },
+      "related": [],
+      "arguments": [],
+      "help": null,
+      "fixes": []
+    }
+  ],
+  "astDump": {
+    "imports": [],
+    "items": [
+      {
+        "body": {
+          "kind": "Block",
+          "span": {
+            "endByte": 59,
+            "startByte": 33
+          },
+          "statements": [
+            {
+              "kind": "AssignStatement",
+              "operator": "=",
+              "span": {
+                "endByte": 44,
+                "startByte": 39
+              },
+              "target": {
+                "kind": "Identifier",
+                "name": "_"
+              },
+              "value": {
+                "kind": "IntLiteral",
+                "span": {
+                  "endByte": 44,
+                  "startByte": 43
+                },
+                "value": 2
+              }
+            },
+            {
+              "kind": "ReturnStatement",
+              "span": {
+                "endByte": 57,
+                "startByte": 49
+              },
+              "value": {
+                "kind": "IntLiteral",
+                "span": {
+                  "endByte": 57,
+                  "startByte": 56
+                },
+                "value": 0
+              }
+            }
+          ]
+        },
+        "ensures": [],
+        "exported": false,
+        "genericParams": [],
+        "kind": "FunctionDeclaration",
+        "name": "bad",
+        "parameters": [],
+        "requires": [],
+        "returnType": "Int",
+        "span": {
+          "endByte": 59,
+          "startByte": 11
+        },
+        "whereClause": []
+      }
+    ],
+    "kind": "SourceUnit",
+    "module": {
+      "kind": "ModuleDeclaration",
+      "name": "app",
+      "span": {
+        "endByte": 10,
+        "startByte": 0
+      }
+    },
+    "span": {
+      "endByte": 59,
+      "startByte": 0
+    }
+  }
+}

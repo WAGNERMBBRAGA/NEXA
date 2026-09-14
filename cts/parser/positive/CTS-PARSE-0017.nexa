@@ -1,0 +1,7 @@
+module app
+function wait_forever() -> Int {
+    loop {
+        break
+    }
+    return 0
+}

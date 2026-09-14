@@ -1,0 +1,4 @@
+module app
+function unsafe_write(x: Int) -> Int effects [std::io::write] {
+    return x
+}

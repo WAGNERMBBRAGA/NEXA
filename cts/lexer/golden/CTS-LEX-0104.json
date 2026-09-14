@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "tokens": [
+    {
+      "category": "trivia",
+      "kind": "BlockComment",
+      "startByte": 0,
+      "endByte": 15
+    },
+    {
+      "category": "token",
+      "kind": "Eof",
+      "startByte": 15,
+      "endByte": 15
+    }
+  ],
+  "diagnostics": [
+    {
+      "code": "NEXA-LEX-0005",
+      "severity": "Error",
+      "category": "lexer",
+      "messageKey": "lexer.unterminated_comment",
+      "message": "unterminated block comment",
+      "primarySpan": {
+        "source": 0,
+        "start": 0,
+        "end": 2
+      },
+      "related": [],
+      "arguments": [],
+      "help": null,
+      "fixes": []
+    }
+  ]
+}

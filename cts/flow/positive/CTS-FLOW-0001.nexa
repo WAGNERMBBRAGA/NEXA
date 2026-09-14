@@ -1,0 +1,9 @@
+module main
+
+function classify(x: Int) -> String {
+    if x > 0 {
+        return "positive"
+    } else {
+        return "non-positive"
+    }
+}

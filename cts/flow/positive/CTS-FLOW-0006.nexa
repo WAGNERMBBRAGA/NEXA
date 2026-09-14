@@ -1,0 +1,9 @@
+module main
+
+function label(x: Int) -> String {
+    if x > 0 {
+        return "pos"
+    } else {
+        return "neg"
+    }
+}

@@ -1,0 +1,9 @@
+module app
+struct User {
+    name: String
+}
+implement Display for User {
+    function show() -> String {
+        return "user"
+    }
+}

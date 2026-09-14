@@ -1,0 +1,9 @@
+[package]
+name = "nexa-symbols"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "NEXA symbol identity types: SymbolId, ScopeId, ModuleId, SymbolKind, Visibility, namespaces"
+
+[dependencies]
+serde.workspace = true

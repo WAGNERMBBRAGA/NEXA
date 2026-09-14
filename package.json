@@ -1,0 +1,29 @@
+{
+  "name": "nexa-desktop",
+  "version": "0.30.0",
+  "description": "NEXA - assistente local para criar, revisar e corrigir projetos de software.",
+  "author": "NEXA",
+  "main": "desktop/main.cjs",
+  "scripts": {
+    "desktop": "npm run build:frontend && electron .",
+    "build:frontend": "npm --prefix frontend run build",
+    "package:win": "npm run build:frontend && electron-builder --win nsis"
+  },
+  "build": {
+    "appId": "com.nexa.desktop",
+    "productName": "NEXA",
+    "files": ["desktop/**", "backend/**", "!backend/data/**", "!backend/config.json", "!backend/**/*.test.js", "frontend/dist/**", "llama.cpp/bin/**", "package.json", "node_modules/**"],
+    "asarUnpack": ["backend/**", "frontend/dist/**", "llama.cpp/bin/**", "node_modules/**"],
+    "artifactName": "NEXA-Setup-${version}.${ext}",
+    "win": { "target": "nsis", "icon": "desktop/assets/nexa.svg" }
+  },
+  "dependencies": {
+    "body-parser": "^2.3.0",
+    "cors": "^2.8.6",
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "electron": "^44.2.0",
+    "electron-builder": "^26.15.3"
+  }
+}

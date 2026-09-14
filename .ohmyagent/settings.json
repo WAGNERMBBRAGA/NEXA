@@ -1,0 +1,48 @@
+{
+  "permission_rules": [
+    {
+      "tool": "Read",
+      "decision": "allow"
+    },
+    {
+      "tool": "Cmd(where *)",
+      "decision": "allow"
+    },
+    {
+      "tool": "Cmd(dir *)",
+      "decision": "allow"
+    },
+    {
+      "tool": "PowerShell(winget *)",
+      "decision": "allow"
+    },
+    {
+      "tool": "PowerShell($rustbin *)",
+      "decision": "allow"
+    },
+    {
+      "tool": "PowerShell($mingw *)",
+      "decision": "allow"
+    },
+    {
+      "tool": "PowerShell($target *)",
+      "decision": "allow"
+    },
+    {
+      "tool": "PowerShell($tmp *)",
+      "decision": "allow"
+    },
+    {
+      "tool": "PowerShell($nexa *)",
+      "decision": "allow"
+    },
+    {
+      "tool": "PowerShell($root *)",
+      "decision": "allow"
+    },
+    {
+      "tool": "PowerShell($g *)",
+      "decision": "allow"
+    }
+  ]
+}

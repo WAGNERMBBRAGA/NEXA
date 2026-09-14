@@ -1,0 +1,6 @@
+module main
+
+function main() -> Int {
+    let x = _
+    return 0
+}

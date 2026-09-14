@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "source": "CTS-CHECK-0144.nexa",
+  "parseDiagnostics": [],
+  "semanticDiagnostics": [],
+  "typeDiagnostics": [
+    {
+      "code": "NEXA-TYPE-0006",
+      "context": null,
+      "message": "let binding type mismatch: expected Meters, got Int",
+      "severity": "error",
+      "span": {
+        "end": 87,
+        "source": 0,
+        "start": 70
+      }
+    }
+  ],
+  "flowDiagnostics": [],
+  "effectDiagnostics": [],
+  "summary": {
+    "effectCallEdges": 0,
+    "errors": 1,
+    "flowCfgs": 0,
+    "symbols": 48,
+    "typedExpressions": 3,
+    "warnings": 0
+  }
+}

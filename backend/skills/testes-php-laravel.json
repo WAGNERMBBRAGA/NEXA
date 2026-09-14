@@ -1,0 +1,10 @@
+{
+  "name": "Testes PHP/Laravel",
+  "description": "Escreve testes PHPUnit/Pest para modulos do sistema Laravel/PHP.",
+  "prompt": "Quando for escrever testes em um projeto Laravel/PHP: (1) Localize tests/Feature ou tests/Unit e siga o padrao ja existente (phpunit.xml ou pest.php). (2) Para cada modulo (Note, Task, Reminder, etc.) gere um arquivo de teste que cubra: criacao valida, validacao de dados obrigatorios (assertSessionHasErrors), edicao e exclusao com permissao. (3) Use factory/model real: $note = Note::factory()->create(); se nao houver factory, crie via modelo. (4) Verifique isolamento do banco com RefreshDatabase ou use sqlite in-memory no phpunit.xml. (5) Rode vendor/bin/phpunit (ou vendor/bin/pest) e confirme que todos os testes passam; corrija falhas antes de terminar. (6) Nunca apague testes existentes.",
+  "enabled": true,
+  "category": "PHP",
+  "commands": [],
+  "createdAt": "2026-09-11T00:00:00.000Z",
+  "updatedAt": "2026-09-11T00:00:00.000Z"
+}

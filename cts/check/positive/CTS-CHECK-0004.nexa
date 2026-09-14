@@ -1,0 +1,12 @@
+module main
+
+const MAX_LIMIT: Int = 100
+
+function area(width: Int, height: Int) -> Int {
+    let w = width
+    let h: Int = height
+    if w == h {
+        return w * h
+    }
+    return w + h
+}

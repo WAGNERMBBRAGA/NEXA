@@ -1,0 +1,10 @@
+module main
+
+enum Shape {
+    Circle
+    Square
+}
+
+function unknown_method(s: Shape) -> String {
+    return s.nope()
+}

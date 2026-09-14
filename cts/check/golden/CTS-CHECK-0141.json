@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "source": "CTS-CHECK-0141.nexa",
+  "parseDiagnostics": [],
+  "semanticDiagnostics": [],
+  "typeDiagnostics": [
+    {
+      "code": "NEXA-TYPE-0005",
+      "context": null,
+      "message": "cannot infer type of _",
+      "severity": "error",
+      "span": {
+        "end": 51,
+        "source": 0,
+        "start": 50
+      }
+    }
+  ],
+  "flowDiagnostics": [],
+  "effectDiagnostics": [],
+  "summary": {
+    "effectCallEdges": 0,
+    "errors": 1,
+    "flowCfgs": 0,
+    "symbols": 46,
+    "typedExpressions": 2,
+    "warnings": 0
+  }
+}

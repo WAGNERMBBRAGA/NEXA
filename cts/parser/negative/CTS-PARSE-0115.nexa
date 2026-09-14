@@ -1,0 +1,5 @@
+module app
+function tuple_expr() -> Int {
+    let pair: Int = (1, 2)
+    return pair
+}

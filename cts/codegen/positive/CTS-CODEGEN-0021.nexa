@@ -1,0 +1,15 @@
+module main
+
+action update(index: Int) -> Unit effects [console::write] {
+    var values: Array<Int> = [10, 20, 30]
+    values[index] = 77
+    if values[index] == 77 {
+        Console::write("dynamic-mutated")
+    }
+    return
+}
+
+action main() -> Unit effects [console::write] {
+    update(2)
+    return
+}

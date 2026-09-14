@@ -1,0 +1,5 @@
+module main
+
+function tick() -> Unit {
+    let n = 1
+}

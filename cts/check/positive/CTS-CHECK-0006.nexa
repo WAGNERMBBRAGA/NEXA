@@ -1,0 +1,10 @@
+module main
+
+function first_two() -> Array<Int> {
+    let xs = [1, 2, 3]
+    return xs
+}
+
+function strings() -> Array<String> {
+    return ["a", "b", "c"]
+}

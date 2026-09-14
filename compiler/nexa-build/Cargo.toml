@@ -1,0 +1,13 @@
+[package]
+name = "nexa-build"
+version = "0.0.1"
+edition = "2021"
+description = "Build graph, fingerprinting, artifact caching, and reproducible builds for NEXA projects"
+
+[dependencies]
+thiserror = "2"
+nexa-manifest = { path = "../nexa-manifest" }
+nexa-lock = { path = "../nexa-lock" }
+nexa-package = { path = "../nexa-package" }
+nexa-cache = { path = "../nexa-cache" }
+nexa-linker = { path = "../nexa-linker" }

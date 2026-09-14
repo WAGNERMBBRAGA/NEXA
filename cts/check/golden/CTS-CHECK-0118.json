@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "source": "CTS-CHECK-0118.nexa",
+  "parseDiagnostics": [],
+  "semanticDiagnostics": [],
+  "typeDiagnostics": [
+    {
+      "code": "NEXA-TYPE-0032",
+      "context": null,
+      "message": "constraint `Point` is not an interface",
+      "severity": "error",
+      "span": {
+        "end": 101,
+        "source": 0,
+        "start": 93
+      }
+    },
+    {
+      "code": "NEXA-TYPE-0013",
+      "context": null,
+      "message": "type does not have fields: x",
+      "severity": "error",
+      "span": {
+        "end": 118,
+        "source": 0,
+        "start": 115
+      }
+    }
+  ],
+  "flowDiagnostics": [],
+  "effectDiagnostics": [],
+  "summary": {
+    "effectCallEdges": 0,
+    "errors": 2,
+    "flowCfgs": 0,
+    "symbols": 51,
+    "typedExpressions": 3,
+    "warnings": 0
+  }
+}

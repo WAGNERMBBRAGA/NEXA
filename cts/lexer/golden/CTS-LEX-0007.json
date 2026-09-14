@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "tokens": [
+    {
+      "category": "trivia",
+      "kind": "BlockComment",
+      "startByte": 0,
+      "endByte": 17
+    },
+    {
+      "category": "token",
+      "kind": "Eof",
+      "startByte": 17,
+      "endByte": 17
+    }
+  ],
+  "diagnostics": []
+}

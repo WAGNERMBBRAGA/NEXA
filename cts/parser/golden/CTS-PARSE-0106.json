@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "diagnostics": [
+    {
+      "code": "NEXA-PARSE-0010",
+      "severity": "Error",
+      "category": "parser",
+      "messageKey": "parser.async_function",
+      "message": "`async` is only valid on actions, not functions",
+      "primarySpan": {
+        "source": 0,
+        "start": 17,
+        "end": 25
+      },
+      "related": [],
+      "arguments": [],
+      "help": null,
+      "fixes": []
+    }
+  ],
+  "astDump": {
+    "imports": [],
+    "items": [
+      {
+        "body": {
+          "kind": "Block",
+          "span": {
+            "endByte": 61,
+            "startByte": 45
+          },
+          "statements": [
+            {
+              "kind": "ReturnStatement",
+              "span": {
+                "endByte": 59,
+                "startByte": 51
+              },
+              "value": {
+                "kind": "IntLiteral",
+                "span": {
+                  "endByte": 59,
+                  "startByte": 58
+                },
+                "value": 1
+              }
+            }
+          ]
+        },
+        "ensures": [],
+        "exported": false,
+        "genericParams": [],
+        "kind": "FunctionDeclaration",
+        "name": "get_value",
+        "parameters": [],
+        "requires": [],
+        "returnType": "Int",
+        "span": {
+          "endByte": 61,
+          "startByte": 11
+        },
+        "whereClause": []
+      }
+    ],
+    "kind": "SourceUnit",
+    "module": {
+      "kind": "ModuleDeclaration",
+      "name": "app",
+      "span": {
+        "endByte": 10,
+        "startByte": 0
+      }
+    },
+    "span": {
+      "endByte": 61,
+      "startByte": 0
+    }
+  }
+}

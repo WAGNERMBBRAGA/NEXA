@@ -1,0 +1,12 @@
+[package]
+name = "nexa-resources"
+version = "0.0.1"
+edition = "2021"
+description = "Resource obligations, deterministic cleanup plans, and scope analysis for NEXA"
+
+[dependencies]
+nexa-source = { path = "../nexa-source" }
+nexa-diagnostics = { path = "../nexa-diagnostics" }
+nexa-symbols = { path = "../nexa-symbols" }
+nexa-types = { path = "../nexa-types" }
+nexa-ownership = { path = "../nexa-ownership" }

@@ -1,0 +1,95 @@
+# NEXA — Reference Compiler Workspace
+#
+# Workspace do toolchain de referência da linguagem NEXA.
+# Cada componente do compiler é um crate separado para evitar um monolito.
+#
+# Direção de dependências (sem ciclos):
+#   nexa-source
+#        ↑
+#   nexa-diagnostics
+#        ↑
+#   nexa-lexer
+#        ↑
+#   nexa-compiler
+#        ↑
+#   nexa-cli
+
+[workspace]
+resolver = "2"
+members = [
+    "compiler/nexa-lock",
+    "compiler/nexa-manifest",
+    "compiler/nexa-source",
+    "compiler/nexa-diagnostics",
+    "compiler/nexa-lexer",
+    "compiler/nexa-cst",
+    "compiler/nexa-ast",
+    "compiler/nexa-symbols",
+    "compiler/nexa-project",
+    "compiler/nexa-parser",
+    "compiler/nexa-resolver",
+    "compiler/nexa-types",
+    "compiler/nexa-effects",
+    "compiler/nexa-contracts",
+    "compiler/nexa-typecheck",
+    "compiler/nexa-compiler",
+    "compiler/nexa-flow",
+    "compiler/nexa-ownership",
+    "compiler/nexa-borrow",
+    "compiler/nexa-resources",
+    "compiler/nexa-tasks",
+    "compiler/nexa-nir",
+    "compiler/nexa-hnir",
+    "compiler/nexa-mnir",
+    "compiler/nexa-nir-verify",
+    "compiler/nexa-lowering",
+    "compiler/nexa-wasm-abi",
+    "compiler/nexa-wasm-validate",
+    "compiler/nexa-backend-wasm",
+    "compiler/nexa-registry",
+    "compiler/nexa-resolver-pkg",
+    "compiler/nexa-package",
+    "compiler/nexa-linker",
+    "compiler/nexa-cache",
+  "runtime/nexa-host-wasm",
+    "runtime/nxr-core",
+    "runtime/nxr-security",
+    "runtime/nxr-resources",
+    "runtime/nxr-observability",
+    "runtime/nxr-providers",
+    "runtime/nxr-tasks",
+    "runtime/nxr-host-wasm",
+    "runtime/nxr-testkit",
+    "runtime/nxr-ai",
+    "runtime/nxr-tools",
+    "runtime/nxr-agents",
+    "tooling/nexa-diagnostic-schema",
+    "tooling/nexa-tooling-protocol",
+    "tooling/nexa-semantic-db",
+    "tooling/nexa-compiler-service",
+    "tooling/nexa-formatter",
+    "tooling/nexa-test-runner",
+    "tooling/nexa-lsp",
+    "cli/nexa-cli",
+]
+
+[workspace.package]
+version = "0.0.1"
+edition = "2021"
+license = "LicenseRef-NEXA-UNDECIDED"
+repository = "https://example.invalid/nexa"
+
+# Dependências comuns do workspace (versões fixadas no Cargo.lock).
+[workspace.dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+thiserror = "2"
+clap = { version = "4", features = ["derive"] }
+nexa-flow = { path = "compiler/nexa-flow" }
+nexa-effects = { path = "compiler/nexa-effects" }
+nexa-contracts = { path = "compiler/nexa-contracts" }
+nexa-project = { path = "compiler/nexa-project" }
+
+[profile.release]
+lto = "thin"
+codegen-units = 1

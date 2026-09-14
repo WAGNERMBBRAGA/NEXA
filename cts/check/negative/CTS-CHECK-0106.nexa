@@ -1,0 +1,9 @@
+module main
+
+function take_string(s: String) -> String {
+    return s
+}
+
+function wrong_arg() -> String {
+    return take_string(42)
+}

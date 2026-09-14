@@ -1,0 +1,11 @@
+module main
+
+enum Shape {
+    Circle(Int)
+    Square
+}
+
+function main() -> Int {
+    let s = Shape::Circle("boom")
+    return 0
+}

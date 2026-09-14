@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "tokens": [
+    {
+      "category": "token",
+      "kind": "InvalidToken",
+      "startByte": 0,
+      "endByte": 3
+    },
+    {
+      "category": "token",
+      "kind": "Eof",
+      "startByte": 2,
+      "endByte": 2
+    }
+  ],
+  "diagnostics": [
+    {
+      "code": "NEXA-LEX-0002",
+      "severity": "Error",
+      "category": "lexer",
+      "messageKey": "lexer.invalid_token",
+      "message": "invalid token",
+      "primarySpan": {
+        "source": 0,
+        "start": 0,
+        "end": 3
+      },
+      "related": [],
+      "arguments": [],
+      "help": null,
+      "fixes": []
+    }
+  ]
+}

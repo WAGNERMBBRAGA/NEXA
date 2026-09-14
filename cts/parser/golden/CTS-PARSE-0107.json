@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "diagnostics": [
+    {
+      "code": "NEXA-PARSE-0010",
+      "severity": "Error",
+      "category": "parser",
+      "messageKey": "parser.effects_on_function",
+      "message": "`effects` is only valid on actions, not functions",
+      "primarySpan": {
+        "source": 0,
+        "start": 48,
+        "end": 55
+      },
+      "related": [],
+      "arguments": [],
+      "help": null,
+      "fixes": []
+    }
+  ],
+  "astDump": {
+    "imports": [],
+    "items": [
+      {
+        "body": {
+          "kind": "Block",
+          "span": {
+            "endByte": 89,
+            "startByte": 73
+          },
+          "statements": [
+            {
+              "kind": "ReturnStatement",
+              "span": {
+                "endByte": 88,
+                "startByte": 79
+              },
+              "value": {
+                "kind": "Identifier",
+                "name": "x",
+                "span": {
+                  "endByte": 88,
+                  "startByte": 86
+                }
+              }
+            }
+          ]
+        },
+        "ensures": [],
+        "exported": false,
+        "genericParams": [],
+        "kind": "FunctionDeclaration",
+        "name": "unsafe_write",
+        "parameters": [
+          {
+            "name": "x",
+            "type": "Int"
+          }
+        ],
+        "requires": [],
+        "returnType": "Int",
+        "span": {
+          "endByte": 89,
+          "startByte": 11
+        },
+        "whereClause": []
+      }
+    ],
+    "kind": "SourceUnit",
+    "module": {
+      "kind": "ModuleDeclaration",
+      "name": "app",
+      "span": {
+        "endByte": 10,
+        "startByte": 0
+      }
+    },
+    "span": {
+      "endByte": 89,
+      "startByte": 0
+    }
+  }
+}

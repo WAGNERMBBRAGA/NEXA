@@ -1,0 +1,4 @@
+module app
+function missing_return(a: Int) {
+    return a
+}

@@ -1,0 +1,12 @@
+[package]
+name = "nexa-parser"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+nexa-source = { path = "../nexa-source" }
+nexa-diagnostics = { path = "../nexa-diagnostics" }
+nexa-lexer = { path = "../nexa-lexer" }
+nexa-cst = { path = "../nexa-cst" }
+nexa-ast = { path = "../nexa-ast" }

@@ -1,0 +1,10 @@
+module main
+
+action divide(value: Int, divisor: Int) -> Int {
+    return value / divisor
+}
+
+action main() -> Int {
+    let minimum: Int = -9223372036854775807 - 1
+    return divide(minimum, -1)
+}

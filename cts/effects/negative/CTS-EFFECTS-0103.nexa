@@ -1,0 +1,10 @@
+module main
+
+action log() -> Unit effects [console::write] {
+    return
+}
+
+action process() -> Unit effects [] {
+    log()
+    return
+}

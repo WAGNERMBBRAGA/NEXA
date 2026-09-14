@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "source": "CTS-EFFECTS-0101.nexa",
+  "parseDiagnostics": [],
+  "semanticDiagnostics": [],
+  "typeDiagnostics": [],
+  "flowDiagnostics": [],
+  "effectDiagnostics": [
+    {
+      "code": "NEXA-EFFECT-0003",
+      "message": "exported action must have an explicit effects clause",
+      "severity": "error",
+      "span": {
+        "end": 31,
+        "source": 0,
+        "start": 27
+      }
+    }
+  ],
+  "summary": {
+    "effectCallEdges": 0,
+    "errors": 1,
+    "flowCfgs": 1,
+    "symbols": 45,
+    "typedExpressions": 0,
+    "warnings": 0
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "source": "CTS-CHECK-0110.nexa",
+  "parseDiagnostics": [],
+  "semanticDiagnostics": [],
+  "typeDiagnostics": [
+    {
+      "code": "NEXA-TYPE-0020",
+      "context": null,
+      "message": "unknown field `extra`",
+      "severity": "error",
+      "span": {
+        "end": 118,
+        "source": 0,
+        "start": 113
+      }
+    }
+  ],
+  "flowDiagnostics": [],
+  "effectDiagnostics": [],
+  "summary": {
+    "effectCallEdges": 0,
+    "errors": 1,
+    "flowCfgs": 0,
+    "symbols": 48,
+    "typedExpressions": 3,
+    "warnings": 0
+  }
+}

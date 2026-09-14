@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "source": "CTS-CHECK-0116.nexa",
+  "parseDiagnostics": [],
+  "semanticDiagnostics": [
+    {
+      "code": "NEXA-SEM-0002",
+      "context": "previous method is symbol#52",
+      "message": "duplicate method 'show' on type",
+      "severity": "error",
+      "span": {
+        "end": 242,
+        "source": 0,
+        "start": 194
+      }
+    }
+  ],
+  "typeDiagnostics": [
+    {
+      "code": "NEXA-TYPE-0027",
+      "context": null,
+      "message": "duplicate implementation: `Show` is already implemented for this exact type",
+      "severity": "error",
+      "span": {
+        "end": 178,
+        "source": 0,
+        "start": 174
+      }
+    }
+  ],
+  "flowDiagnostics": [],
+  "effectDiagnostics": [],
+  "summary": {
+    "effectCallEdges": 0,
+    "errors": 2,
+    "flowCfgs": 0,
+    "symbols": 56,
+    "typedExpressions": 2,
+    "warnings": 0
+  }
+}

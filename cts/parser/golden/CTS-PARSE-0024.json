@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "diagnostics": [],
+  "astDump": {
+    "imports": [],
+    "items": [
+      {
+        "exported": false,
+        "genericParams": [],
+        "kind": "InterfaceDeclaration",
+        "methods": [
+          {
+            "effects": [],
+            "name": "show",
+            "parameters": [],
+            "receiver": "self",
+            "returnType": "String"
+          }
+        ],
+        "name": "Display",
+        "span": {
+          "endByte": 52,
+          "startByte": 11
+        }
+      },
+      {
+        "body": {
+          "kind": "Block",
+          "span": {
+            "endByte": 135,
+            "startByte": 110
+          },
+          "statements": [
+            {
+              "kind": "ReturnStatement",
+              "span": {
+                "endByte": 133,
+                "startByte": 116
+              },
+              "value": {
+                "kind": "StringLiteral",
+                "multiline": false,
+                "parts": [
+                  {
+                    "kind": "Text",
+                    "text": "rendered"
+                  }
+                ],
+                "span": {
+                  "endByte": 133,
+                  "startByte": 123
+                }
+              }
+            }
+          ]
+        },
+        "ensures": [],
+        "exported": false,
+        "genericParams": [
+          {
+            "bounds": [],
+            "name": "T"
+          }
+        ],
+        "kind": "FunctionDeclaration",
+        "name": "render",
+        "parameters": [
+          {
+            "name": "value",
+            "type": "T"
+          }
+        ],
+        "requires": [],
+        "returnType": "String",
+        "span": {
+          "endByte": 135,
+          "startByte": 54
+        },
+        "whereClause": [
+          {
+            "bounds": [
+              "Display"
+            ],
+            "typeName": "T"
+          }
+        ]
+      }
+    ],
+    "kind": "SourceUnit",
+    "module": {
+      "kind": "ModuleDeclaration",
+      "name": "app",
+      "span": {
+        "endByte": 10,
+        "startByte": 0
+      }
+    },
+    "span": {
+      "endByte": 135,
+      "startByte": 0
+    }
+  }
+}

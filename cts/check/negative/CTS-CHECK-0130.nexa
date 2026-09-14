@@ -1,0 +1,8 @@
+module main
+
+function main() -> Int {
+    for x in 5 {
+        let a = x
+    }
+    return 0
+}

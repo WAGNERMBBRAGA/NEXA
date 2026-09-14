@@ -1,0 +1,10 @@
+module main
+
+action tick() -> Unit {
+    return
+}
+
+function use_it() -> Unit {
+    tick()
+    return
+}

@@ -1,0 +1,13 @@
+module main
+
+struct Secret {
+    code: Int
+}
+
+export function leak() -> Secret {
+    return Secret { code: 0 }
+}
+
+function main() -> Int {
+    return 0
+}

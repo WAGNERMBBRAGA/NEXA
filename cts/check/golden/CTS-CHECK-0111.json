@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "source": "CTS-CHECK-0111.nexa",
+  "parseDiagnostics": [],
+  "semanticDiagnostics": [],
+  "typeDiagnostics": [
+    {
+      "code": "NEXA-TYPE-0021",
+      "context": null,
+      "message": "duplicate field `x`",
+      "severity": "error",
+      "span": {
+        "end": 108,
+        "source": 0,
+        "start": 107
+      }
+    }
+  ],
+  "flowDiagnostics": [],
+  "effectDiagnostics": [],
+  "summary": {
+    "effectCallEdges": 0,
+    "errors": 1,
+    "flowCfgs": 0,
+    "symbols": 48,
+    "typedExpressions": 3,
+    "warnings": 0
+  }
+}

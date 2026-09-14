@@ -1,0 +1,7 @@
+module main
+
+function main() -> Int {
+    let x = 5
+    let r = await x
+    return 0
+}

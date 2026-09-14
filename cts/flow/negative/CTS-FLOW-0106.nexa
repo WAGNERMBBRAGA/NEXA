@@ -1,0 +1,6 @@
+module main
+
+function f() -> Int {
+    var x: Int
+    return x
+}

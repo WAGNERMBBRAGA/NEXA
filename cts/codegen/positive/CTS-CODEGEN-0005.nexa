@@ -1,0 +1,7 @@
+module main
+
+action main() -> Unit effects [console::write] {
+    Console::write("Olá, ")
+    Console::write("NEXA 🚀")
+    return
+}

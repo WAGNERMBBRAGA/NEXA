@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "diagnostics": [
+    {
+      "code": "NEXA-PARSE-0004",
+      "severity": "Error",
+      "category": "parser",
+      "messageKey": "parser.tuple_literal",
+      "message": "tuple literals are not supported (only `()` = Unit) (§365-368)",
+      "primarySpan": {
+        "source": 0,
+        "start": 64,
+        "end": 65
+      },
+      "related": [],
+      "arguments": [],
+      "help": null,
+      "fixes": []
+    }
+  ],
+  "astDump": {
+    "imports": [],
+    "items": [
+      {
+        "body": {
+          "kind": "Block",
+          "span": {
+            "endByte": 86,
+            "startByte": 40
+          },
+          "statements": [
+            {
+              "init": {
+                "kind": "Underscore",
+                "span": {
+                  "endByte": 69,
+                  "startByte": 62
+                }
+              },
+              "kind": "LetStatement",
+              "name": "pair",
+              "span": {
+                "endByte": 69,
+                "startByte": 46
+              },
+              "type": "Int"
+            },
+            {
+              "kind": "ReturnStatement",
+              "span": {
+                "endByte": 85,
+                "startByte": 73
+              },
+              "value": {
+                "kind": "Identifier",
+                "name": "pair",
+                "span": {
+                  "endByte": 85,
+                  "startByte": 80
+                }
+              }
+            }
+          ]
+        },
+        "ensures": [],
+        "exported": false,
+        "genericParams": [],
+        "kind": "FunctionDeclaration",
+        "name": "tuple_expr",
+        "parameters": [],
+        "requires": [],
+        "returnType": "Int",
+        "span": {
+          "endByte": 86,
+          "startByte": 11
+        },
+        "whereClause": []
+      }
+    ],
+    "kind": "SourceUnit",
+    "module": {
+      "kind": "ModuleDeclaration",
+      "name": "app",
+      "span": {
+        "endByte": 10,
+        "startByte": 0
+      }
+    },
+    "span": {
+      "endByte": 86,
+      "startByte": 0
+    }
+  }
+}

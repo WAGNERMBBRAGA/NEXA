@@ -1,0 +1,9 @@
+module main
+
+action invalid_shift(count: Int) -> Int {
+    return 1 << count
+}
+
+action main() -> Int {
+    return invalid_shift(64)
+}

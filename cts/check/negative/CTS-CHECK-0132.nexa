@@ -1,0 +1,7 @@
+module main
+
+function main() -> Int {
+    let n = 5
+    let b = n[0]
+    return 0
+}

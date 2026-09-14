@@ -1,0 +1,10 @@
+{
+  "name": "Laravel & PHP Helper",
+  "description": "Ajuda a construir e corrigir projetos Laravel/PHP: rotas, controllers, Blade, migrations e validacao com php -l.",
+  "prompt": "Ao trabalhar em um projeto Laravel/PHP: (1) Antes de terminar qualquer alteracao, valide os arquivos PHP com o comando php -l 'caminho/arquivo.php' e nunca deixe erro de sintaxe. (2) Em routes/web.php, use read_file antes de write_file e preserve TODAS as rotas existentes; adicione as novas. (3) Use namespace App\\Models, App\\Http\\Controllers sem barra inicial no 'use'. (4) Prefira request()->validate([...]) no proprio controller. (5) Views Blade: @extends('layouts.app'), @section('content'), @csrf em formularios, route('nome.da.rota') em action/url. (6) Migrations: $table->id(), ->timestamps(), chaves estrangeiras com ->foreign(...)->onDelete('cascade'). (7) Ao terminar, rode inspect_project e audit_project e revise que o servidor nao quebrou.",
+  "enabled": true,
+  "category": "PHP",
+  "commands": [],
+  "createdAt": "2026-09-11T00:00:00.000Z",
+  "updatedAt": "2026-09-11T00:00:00.000Z"
+}

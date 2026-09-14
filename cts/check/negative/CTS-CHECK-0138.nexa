@@ -1,0 +1,9 @@
+module main
+
+function main() -> Int {
+    let x: Int = 1
+    match x {
+        "s" => 0
+    }
+    return 0
+}

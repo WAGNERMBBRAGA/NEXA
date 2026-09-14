@@ -1,0 +1,10 @@
+[package]
+name = "nexa-hnir"
+version = "0.0.1"
+edition = "2021"
+description = "High-level NEXA IR: typed instructions, explicit copy/move/borrow, control flow, tasks, contracts"
+
+[dependencies]
+nexa-source = { path = "../nexa-source" }
+nexa-symbols = { path = "../nexa-symbols" }
+nexa-nir = { path = "../nexa-nir" }

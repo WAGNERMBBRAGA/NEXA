@@ -1,0 +1,24 @@
+[package]
+name = "nexa-cli"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "NEXA CLI driver: version, lex, format, test, verify, build, explain, doctor, lsp"
+
+[[bin]]
+name = "nexa"
+path = "src/main.rs"
+
+[dependencies]
+nexa-compiler = { path = "../../compiler/nexa-compiler" }
+nexa-diagnostics = { path = "../../compiler/nexa-diagnostics" }
+nexa-formatter = { path = "../../tooling/nexa-formatter" }
+nexa-test-runner = { path = "../../tooling/nexa-test-runner" }
+nexa-semantic-db = { path = "../../tooling/nexa-semantic-db" }
+nexa-lsp = { path = "../../tooling/nexa-lsp" }
+nexa-host-wasm = { path = "../../runtime/nexa-host-wasm" }
+nexa-manifest = { path = "../../compiler/nexa-manifest" }
+nexa-resolver-pkg = { path = "../../compiler/nexa-resolver-pkg" }
+nexa-registry = { path = "../../compiler/nexa-registry" }
+nexa-lock = { path = "../../compiler/nexa-lock" }
+serde_json.workspace = true

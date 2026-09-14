@@ -1,0 +1,12 @@
+module main
+
+struct Point {
+    x: Int
+    y: Int
+}
+
+implement Point {
+    duplicate() -> Self {
+        return ()
+    }
+}

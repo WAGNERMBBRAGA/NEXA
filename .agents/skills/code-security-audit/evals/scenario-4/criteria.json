@@ -1,0 +1,30 @@
+{
+  "criteria": [
+    {
+      "name": "PCI DSS card data logging violation",
+      "description": "Agent identifies that full card numbers are logged (PCI DSS violation — cardholder data must not be logged)",
+      "points": 20
+    },
+    {
+      "name": "Card data retention violation",
+      "description": "Agent flags full card_number stored in database (PCI DSS — must not retain full card numbers)",
+      "points": 20
+    },
+    {
+      "name": "Missing authorization on transactions endpoint",
+      "description": "Agent identifies IDOR vulnerability — any user can view any other user's transaction history",
+      "points": 20
+    },
+    {
+      "name": "Refund authorization bypass",
+      "description": "Agent identifies the refund endpoint lacks ownership verification — anyone can refund any charge",
+      "points": 20
+    },
+    {
+      "name": "Domain-specific categories applied",
+      "description": "Agent references financial services or PCI DSS-specific checks beyond standard vulnerability categories, demonstrating use of custom scan instructions",
+      "points": 20
+    }
+  ],
+  "total_points": 100
+}

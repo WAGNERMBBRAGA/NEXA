@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "source": "CTS-CHECK-0002.nexa",
+  "parseDiagnostics": [],
+  "semanticDiagnostics": [],
+  "typeDiagnostics": [],
+  "flowDiagnostics": [],
+  "effectDiagnostics": [],
+  "summary": {
+    "effectCallEdges": 0,
+    "errors": 0,
+    "flowCfgs": 2,
+    "symbols": 63,
+    "typedExpressions": 7,
+    "warnings": 0
+  }
+}

@@ -1,0 +1,4 @@
+module app
+function tuple_type(x: (Int, String)) -> Int {
+    return 1
+}

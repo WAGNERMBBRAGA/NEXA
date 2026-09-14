@@ -1,0 +1,10 @@
+[package]
+name = "nexa-mnir"
+version = "0.0.1"
+edition = "2021"
+description = "Mid-level NEXA IR: SSA, block parameters, typed values, ownership-carrying instructions"
+
+[dependencies]
+nexa-source = { path = "../nexa-source" }
+nexa-symbols = { path = "../nexa-symbols" }
+nexa-nir = { path = "../nexa-nir" }

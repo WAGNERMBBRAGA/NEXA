@@ -1,0 +1,16 @@
+module main
+
+action main() -> Unit effects [console::write] {
+    var counter: Int = 0
+    loop {
+        counter = counter + 1
+        if !(counter < 3) {
+            break
+        }
+        Console::write("x")
+    }
+    if -1 == ~0 {
+        Console::write("-unary-ok")
+    }
+    return
+}

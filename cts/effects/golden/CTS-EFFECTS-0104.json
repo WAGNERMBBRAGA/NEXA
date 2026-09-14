@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "source": "CTS-EFFECTS-0104.nexa",
+  "parseDiagnostics": [],
+  "semanticDiagnostics": [],
+  "typeDiagnostics": [],
+  "flowDiagnostics": [],
+  "effectDiagnostics": [
+    {
+      "code": "NEXA-EFFECT-0005",
+      "message": "unknown effect 'foo::bar'",
+      "severity": "error",
+      "span": {
+        "end": 52,
+        "source": 0,
+        "start": 35
+      }
+    }
+  ],
+  "summary": {
+    "effectCallEdges": 0,
+    "errors": 1,
+    "flowCfgs": 1,
+    "symbols": 45,
+    "typedExpressions": 0,
+    "warnings": 0
+  }
+}

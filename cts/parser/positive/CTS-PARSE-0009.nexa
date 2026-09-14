@@ -1,0 +1,5 @@
+module app
+interface Display {
+    show() -> String
+    validate(value: Int) -> Bool
+}

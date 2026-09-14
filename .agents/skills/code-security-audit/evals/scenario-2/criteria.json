@@ -1,0 +1,35 @@
+{
+  "criteria": [
+    {
+      "name": "Valid workflow YAML",
+      "description": "Agent produces a syntactically valid GitHub Actions workflow YAML with on: pull_request trigger",
+      "points": 20
+    },
+    {
+      "name": "Correct permissions",
+      "description": "Workflow includes pull-requests: write and contents: read permissions",
+      "points": 15
+    },
+    {
+      "name": "Required environment variables",
+      "description": "Agent specifies ANTHROPIC_API_KEY, GITHUB_TOKEN, GITHUB_REPOSITORY, and PR_NUMBER",
+      "points": 20
+    },
+    {
+      "name": "Exclude directories configured",
+      "description": "EXCLUDE_DIRECTORIES is set to include tests/ and docs/",
+      "points": 15
+    },
+    {
+      "name": "PR commenting explained",
+      "description": "Agent references scripts/comment-pr-findings.js or the action's comment-pr input for posting findings as review comments",
+      "points": 15
+    },
+    {
+      "name": "Uses correct audit entry point",
+      "description": "Agent references claudecode/audit.py or the anthropics/claude-code-security-review action",
+      "points": 15
+    }
+  ],
+  "total_points": 100
+}

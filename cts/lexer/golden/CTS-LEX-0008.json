@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "tokens": [
+    {
+      "category": "token",
+      "kind": "Keyword",
+      "keyword": "let",
+      "startByte": 0,
+      "endByte": 3
+    },
+    {
+      "category": "trivia",
+      "kind": "Whitespace",
+      "startByte": 3,
+      "endByte": 4
+    },
+    {
+      "category": "token",
+      "kind": "Identifier",
+      "startByte": 4,
+      "endByte": 5
+    },
+    {
+      "category": "trivia",
+      "kind": "Whitespace",
+      "startByte": 5,
+      "endByte": 6
+    },
+    {
+      "category": "token",
+      "kind": "Equal",
+      "startByte": 6,
+      "endByte": 7
+    },
+    {
+      "category": "trivia",
+      "kind": "Whitespace",
+      "startByte": 7,
+      "endByte": 8
+    },
+    {
+      "category": "token",
+      "kind": "IntegerLiteral",
+      "startByte": 8,
+      "endByte": 9
+    },
+    {
+      "category": "token",
+      "kind": "Newline",
+      "startByte": 9,
+      "endByte": 11
+    },
+    {
+      "category": "token",
+      "kind": "Keyword",
+      "keyword": "let",
+      "startByte": 11,
+      "endByte": 14
+    },
+    {
+      "category": "trivia",
+      "kind": "Whitespace",
+      "startByte": 14,
+      "endByte": 15
+    },
+    {
+      "category": "token",
+      "kind": "Identifier",
+      "startByte": 15,
+      "endByte": 16
+    },
+    {
+      "category": "trivia",
+      "kind": "Whitespace",
+      "startByte": 16,
+      "endByte": 17
+    },
+    {
+      "category": "token",
+      "kind": "Equal",
+      "startByte": 17,
+      "endByte": 18
+    },
+    {
+      "category": "trivia",
+      "kind": "Whitespace",
+      "startByte": 18,
+      "endByte": 19
+    },
+    {
+      "category": "token",
+      "kind": "IntegerLiteral",
+      "startByte": 19,
+      "endByte": 20
+    },
+    {
+      "category": "token",
+      "kind": "Newline",
+      "startByte": 20,
+      "endByte": 22
+    },
+    {
+      "category": "token",
+      "kind": "Eof",
+      "startByte": 22,
+      "endByte": 22
+    }
+  ],
+  "diagnostics": []
+}

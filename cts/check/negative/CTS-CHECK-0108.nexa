@@ -1,0 +1,9 @@
+module main
+
+function add(a: Int, b: Int) -> Int {
+    return a + b
+}
+
+function mismatch_arity() -> Int {
+    return add(1)
+}

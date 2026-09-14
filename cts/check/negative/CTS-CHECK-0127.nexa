@@ -1,0 +1,29 @@
+module main
+
+interface Renderable {
+    render() -> String
+}
+
+struct Box<T> {
+    value: T
+}
+
+struct A {
+    a: Int
+}
+
+struct B {
+    b: Int
+}
+
+implement Renderable for Box<A> {
+    render(self) -> String {
+        return "a"
+    }
+}
+
+implement Renderable for Box<B> {
+    render(self) -> String {
+        return "b"
+    }
+}

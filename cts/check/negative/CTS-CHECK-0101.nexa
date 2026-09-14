@@ -1,0 +1,5 @@
+module main
+
+function bad(a: Int) -> Int {
+    return a + true
+}

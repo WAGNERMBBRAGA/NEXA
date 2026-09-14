@@ -1,0 +1,1 @@
+Manual audit workflow: gather branch diff, perform 3-phase security analysis, filter false positives, produce structured vulnerability output

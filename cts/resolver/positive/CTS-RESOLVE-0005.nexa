@@ -1,0 +1,8 @@
+module main
+
+function fib(n: Int) -> Int {
+    if n == 0 {
+        return 0
+    }
+    return fib(n)
+}

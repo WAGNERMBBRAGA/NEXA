@@ -1,0 +1,11 @@
+module main
+
+action main() -> Unit effects [console::write] {
+    var counter: Int = 0
+    while counter < 3 {
+        Console::write("x")
+        counter = counter + 1
+    }
+    Console::write("-done")
+    return
+}

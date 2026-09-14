@@ -1,0 +1,12 @@
+module main
+
+action main() -> Unit effects [console::write] {
+    if 1 > 2 {
+        Console::write("wrong")
+    } else if 2 > 3 {
+        Console::write("also-wrong")
+    } else {
+        Console::write("else-ok")
+    }
+    return
+}

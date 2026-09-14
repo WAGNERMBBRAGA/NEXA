@@ -1,0 +1,6 @@
+module main
+
+action main() -> Int {
+    let values: Array<Int> = [10, 20, 30]
+    return values[2]
+}

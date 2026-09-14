@@ -1,0 +1,15 @@
+{
+  "name": "nexa-backend",
+  "version": "1.0.0",
+  "description": "Backend for NEXA AI Assistant",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node --test src/config/runtimePaths.test.js src/config/store.test.js src/config/secretStore.test.js src/services/apiSecurity.test.js src/services/downloadManager.test.js src/services/modelManager.test.js src/services/agentActions.test.js src/services/agentLoop.test.js src/services/projectAudit.test.js src/services/projectContext.test.js src/services/projectIndex.test.js src/services/projectInspector.test.js src/services/semanticIndex.test.js src/services/toolAdapter.test.js src/services/agentContract.matrix.test.js src/services/actionPlanner.test.js src/services/agentRuntime.test.js src/services/requestPlanner.test.js src/services/correctionPlanner.test.js src/services/structuralFallback.test.js src/services/conversationStatus.test.js src/services/aiService.test.js src/services/conversationActivity.test.js src/services/workPlan.test.js src/services/creationFallback.test.js src/services/deterministicExecutor.test.js src/services/nexaAgent.test.js src/services/projectBlueprint.test.js src/services/workspaceStore.test.js src/services/skillsService.test.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "node-fetch": "^3.3.1"
+  }
+}

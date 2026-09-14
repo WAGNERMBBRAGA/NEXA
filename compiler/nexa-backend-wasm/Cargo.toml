@@ -1,0 +1,13 @@
+[package]
+name = "nexa-backend-wasm"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+nexa-wasm-abi = { path = "../nexa-wasm-abi" }
+nexa-wasm-validate = { path = "../nexa-wasm-validate" }
+nexa-nir = { path = "../nexa-nir" }
+wasm-encoder = "0.258"
+thiserror = "2"
+
+[dev-dependencies]

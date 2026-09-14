@@ -1,0 +1,11 @@
+module main
+
+action main() -> Unit effects [console::write] {
+    let value: Int = 2
+    match value {
+        1 => { Console::write("one") }
+        2 => { Console::write("two") }
+        _ => { Console::write("other") }
+    }
+    return
+}

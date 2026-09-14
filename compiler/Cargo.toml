@@ -1,0 +1,15 @@
+[package]
+name = "bump_allocator"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# Optional dependencies (no external crates needed currently)
+
+[[bin]]
+name = "bump_test"
+path = "main.rs"
+
+[[test]]
+name = "bump_heap_tests"
+harness = true

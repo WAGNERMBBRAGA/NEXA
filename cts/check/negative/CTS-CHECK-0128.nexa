@@ -1,0 +1,9 @@
+module main
+
+struct Box<T> {
+    value: T
+}
+
+function id(b: Box<Int, String>) -> Int {
+    return 0
+}

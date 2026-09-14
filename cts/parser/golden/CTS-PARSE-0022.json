@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "diagnostics": [],
+  "astDump": {
+    "imports": [],
+    "items": [
+      {
+        "body": {
+          "kind": "Block",
+          "span": {
+            "endByte": 114,
+            "startByte": 94
+          },
+          "statements": [
+            {
+              "kind": "ReturnStatement",
+              "span": {
+                "endByte": 113,
+                "startByte": 100
+              },
+              "value": {
+                "kind": "BinaryExpression",
+                "left": {
+                  "kind": "Identifier",
+                  "name": "a",
+                  "span": {
+                    "endByte": 110,
+                    "startByte": 107
+                  }
+                },
+                "operator": "/",
+                "right": {
+                  "kind": "Identifier",
+                  "name": "b",
+                  "span": {
+                    "endByte": 113,
+                    "startByte": 111
+                  }
+                },
+                "span": {
+                  "endByte": 113,
+                  "startByte": 107
+                }
+              }
+            }
+          ]
+        },
+        "ensures": [
+          {
+            "expression": {
+              "expression": {
+                "kind": "BinaryExpression",
+                "left": {
+                  "kind": "Identifier",
+                  "name": "result",
+                  "span": {
+                    "endByte": 90,
+                    "startByte": 81
+                  }
+                },
+                "operator": ">=",
+                "right": {
+                  "kind": "IntLiteral",
+                  "span": {
+                    "endByte": 92,
+                    "startByte": 91
+                  },
+                  "value": 0
+                },
+                "span": {
+                  "endByte": 92,
+                  "startByte": 81
+                }
+              },
+              "kind": "Parenthesized",
+              "span": {
+                "endByte": 94,
+                "startByte": 80
+              }
+            },
+            "kind": "Ensure"
+          }
+        ],
+        "exported": false,
+        "genericParams": [],
+        "kind": "FunctionDeclaration",
+        "name": "divide",
+        "parameters": [
+          {
+            "name": "a",
+            "type": "Int"
+          },
+          {
+            "name": "b",
+            "type": "Int"
+          }
+        ],
+        "requires": [
+          {
+            "expression": {
+              "expression": {
+                "kind": "BinaryExpression",
+                "left": {
+                  "kind": "Identifier",
+                  "name": "b",
+                  "span": {
+                    "endByte": 66,
+                    "startByte": 62
+                  }
+                },
+                "operator": "!=",
+                "right": {
+                  "kind": "IntLiteral",
+                  "span": {
+                    "endByte": 68,
+                    "startByte": 67
+                  },
+                  "value": 0
+                },
+                "span": {
+                  "endByte": 68,
+                  "startByte": 62
+                }
+              },
+              "kind": "Parenthesized",
+              "span": {
+                "endByte": 70,
+                "startByte": 61
+              }
+            },
+            "kind": "Require"
+          }
+        ],
+        "returnType": "Int",
+        "span": {
+          "endByte": 114,
+          "startByte": 11
+        },
+        "whereClause": []
+      }
+    ],
+    "kind": "SourceUnit",
+    "module": {
+      "kind": "ModuleDeclaration",
+      "name": "app",
+      "span": {
+        "endByte": 10,
+        "startByte": 0
+      }
+    },
+    "span": {
+      "endByte": 114,
+      "startByte": 0
+    }
+  }
+}

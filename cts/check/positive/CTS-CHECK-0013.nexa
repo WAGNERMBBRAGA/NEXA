@@ -1,0 +1,9 @@
+module main
+
+struct Node {
+    next: ref Node
+}
+
+function main() -> Int {
+    return 0
+}

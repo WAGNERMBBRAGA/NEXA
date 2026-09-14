@@ -1,0 +1,8 @@
+module main
+
+type A = B
+type B = A
+
+function main() -> Int {
+    return 0
+}

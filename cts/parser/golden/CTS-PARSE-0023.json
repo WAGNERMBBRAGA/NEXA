@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "diagnostics": [],
+  "astDump": {
+    "imports": [],
+    "items": [
+      {
+        "body": {
+          "kind": "Block",
+          "span": {
+            "endByte": 67,
+            "startByte": 47
+          },
+          "statements": [
+            {
+              "kind": "ReturnStatement",
+              "span": {
+                "endByte": 66,
+                "startByte": 53
+              },
+              "value": {
+                "kind": "Identifier",
+                "name": "value",
+                "span": {
+                  "endByte": 66,
+                  "startByte": 60
+                }
+              }
+            }
+          ]
+        },
+        "ensures": [],
+        "exported": false,
+        "genericParams": [
+          {
+            "bounds": [],
+            "name": "T"
+          }
+        ],
+        "kind": "FunctionDeclaration",
+        "name": "identity",
+        "parameters": [
+          {
+            "name": "value",
+            "type": "T"
+          }
+        ],
+        "requires": [],
+        "returnType": "T",
+        "span": {
+          "endByte": 67,
+          "startByte": 11
+        },
+        "whereClause": []
+      }
+    ],
+    "kind": "SourceUnit",
+    "module": {
+      "kind": "ModuleDeclaration",
+      "name": "app",
+      "span": {
+        "endByte": 10,
+        "startByte": 0
+      }
+    },
+    "span": {
+      "endByte": 67,
+      "startByte": 0
+    }
+  }
+}

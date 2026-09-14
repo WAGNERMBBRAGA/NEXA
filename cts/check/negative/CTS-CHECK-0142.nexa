@@ -1,0 +1,3 @@
+module main
+
+export const Max = 10

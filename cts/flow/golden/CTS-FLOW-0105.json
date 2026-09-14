@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "source": "CTS-FLOW-0105.nexa",
+  "parseDiagnostics": [],
+  "semanticDiagnostics": [],
+  "typeDiagnostics": [],
+  "flowDiagnostics": [
+    {
+      "code": "NEXA-FLOW-0004",
+      "message": "continue outside of a loop (while, loop or for)",
+      "severity": "error",
+      "span": {
+        "end": 49,
+        "source": 0,
+        "start": 40
+      }
+    }
+  ],
+  "effectDiagnostics": [],
+  "summary": {
+    "effectCallEdges": 0,
+    "errors": 1,
+    "flowCfgs": 1,
+    "symbols": 45,
+    "typedExpressions": 0,
+    "warnings": 0
+  }
+}

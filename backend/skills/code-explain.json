@@ -1,0 +1,10 @@
+{
+  "name": "Explicar Codigo",
+  "description": "Explica codigo passo a passo",
+  "prompt": "Quando o usuario pedir para explicar codigo, explique linha por linha de forma simples e direita. Use exemplos quando possivel.",
+  "enabled": true,
+  "category": "Codigo",
+  "commands": [],
+  "createdAt": "2026-09-05T03:25:57.199Z",
+  "updatedAt": "2026-09-11T18:08:18.367Z"
+}

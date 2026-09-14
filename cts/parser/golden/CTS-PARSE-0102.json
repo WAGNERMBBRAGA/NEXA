@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "diagnostics": [
+    {
+      "code": "NEXA-PARSE-0014",
+      "severity": "Error",
+      "category": "parser",
+      "messageKey": "parser.duplicate_module",
+      "message": "duplicate module declaration",
+      "primarySpan": {
+        "source": 0,
+        "start": 11,
+        "end": 17
+      },
+      "related": [],
+      "arguments": [],
+      "help": null,
+      "fixes": []
+    }
+  ],
+  "astDump": {
+    "imports": [],
+    "items": [],
+    "kind": "SourceUnit",
+    "module": {
+      "kind": "ModuleDeclaration",
+      "name": "app",
+      "span": {
+        "endByte": 10,
+        "startByte": 0
+      }
+    },
+    "span": {
+      "endByte": 23,
+      "startByte": 0
+    }
+  }
+}

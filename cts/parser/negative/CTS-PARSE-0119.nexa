@@ -1,0 +1,4 @@
+module app
+function bad<T(x: T) -> T {
+    return x
+}

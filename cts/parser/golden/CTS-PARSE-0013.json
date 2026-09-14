@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 1,
+  "diagnostics": [],
+  "astDump": {
+    "imports": [],
+    "items": [
+      {
+        "exported": false,
+        "init": {
+          "kind": "IntLiteral",
+          "span": {
+            "endByte": 28,
+            "startByte": 26
+          },
+          "value": 10
+        },
+        "kind": "ConstDeclaration",
+        "name": "N",
+        "span": {
+          "endByte": 28,
+          "startByte": 11
+        },
+        "type": "Int"
+      },
+      {
+        "body": {
+          "kind": "Block",
+          "span": {
+            "endByte": 113,
+            "startByte": 51
+          },
+          "statements": [
+            {
+              "init": {
+                "kind": "IntLiteral",
+                "span": {
+                  "endByte": 71,
+                  "startByte": 70
+                },
+                "value": 1
+              },
+              "kind": "LetStatement",
+              "name": "a",
+              "span": {
+                "endByte": 71,
+                "startByte": 57
+              },
+              "type": "Int"
+            },
+            {
+              "init": {
+                "kind": "IntLiteral",
+                "span": {
+                  "endByte": 90,
+                  "startByte": 89
+                },
+                "value": 2
+              },
+              "kind": "VarStatement",
+              "name": "b",
+              "span": {
+                "endByte": 90,
+                "startByte": 76
+              },
+              "type": "Int"
+            },
+            {
+              "kind": "ReturnStatement",
+              "span": {
+                "endByte": 112,
+                "startByte": 95
+              },
+              "value": {
+                "kind": "BinaryExpression",
+                "left": {
+                  "kind": "BinaryExpression",
+                  "left": {
+                    "kind": "Identifier",
+                    "name": "a",
+                    "span": {
+                      "endByte": 105,
+                      "startByte": 102
+                    }
+                  },
+                  "operator": "+",
+                  "right": {
+                    "kind": "Identifier",
+                    "name": "b",
+                    "span": {
+                      "endByte": 109,
+                      "startByte": 106
+                    }
+                  },
+                  "span": {
+                    "endByte": 109,
+                    "startByte": 102
+                  }
+                },
+                "operator": "+",
+                "right": {
+                  "kind": "Identifier",
+                  "name": "N",
+                  "span": {
+                    "endByte": 112,
+                    "startByte": 110
+                  }
+                },
+                "span": {
+                  "endByte": 112,
+                  "startByte": 102
+                }
+              }
+            }
+          ]
+        },
+        "ensures": [],
+        "exported": false,
+        "genericParams": [],
+        "kind": "FunctionDeclaration",
+        "name": "sum",
+        "parameters": [],
+        "requires": [],
+        "returnType": "Int",
+        "span": {
+          "endByte": 113,
+          "startByte": 29
+        },
+        "whereClause": []
+      }
+    ],
+    "kind": "SourceUnit",
+    "module": {
+      "kind": "ModuleDeclaration",
+      "name": "app",
+      "span": {
+        "endByte": 10,
+        "startByte": 0
+      }
+    },
+    "span": {
+      "endByte": 113,
+      "startByte": 0
+    }
+  }
+}

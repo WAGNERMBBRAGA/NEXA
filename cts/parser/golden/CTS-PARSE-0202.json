@@ -1,0 +1,191 @@
+{
+  "schemaVersion": 1,
+  "diagnostics": [
+    {
+      "code": "NEXA-PARSE-0004",
+      "severity": "Error",
+      "category": "parser",
+      "messageKey": "parser.invalid_expression",
+      "message": "expected an expression, found keyword `let`",
+      "primarySpan": {
+        "source": 0,
+        "start": 54,
+        "end": 57
+      },
+      "related": [],
+      "arguments": [],
+      "help": null,
+      "fixes": []
+    },
+    {
+      "code": "NEXA-PARSE-0008",
+      "severity": "Error",
+      "category": "parser",
+      "messageKey": "parser.missing_statement_terminator",
+      "message": "expected a new line, found identifier `y`",
+      "primarySpan": {
+        "source": 0,
+        "start": 58,
+        "end": 59
+      },
+      "related": [],
+      "arguments": [],
+      "help": null,
+      "fixes": []
+    },
+    {
+      "code": "NEXA-PARSE-0008",
+      "severity": "Error",
+      "category": "parser",
+      "messageKey": "parser.missing_statement_terminator",
+      "message": "expected a new line, found `Colon`",
+      "primarySpan": {
+        "source": 0,
+        "start": 59,
+        "end": 60
+      },
+      "related": [],
+      "arguments": [],
+      "help": null,
+      "fixes": []
+    },
+    {
+      "code": "NEXA-PARSE-0008",
+      "severity": "Error",
+      "category": "parser",
+      "messageKey": "parser.missing_statement_terminator",
+      "message": "expected a new line, found identifier `Int`",
+      "primarySpan": {
+        "source": 0,
+        "start": 61,
+        "end": 64
+      },
+      "related": [],
+      "arguments": [],
+      "help": null,
+      "fixes": []
+    }
+  ],
+  "astDump": {
+    "imports": [],
+    "items": [
+      {
+        "body": {
+          "kind": "Block",
+          "span": {
+            "endByte": 83,
+            "startByte": 31
+          },
+          "statements": [
+            {
+              "init": {
+                "kind": "Underscore",
+                "span": {
+                  "endByte": 57,
+                  "startByte": 54
+                }
+              },
+              "kind": "LetStatement",
+              "name": "x",
+              "span": {
+                "endByte": 57,
+                "startByte": 37
+              },
+              "type": "Int"
+            },
+            {
+              "expression": {
+                "kind": "Identifier",
+                "name": "y",
+                "span": {
+                  "endByte": 60,
+                  "startByte": 58
+                }
+              },
+              "kind": "ExpressionStatement",
+              "span": {
+                "endByte": 60,
+                "startByte": 58
+              }
+            },
+            {
+              "expression": {
+                "kind": "Underscore",
+                "span": {
+                  "endByte": 60,
+                  "startByte": 59
+                }
+              },
+              "kind": "ExpressionStatement",
+              "span": {
+                "endByte": 60,
+                "startByte": 59
+              }
+            },
+            {
+              "kind": "AssignStatement",
+              "operator": "=",
+              "span": {
+                "endByte": 68,
+                "startByte": 61
+              },
+              "target": {
+                "kind": "Identifier",
+                "name": "Int"
+              },
+              "value": {
+                "kind": "IntLiteral",
+                "span": {
+                  "endByte": 68,
+                  "startByte": 67
+                },
+                "value": 1
+              }
+            },
+            {
+              "kind": "ReturnStatement",
+              "span": {
+                "endByte": 82,
+                "startByte": 73
+              },
+              "value": {
+                "kind": "Identifier",
+                "name": "y",
+                "span": {
+                  "endByte": 82,
+                  "startByte": 80
+                }
+              }
+            }
+          ]
+        },
+        "ensures": [],
+        "exported": false,
+        "genericParams": [],
+        "kind": "FunctionDeclaration",
+        "name": "f",
+        "parameters": [],
+        "requires": [],
+        "returnType": "Int",
+        "span": {
+          "endByte": 83,
+          "startByte": 11
+        },
+        "whereClause": []
+      }
+    ],
+    "kind": "SourceUnit",
+    "module": {
+      "kind": "ModuleDeclaration",
+      "name": "app",
+      "span": {
+        "endByte": 10,
+        "startByte": 0
+      }
+    },
+    "span": {
+      "endByte": 83,
+      "startByte": 0
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "tokens": [
+    {
+      "category": "trivia",
+      "kind": "DocumentationComment",
+      "startByte": 0,
+      "endByte": 15
+    },
+    {
+      "category": "token",
+      "kind": "Newline",
+      "startByte": 15,
+      "endByte": 16
+    },
+    {
+      "category": "trivia",
+      "kind": "BlockComment",
+      "startByte": 16,
+      "endByte": 32
+    },
+    {
+      "category": "token",
+      "kind": "Eof",
+      "startByte": 32,
+      "endByte": 32
+    }
+  ],
+  "diagnostics": []
+}

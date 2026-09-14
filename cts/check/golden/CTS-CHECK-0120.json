@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "source": "CTS-CHECK-0120.nexa",
+  "parseDiagnostics": [],
+  "semanticDiagnostics": [],
+  "typeDiagnostics": [
+    {
+      "code": "NEXA-TYPE-0044",
+      "context": null,
+      "message": "public API of `Outer` exposes non-public type `Inner`",
+      "severity": "error",
+      "span": {
+        "end": 67,
+        "source": 0,
+        "start": 62
+      }
+    }
+  ],
+  "flowDiagnostics": [],
+  "effectDiagnostics": [],
+  "summary": {
+    "effectCallEdges": 0,
+    "errors": 1,
+    "flowCfgs": 0,
+    "symbols": 49,
+    "typedExpressions": 1,
+    "warnings": 0
+  }
+}

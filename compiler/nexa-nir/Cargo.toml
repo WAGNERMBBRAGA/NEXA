@@ -1,0 +1,10 @@
+[package]
+name = "nexa-nir"
+version = "0.0.1"
+edition = "2021"
+description = "Shared NIR data model: type table, constant pool, function table, metadata, serialization for NEXA"
+
+[dependencies]
+nexa-source = { path = "../nexa-source" }
+nexa-diagnostics = { path = "../nexa-diagnostics" }
+nexa-symbols = { path = "../nexa-symbols" }

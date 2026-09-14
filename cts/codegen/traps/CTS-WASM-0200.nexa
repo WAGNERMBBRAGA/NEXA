@@ -1,0 +1,6 @@
+module main
+
+action main() -> Int {
+    let maximum: Int = 9223372036854775807
+    return maximum + 1
+}

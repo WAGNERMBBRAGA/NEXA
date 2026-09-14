@@ -1,0 +1,18 @@
+module main
+
+interface I {
+    run() -> Int
+}
+
+struct P {
+    x: Int
+}
+
+implement I for P {
+    run(self) -> Int {
+        return 1
+    }
+    extra(self) -> Int {
+        return 2
+    }
+}

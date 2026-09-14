@@ -1,0 +1,4 @@
+module app
+action log_message(message: String) -> Unit effects [std::io::write] {
+    discard message
+}

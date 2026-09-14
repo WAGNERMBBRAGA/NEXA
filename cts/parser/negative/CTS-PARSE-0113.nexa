@@ -1,0 +1,4 @@
+module app
+function call() -> Int {
+    return f(x: 1)
+}

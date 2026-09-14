@@ -1,0 +1,13 @@
+[package]
+name = "nexa-diagnostic-schema"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "NEXA Diagnostic Schema 1: machine-readable diagnostics, fixes and applicability"
+
+[dependencies]
+nexa-source = { path = "../../compiler/nexa-source" }
+nexa-diagnostics = { path = "../../compiler/nexa-diagnostics" }
+serde.workspace = true
+serde_json.workspace = true
+thiserror.workspace = true

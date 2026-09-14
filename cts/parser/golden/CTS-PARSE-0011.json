@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "diagnostics": [],
+  "astDump": {
+    "imports": [],
+    "items": [
+      {
+        "distinct": false,
+        "exported": false,
+        "genericParams": [],
+        "kind": "TypeAliasDeclaration",
+        "name": "Name",
+        "span": {
+          "endByte": 29,
+          "startByte": 11
+        },
+        "type": "String"
+      }
+    ],
+    "kind": "SourceUnit",
+    "module": {
+      "kind": "ModuleDeclaration",
+      "name": "app",
+      "span": {
+        "endByte": 10,
+        "startByte": 0
+      }
+    },
+    "span": {
+      "endByte": 29,
+      "startByte": 0
+    }
+  }
+}

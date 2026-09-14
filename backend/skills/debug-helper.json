@@ -1,0 +1,10 @@
+{
+  "name": "Debug Helper",
+  "description": "Ajuda a encontrar e corrigir bugs",
+  "prompt": "Quando o usuario reportar um bug, analise o codigo, identifique o problema e sugira a correcao. Se possivel, crie o arquivo corrigido.",
+  "enabled": true,
+  "category": "Codigo",
+  "commands": [],
+  "createdAt": "2026-09-05T03:25:57.201Z",
+  "updatedAt": "2026-09-11T18:08:18.367Z"
+}

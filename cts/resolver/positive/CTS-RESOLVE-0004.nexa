@@ -1,0 +1,10 @@
+module main
+
+action main() -> Unit {
+    let v = helper()
+    return
+}
+
+function helper() -> Int {
+    return 1
+}

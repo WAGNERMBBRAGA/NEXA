@@ -1,0 +1,11 @@
+module main
+
+enum Color {
+    Red
+    Green
+}
+
+action main() -> Unit {
+    let c = Color::Red
+    return
+}

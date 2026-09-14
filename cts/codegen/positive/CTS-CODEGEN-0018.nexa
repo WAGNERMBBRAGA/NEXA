@@ -1,0 +1,9 @@
+module main
+
+action main() -> Unit effects [console::write] {
+    let letters: Array<String> = ["n", "e", "x", "a"]
+    for letter in letters {
+        Console::write(letter)
+    }
+    return
+}

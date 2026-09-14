@@ -1,0 +1,5 @@
+module util
+
+export function lift() -> Int {
+    return 1
+}

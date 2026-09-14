@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "source": "CTS-CHECK-0107.nexa",
+  "parseDiagnostics": [],
+  "semanticDiagnostics": [],
+  "typeDiagnostics": [
+    {
+      "code": "NEXA-TYPE-0012",
+      "context": null,
+      "message": "method `describe` expects 0 argument(s), got 1",
+      "severity": "error",
+      "span": {
+        "end": 244,
+        "source": 0,
+        "start": 230
+      }
+    }
+  ],
+  "flowDiagnostics": [],
+  "effectDiagnostics": [],
+  "summary": {
+    "effectCallEdges": 0,
+    "errors": 1,
+    "flowCfgs": 0,
+    "symbols": 55,
+    "typedExpressions": 3,
+    "warnings": 0
+  }
+}

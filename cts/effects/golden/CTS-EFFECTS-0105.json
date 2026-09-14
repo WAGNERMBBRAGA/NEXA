@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "source": "CTS-EFFECTS-0105.nexa",
+  "parseDiagnostics": [],
+  "semanticDiagnostics": [],
+  "typeDiagnostics": [],
+  "flowDiagnostics": [],
+  "effectDiagnostics": [
+    {
+      "code": "NEXA-EFFECT-0001",
+      "message": "functions cannot call actions",
+      "severity": "error",
+      "span": {
+        "end": 111,
+        "source": 0,
+        "start": 107
+      }
+    },
+    {
+      "code": "NEXA-EFFECT-0001",
+      "message": "function must be pure but has effects",
+      "severity": "error",
+      "span": {
+        "end": 90,
+        "source": 0,
+        "start": 84
+      }
+    }
+  ],
+  "summary": {
+    "effectCallEdges": 1,
+    "errors": 2,
+    "flowCfgs": 2,
+    "symbols": 46,
+    "typedExpressions": 1,
+    "warnings": 0
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "source": "CTS-CHECK-0143.nexa",
+  "parseDiagnostics": [],
+  "semanticDiagnostics": [],
+  "typeDiagnostics": [
+    {
+      "code": "NEXA-TYPE-0003",
+      "context": null,
+      "message": "let binding type mismatch: expected Int64, got Int32",
+      "severity": "error",
+      "span": {
+        "end": 80,
+        "source": 0,
+        "start": 63
+      }
+    }
+  ],
+  "flowDiagnostics": [],
+  "effectDiagnostics": [],
+  "summary": {
+    "effectCallEdges": 0,
+    "errors": 1,
+    "flowCfgs": 0,
+    "symbols": 47,
+    "typedExpressions": 3,
+    "warnings": 0
+  }
+}

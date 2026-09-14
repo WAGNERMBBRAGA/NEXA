@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "diagnostics": [
+    {
+      "code": "NEXA-PARSE-0011",
+      "severity": "Error",
+      "category": "parser",
+      "messageKey": "parser.import_after_declaration",
+      "message": "import after a declaration is not allowed",
+      "primarySpan": {
+        "source": 0,
+        "start": 48,
+        "end": 54
+      },
+      "related": [],
+      "arguments": [],
+      "help": null,
+      "fixes": []
+    }
+  ],
+  "astDump": {
+    "imports": [
+      {
+        "alias": null,
+        "kind": "ImportDeclaration",
+        "path": "std::io",
+        "span": {
+          "endByte": 62,
+          "startByte": 48
+        }
+      }
+    ],
+    "items": [
+      {
+        "body": {
+          "kind": "Block",
+          "span": {
+            "endByte": 48,
+            "startByte": 31
+          },
+          "statements": [
+            {
+              "kind": "ReturnStatement",
+              "span": {
+                "endByte": 45,
+                "startByte": 37
+              },
+              "value": {
+                "kind": "IntLiteral",
+                "span": {
+                  "endByte": 45,
+                  "startByte": 44
+                },
+                "value": 1
+              }
+            }
+          ]
+        },
+        "ensures": [],
+        "exported": false,
+        "genericParams": [],
+        "kind": "FunctionDeclaration",
+        "name": "f",
+        "parameters": [],
+        "requires": [],
+        "returnType": "Int",
+        "span": {
+          "endByte": 48,
+          "startByte": 11
+        },
+        "whereClause": []
+      }
+    ],
+    "kind": "SourceUnit",
+    "module": {
+      "kind": "ModuleDeclaration",
+      "name": "app",
+      "span": {
+        "endByte": 10,
+        "startByte": 0
+      }
+    },
+    "span": {
+      "endByte": 62,
+      "startByte": 0
+    }
+  }
+}

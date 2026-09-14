@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "source": "CTS-FLOW-0005.nexa",
+  "parseDiagnostics": [],
+  "semanticDiagnostics": [],
+  "typeDiagnostics": [],
+  "flowDiagnostics": [
+    {
+      "code": "NEXA-FLOW-0002",
+      "message": "this statement is unreachable",
+      "severity": "warning",
+      "span": {
+        "end": 66,
+        "source": 0,
+        "start": 58
+      }
+    }
+  ],
+  "effectDiagnostics": [],
+  "summary": {
+    "effectCallEdges": 0,
+    "errors": 0,
+    "flowCfgs": 1,
+    "symbols": 46,
+    "typedExpressions": 2,
+    "warnings": 1
+  }
+}

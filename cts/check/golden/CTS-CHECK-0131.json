@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "source": "CTS-CHECK-0131.nexa",
+  "parseDiagnostics": [],
+  "semanticDiagnostics": [],
+  "typeDiagnostics": [
+    {
+      "code": "NEXA-TYPE-0016",
+      "context": null,
+      "message": "array index must be integer",
+      "severity": "error",
+      "span": {
+        "end": 91,
+        "source": 0,
+        "start": 84
+      }
+    }
+  ],
+  "flowDiagnostics": [],
+  "effectDiagnostics": [],
+  "summary": {
+    "effectCallEdges": 0,
+    "errors": 1,
+    "flowCfgs": 0,
+    "symbols": 47,
+    "typedExpressions": 8,
+    "warnings": 0
+  }
+}

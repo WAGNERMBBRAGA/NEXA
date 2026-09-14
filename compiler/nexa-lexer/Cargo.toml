@@ -1,0 +1,11 @@
+[package]
+name = "nexa-lexer"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "NEXA lossless lexer: tokens, trivia, keywords, literals, strings com interpolação e recovery"
+
+[dependencies]
+nexa-source = { path = "../nexa-source" }
+nexa-diagnostics = { path = "../nexa-diagnostics" }
+serde.workspace = true

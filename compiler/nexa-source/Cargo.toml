@@ -1,0 +1,9 @@
+[package]
+name = "nexa-source"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "NEXA source model: SourceId, SourceSpan, SourceFile, line index e SourceManager"
+
+[dependencies]
+serde.workspace = true

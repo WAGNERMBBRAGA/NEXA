@@ -1,0 +1,17 @@
+module main
+
+action main() -> Unit effects [console::write] {
+    var counter: Int = 0
+    while counter < 5 {
+        counter = counter + 1
+        if counter == 2 {
+            continue
+        }
+        if counter == 4 {
+            break
+        }
+        Console::write("x")
+    }
+    Console::write("-done")
+    return
+}

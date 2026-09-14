@@ -1,0 +1,17 @@
+[package]
+name = "nexa-typecheck"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "NEXA type checker: expression typing, call resolution, method lookup, generics, interface validation, typed semantic model"
+
+[dependencies]
+nexa-source = { path = "../nexa-source" }
+nexa-diagnostics = { path = "../nexa-diagnostics" }
+nexa-ast = { path = "../nexa-ast" }
+nexa-symbols = { path = "../nexa-symbols" }
+nexa-resolver = { path = "../nexa-resolver" }
+nexa-types = { path = "../nexa-types" }
+
+[dev-dependencies]
+nexa-parser = { path = "../nexa-parser" }

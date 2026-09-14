@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "tokens": [
+    {
+      "category": "token",
+      "kind": "FloatLiteral",
+      "startByte": 0,
+      "endByte": 4
+    },
+    {
+      "category": "trivia",
+      "kind": "Whitespace",
+      "startByte": 4,
+      "endByte": 5
+    },
+    {
+      "category": "token",
+      "kind": "FloatLiteral",
+      "startByte": 5,
+      "endByte": 8
+    },
+    {
+      "category": "trivia",
+      "kind": "Whitespace",
+      "startByte": 8,
+      "endByte": 9
+    },
+    {
+      "category": "token",
+      "kind": "FloatLiteral",
+      "startByte": 9,
+      "endByte": 13
+    },
+    {
+      "category": "trivia",
+      "kind": "Whitespace",
+      "startByte": 13,
+      "endByte": 14
+    },
+    {
+      "category": "token",
+      "kind": "FloatLiteral",
+      "startByte": 14,
+      "endByte": 20
+    },
+    {
+      "category": "trivia",
+      "kind": "Whitespace",
+      "startByte": 20,
+      "endByte": 21
+    },
+    {
+      "category": "token",
+      "kind": "IntegerLiteral",
+      "startByte": 21,
+      "endByte": 22
+    },
+    {
+      "category": "token",
+      "kind": "Dot",
+      "startByte": 22,
+      "endByte": 23
+    },
+    {
+      "category": "token",
+      "kind": "Identifier",
+      "startByte": 23,
+      "endByte": 26
+    },
+    {
+      "category": "token",
+      "kind": "Eof",
+      "startByte": 26,
+      "endByte": 26
+    }
+  ],
+  "diagnostics": []
+}

@@ -1,0 +1,15 @@
+[package]
+name = "nexa-formatter"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "NEXA canonical formatter: deterministic, idempotent, syntax/comment preserving"
+
+[dependencies]
+nexa-source = { path = "../../compiler/nexa-source" }
+nexa-diagnostics = { path = "../../compiler/nexa-diagnostics" }
+nexa-lexer = { path = "../../compiler/nexa-lexer" }
+nexa-ast = { path = "../../compiler/nexa-ast" }
+nexa-parser = { path = "../../compiler/nexa-parser" }
+serde.workspace = true
+serde_json.workspace = true

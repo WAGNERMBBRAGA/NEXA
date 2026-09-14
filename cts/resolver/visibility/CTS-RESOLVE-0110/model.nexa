@@ -1,0 +1,5 @@
+module model
+
+function make() -> Int {
+    return 7
+}

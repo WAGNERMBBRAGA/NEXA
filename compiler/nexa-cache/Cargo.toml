@@ -1,0 +1,8 @@
+[package]
+name = "nexa-cache"
+version = "0.0.1"
+edition = "2021"
+description = "Content-addressed storage (CAS) for NEXA packages and build artifacts"
+
+[dependencies]
+thiserror = "2"

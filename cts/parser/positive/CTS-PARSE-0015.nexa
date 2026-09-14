@@ -1,0 +1,8 @@
+module app
+function count_down(n: Int) -> Int {
+    var current: Int = n
+    while current > 0 {
+        current = current - 1
+    }
+    return current
+}

@@ -1,0 +1,15 @@
+module main
+
+interface I {
+    run() -> Int
+}
+
+struct Plain {
+    x: Int
+}
+
+implement Plain for Plain {
+    run(self) -> Int {
+        return 1
+    }
+}

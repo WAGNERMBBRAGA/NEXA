@@ -1,0 +1,15 @@
+module main
+
+interface Greeter {
+    greet() -> String
+}
+
+struct Person {
+    name: String
+}
+
+implement Greeter for Person {
+    greet(self) -> Int {
+        return 7
+    }
+}

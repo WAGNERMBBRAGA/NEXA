@@ -1,0 +1,7 @@
+module main
+
+function main() -> Int {
+    let a: Array<Int> = [1, 2, 3]
+    let b = a["x"]
+    return 0
+}

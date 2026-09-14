@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "source": "CTS-CHECK-0102.nexa",
+  "parseDiagnostics": [],
+  "semanticDiagnostics": [],
+  "typeDiagnostics": [
+    {
+      "code": "NEXA-TYPE-0009",
+      "context": null,
+      "message": "logical operators require Bool",
+      "severity": "error",
+      "span": {
+        "end": 115,
+        "source": 0,
+        "start": 106
+      }
+    }
+  ],
+  "flowDiagnostics": [],
+  "effectDiagnostics": [],
+  "summary": {
+    "effectCallEdges": 0,
+    "errors": 1,
+    "flowCfgs": 0,
+    "symbols": 48,
+    "typedExpressions": 5,
+    "warnings": 0
+  }
+}

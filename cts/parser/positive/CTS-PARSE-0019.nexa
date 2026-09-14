@@ -1,0 +1,9 @@
+module app
+struct Point {
+    x: Int
+    y: Int
+}
+function area(p: Point) -> Int {
+    let a: Int = origin().x
+    return p.x + a
+}

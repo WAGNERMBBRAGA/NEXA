@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "source": "CTS-CHECK-0126.nexa",
+  "parseDiagnostics": [],
+  "semanticDiagnostics": [],
+  "typeDiagnostics": [
+    {
+      "code": "NEXA-TYPE-0040",
+      "context": null,
+      "message": "match guard must be Bool",
+      "severity": "error",
+      "span": {
+        "end": 167,
+        "source": 0,
+        "start": 140
+      }
+    }
+  ],
+  "flowDiagnostics": [],
+  "effectDiagnostics": [],
+  "summary": {
+    "effectCallEdges": 0,
+    "errors": 1,
+    "flowCfgs": 0,
+    "symbols": 51,
+    "typedExpressions": 8,
+    "warnings": 0
+  }
+}

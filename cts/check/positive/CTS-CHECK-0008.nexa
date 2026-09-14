@@ -1,0 +1,16 @@
+module main
+
+function identity<T>(x: T) -> T {
+    return x
+}
+
+function first<T>(a: T, b: T) -> T {
+    return a
+}
+
+function main() -> Unit {
+    let n: Int = identity(41)
+    let s: String = identity("hi")
+    let a: Int = first(1, 2)
+    let b: String = first("x", "y")
+}

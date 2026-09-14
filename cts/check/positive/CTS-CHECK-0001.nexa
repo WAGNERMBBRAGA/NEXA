@@ -1,0 +1,15 @@
+module main
+
+enum Color {
+    Red
+    Green
+    Blue
+}
+
+function describe_color(c: Color) -> String {
+    return match c {
+        Color::Red => "red"
+        Color::Green => "green"
+        Color::Blue => "blue"
+    }
+}

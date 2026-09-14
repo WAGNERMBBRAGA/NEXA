@@ -1,0 +1,15 @@
+module main
+
+enum Shape {
+    Circle(Int)
+    Square
+}
+
+function main() -> Int {
+    let s = Shape::Circle(1)
+    let v = match s {
+        Shape::Circle(r) => r
+        Shape::Square => "nope"
+    }
+    return v
+}

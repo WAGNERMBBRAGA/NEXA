@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "source": "CTS-CHECK-0106.nexa",
+  "parseDiagnostics": [],
+  "semanticDiagnostics": [],
+  "typeDiagnostics": [
+    {
+      "code": "NEXA-TYPE-0011",
+      "context": null,
+      "message": "argument type mismatch: expected String, got Int",
+      "severity": "error",
+      "span": {
+        "end": 131,
+        "source": 0,
+        "start": 129
+      }
+    }
+  ],
+  "flowDiagnostics": [],
+  "effectDiagnostics": [],
+  "summary": {
+    "effectCallEdges": 0,
+    "errors": 1,
+    "flowCfgs": 0,
+    "symbols": 47,
+    "typedExpressions": 3,
+    "warnings": 0
+  }
+}

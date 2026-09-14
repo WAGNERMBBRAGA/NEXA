@@ -1,0 +1,9 @@
+module main
+
+function bad(a: Bool) -> Bool {
+    return !a
+}
+
+function worse(x: Int) -> Bool {
+    return x && true
+}

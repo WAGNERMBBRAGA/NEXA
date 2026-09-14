@@ -1,0 +1,10 @@
+module app
+function f(x: Int) -> Int {
+    return match x {
+        => 1
+        _ => 2
+    }
+}
+function good() -> Int {
+    return 0
+}

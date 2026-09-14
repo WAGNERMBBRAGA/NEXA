@@ -1,0 +1,8 @@
+module app
+function broken( -> Int {
+    let x: Int = (1 + )
+    return x
+}
+function good() -> Int {
+    return 2
+}

@@ -1,0 +1,306 @@
+{
+  "schemaVersion": 1,
+  "diagnostics": [],
+  "astDump": {
+    "imports": [
+      {
+        "alias": null,
+        "kind": "ImportDeclaration",
+        "path": "std::io",
+        "span": {
+          "endByte": 25,
+          "startByte": 11
+        }
+      }
+    ],
+    "items": [
+      {
+        "exported": false,
+        "genericParams": [],
+        "kind": "InterfaceDeclaration",
+        "methods": [
+          {
+            "effects": [],
+            "name": "show",
+            "parameters": [],
+            "receiver": "self",
+            "returnType": "String"
+          }
+        ],
+        "name": "Display",
+        "span": {
+          "endByte": 67,
+          "startByte": 26
+        }
+      },
+      {
+        "exported": false,
+        "fields": [
+          {
+            "exported": false,
+            "name": "name",
+            "type": "String"
+          },
+          {
+            "exported": false,
+            "name": "age",
+            "type": "Int"
+          }
+        ],
+        "genericParams": [],
+        "kind": "StructDeclaration",
+        "name": "User",
+        "span": {
+          "endByte": 113,
+          "startByte": 69
+        }
+      },
+      {
+        "exported": false,
+        "genericParams": [],
+        "kind": "EnumDeclaration",
+        "name": "Role",
+        "span": {
+          "endByte": 146,
+          "startByte": 115
+        },
+        "variants": [
+          {
+            "kind": "Unit",
+            "name": "Admin",
+            "payload": null
+          },
+          {
+            "kind": "Unit",
+            "name": "Guest",
+            "payload": null
+          }
+        ]
+      },
+      {
+        "body": {
+          "kind": "Block",
+          "span": {
+            "endByte": 293,
+            "startByte": 189
+          },
+          "statements": [
+            {
+              "init": {
+                "kind": "StringLiteral",
+                "multiline": false,
+                "parts": [
+                  {
+                    "kind": "Text",
+                    "text": "user"
+                  }
+                ],
+                "span": {
+                  "endByte": 221,
+                  "startByte": 215
+                }
+              },
+              "kind": "LetStatement",
+              "name": "label",
+              "span": {
+                "endByte": 221,
+                "startByte": 195
+              },
+              "type": "String"
+            },
+            {
+              "expression": {
+                "condition": {
+                  "kind": "BinaryExpression",
+                  "left": {
+                    "kind": "MemberAccess",
+                    "member": "age",
+                    "span": {
+                      "endByte": 237,
+                      "startByte": 229
+                    },
+                    "target": {
+                      "kind": "Identifier",
+                      "name": "user",
+                      "span": {
+                        "endByte": 234,
+                        "startByte": 229
+                      }
+                    }
+                  },
+                  "operator": ">",
+                  "right": {
+                    "kind": "IntLiteral",
+                    "span": {
+                      "endByte": 242,
+                      "startByte": 240
+                    },
+                    "value": 18
+                  },
+                  "span": {
+                    "endByte": 242,
+                    "startByte": 229
+                  }
+                },
+                "else": null,
+                "elseIfs": [],
+                "kind": "IfExpression",
+                "span": {
+                  "endByte": 272,
+                  "startByte": 226
+                },
+                "then": {
+                  "kind": "Block",
+                  "span": {
+                    "endByte": 272,
+                    "startByte": 243
+                  },
+                  "statements": [
+                    {
+                      "kind": "ReturnStatement",
+                      "span": {
+                        "endByte": 266,
+                        "startByte": 253
+                      },
+                      "value": {
+                        "kind": "Identifier",
+                        "name": "label",
+                        "span": {
+                          "endByte": 266,
+                          "startByte": 260
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "kind": "ExpressionStatement",
+              "span": {
+                "endByte": 272,
+                "startByte": 226
+              }
+            },
+            {
+              "kind": "ReturnStatement",
+              "span": {
+                "endByte": 290,
+                "startByte": 276
+              },
+              "value": {
+                "kind": "StringLiteral",
+                "multiline": false,
+                "parts": [
+                  {
+                    "kind": "Text",
+                    "text": "minor"
+                  }
+                ],
+                "span": {
+                  "endByte": 290,
+                  "startByte": 283
+                }
+              }
+            }
+          ]
+        },
+        "ensures": [],
+        "exported": false,
+        "genericParams": [],
+        "kind": "FunctionDeclaration",
+        "name": "describe",
+        "parameters": [
+          {
+            "name": "user",
+            "type": "User"
+          }
+        ],
+        "requires": [],
+        "returnType": "String",
+        "span": {
+          "endByte": 293,
+          "startByte": 149
+        },
+        "whereClause": []
+      },
+      {
+        "body": {
+          "kind": "Block",
+          "span": {
+            "endByte": 366,
+            "startByte": 348
+          },
+          "statements": [
+            {
+              "kind": "DiscardStatement",
+              "span": {
+                "endByte": 364,
+                "startByte": 354
+              },
+              "value": {
+                "kind": "Identifier",
+                "name": "v",
+                "span": {
+                  "endByte": 364,
+                  "startByte": 362
+                }
+              }
+            }
+          ]
+        },
+        "effects": [
+          "std::io::write"
+        ],
+        "ensures": [],
+        "exported": false,
+        "genericParams": [],
+        "isAsync": false,
+        "kind": "ActionDeclaration",
+        "name": "report",
+        "parameters": [
+          {
+            "name": "v",
+            "type": "Int"
+          }
+        ],
+        "requires": [],
+        "returnType": "Unit",
+        "span": {
+          "endByte": 366,
+          "startByte": 293
+        },
+        "whereClause": []
+      },
+      {
+        "exported": false,
+        "init": {
+          "kind": "IntLiteral",
+          "span": {
+            "endByte": 386,
+            "startByte": 383
+          },
+          "value": 100
+        },
+        "kind": "ConstDeclaration",
+        "name": "MAX",
+        "span": {
+          "endByte": 386,
+          "startByte": 366
+        },
+        "type": "Int"
+      }
+    ],
+    "kind": "SourceUnit",
+    "module": {
+      "kind": "ModuleDeclaration",
+      "name": "app",
+      "span": {
+        "endByte": 10,
+        "startByte": 0
+      }
+    },
+    "span": {
+      "endByte": 386,
+      "startByte": 0
+    }
+  }
+}

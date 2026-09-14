@@ -1,0 +1,16 @@
+[package]
+name = "nxr-agents"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "NEXA agent runtime: AgentId, ToolSet, permissions, budgets, memory/AI policy and audit"
+
+[dependencies]
+nxr-core = { path = "../nxr-core" }
+nxr-security = { path = "../nxr-security" }
+nxr-observability = { path = "../nxr-observability" }
+nxr-ai = { path = "../nxr-ai" }
+nxr-tools = { path = "../nxr-tools" }
+nxr-tasks = { path = "../nxr-tasks" }
+serde.workspace = true
+thiserror.workspace = true

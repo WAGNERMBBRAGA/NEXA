@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "source": "CTS-CHECK-0140.nexa",
+  "parseDiagnostics": [],
+  "semanticDiagnostics": [],
+  "typeDiagnostics": [
+    {
+      "code": "NEXA-TYPE-0024",
+      "context": null,
+      "message": "impl target is not an interface",
+      "severity": "error",
+      "span": {
+        "end": 91,
+        "source": 0,
+        "start": 86
+      }
+    }
+  ],
+  "flowDiagnostics": [],
+  "effectDiagnostics": [],
+  "summary": {
+    "effectCallEdges": 0,
+    "errors": 1,
+    "flowCfgs": 0,
+    "symbols": 53,
+    "typedExpressions": 1,
+    "warnings": 0
+  }
+}

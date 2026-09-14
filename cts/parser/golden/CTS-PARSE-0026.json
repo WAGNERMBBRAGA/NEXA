@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "diagnostics": [],
+  "astDump": {
+    "imports": [],
+    "items": [
+      {
+        "body": {
+          "kind": "Block",
+          "span": {
+            "endByte": 82,
+            "startByte": 50
+          },
+          "statements": [
+            {
+              "kind": "ReturnStatement",
+              "span": {
+                "endByte": 80,
+                "startByte": 56
+              },
+              "value": {
+                "kind": "StringLiteral",
+                "multiline": false,
+                "parts": [
+                  {
+                    "kind": "Text",
+                    "text": "Hello, "
+                  },
+                  {
+                    "expression": {
+                      "kind": "Identifier",
+                      "name": "name",
+                      "span": {
+                        "endByte": 78,
+                        "startByte": 73
+                      }
+                    },
+                    "kind": "Interpolation"
+                  },
+                  {
+                    "kind": "Text",
+                    "text": "!"
+                  }
+                ],
+                "span": {
+                  "endByte": 80,
+                  "startByte": 63
+                }
+              }
+            }
+          ]
+        },
+        "ensures": [],
+        "exported": false,
+        "genericParams": [],
+        "kind": "FunctionDeclaration",
+        "name": "greet",
+        "parameters": [
+          {
+            "name": "name",
+            "type": "String"
+          }
+        ],
+        "requires": [],
+        "returnType": "String",
+        "span": {
+          "endByte": 82,
+          "startByte": 11
+        },
+        "whereClause": []
+      }
+    ],
+    "kind": "SourceUnit",
+    "module": {
+      "kind": "ModuleDeclaration",
+      "name": "app",
+      "span": {
+        "endByte": 10,
+        "startByte": 0
+      }
+    },
+    "span": {
+      "endByte": 82,
+      "startByte": 0
+    }
+  }
+}

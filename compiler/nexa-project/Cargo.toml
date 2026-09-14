@@ -1,0 +1,12 @@
+[package]
+name = "nexa-project"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "NEXA in-memory project graph: package instances, module units, dependency aliases and parsed project model (Impl 03)"
+
+[dependencies]
+nexa-source = { path = "../nexa-source" }
+nexa-ast = { path = "../nexa-ast" }
+nexa-symbols = { path = "../nexa-symbols" }
+serde.workspace = true

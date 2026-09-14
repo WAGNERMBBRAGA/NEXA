@@ -1,0 +1,8 @@
+module main
+
+import self::util
+
+action main() -> Unit {
+    let u = util::helper()
+    return
+}

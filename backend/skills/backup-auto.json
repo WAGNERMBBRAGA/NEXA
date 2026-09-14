@@ -1,0 +1,10 @@
+{
+  "name": "Backup Automatico",
+  "description": "Cria backup completo do projeto",
+  "prompt": "Quando o usuario pedir backup, digite apenas: Criando backup do projeto... O sistema executa automaticamente. NAO gere comandos.",
+  "enabled": true,
+  "category": "Sistema",
+  "commands": [],
+  "createdAt": "2026-09-05T03:25:57.195Z",
+  "updatedAt": "2026-09-11T18:08:18.362Z"
+}

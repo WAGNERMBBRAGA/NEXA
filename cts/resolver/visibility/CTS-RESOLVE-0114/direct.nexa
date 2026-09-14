@@ -1,0 +1,5 @@
+module util
+
+export function ok() -> Int {
+    return 1
+}

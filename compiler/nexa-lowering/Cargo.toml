@@ -1,0 +1,16 @@
+[package]
+name = "nexa-lowering"
+version = "0.0.1"
+edition = "2021"
+description = "Semantic Model to HNIR to MNIR lowering pipeline for NEXA"
+
+[dependencies]
+nexa-source = { path = "../nexa-source" }
+nexa-diagnostics = { path = "../nexa-diagnostics" }
+nexa-symbols = { path = "../nexa-symbols" }
+nexa-nir = { path = "../nexa-nir" }
+nexa-hnir = { path = "../nexa-hnir" }
+nexa-mnir = { path = "../nexa-mnir" }
+nexa-ownership = { path = "../nexa-ownership" }
+nexa-resources = { path = "../nexa-resources" }
+nexa-tasks = { path = "../nexa-tasks" }

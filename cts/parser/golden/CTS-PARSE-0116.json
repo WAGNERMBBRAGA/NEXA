@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "diagnostics": [
+    {
+      "code": "NEXA-PARSE-0004",
+      "severity": "Error",
+      "category": "parser",
+      "messageKey": "parser.tuple_type",
+      "message": "general tuple types are not supported in NEXA 1.0 (`()` is Unit only) (§347/§798)",
+      "primarySpan": {
+        "source": 0,
+        "start": 38,
+        "end": 39
+      },
+      "related": [],
+      "arguments": [],
+      "help": null,
+      "fixes": []
+    }
+  ],
+  "astDump": {
+    "imports": [],
+    "items": [
+      {
+        "body": {
+          "kind": "Block",
+          "span": {
+            "endByte": 72,
+            "startByte": 56
+          },
+          "statements": [
+            {
+              "kind": "ReturnStatement",
+              "span": {
+                "endByte": 70,
+                "startByte": 62
+              },
+              "value": {
+                "kind": "IntLiteral",
+                "span": {
+                  "endByte": 70,
+                  "startByte": 69
+                },
+                "value": 1
+              }
+            }
+          ]
+        },
+        "ensures": [],
+        "exported": false,
+        "genericParams": [],
+        "kind": "FunctionDeclaration",
+        "name": "tuple_type",
+        "parameters": [
+          {
+            "name": "x",
+            "type": "Unit"
+          }
+        ],
+        "requires": [],
+        "returnType": "Int",
+        "span": {
+          "endByte": 72,
+          "startByte": 11
+        },
+        "whereClause": []
+      }
+    ],
+    "kind": "SourceUnit",
+    "module": {
+      "kind": "ModuleDeclaration",
+      "name": "app",
+      "span": {
+        "endByte": 10,
+        "startByte": 0
+      }
+    },
+    "span": {
+      "endByte": 72,
+      "startByte": 0
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "source": "CTS-CHECK-0136.nexa",
+  "parseDiagnostics": [],
+  "semanticDiagnostics": [],
+  "typeDiagnostics": [
+    {
+      "code": "NEXA-TYPE-0008",
+      "context": null,
+      "message": "numeric literal out of range for type",
+      "severity": "error",
+      "span": {
+        "end": 59,
+        "source": 0,
+        "start": 56
+      }
+    }
+  ],
+  "flowDiagnostics": [],
+  "effectDiagnostics": [],
+  "summary": {
+    "effectCallEdges": 0,
+    "errors": 1,
+    "flowCfgs": 0,
+    "symbols": 46,
+    "typedExpressions": 2,
+    "warnings": 0
+  }
+}

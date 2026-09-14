@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 1,
+  "tokens": [
+    {
+      "category": "token",
+      "kind": "Identifier",
+      "startByte": 0,
+      "endByte": 3
+    },
+    {
+      "category": "trivia",
+      "kind": "Whitespace",
+      "startByte": 3,
+      "endByte": 4
+    },
+    {
+      "category": "token",
+      "kind": "Identifier",
+      "startByte": 4,
+      "endByte": 8
+    },
+    {
+      "category": "trivia",
+      "kind": "Whitespace",
+      "startByte": 8,
+      "endByte": 9
+    },
+    {
+      "category": "token",
+      "kind": "Identifier",
+      "startByte": 9,
+      "endByte": 13
+    },
+    {
+      "category": "trivia",
+      "kind": "Whitespace",
+      "startByte": 13,
+      "endByte": 14
+    },
+    {
+      "category": "token",
+      "kind": "Identifier",
+      "startByte": 14,
+      "endByte": 21
+    },
+    {
+      "category": "trivia",
+      "kind": "Whitespace",
+      "startByte": 21,
+      "endByte": 22
+    },
+    {
+      "category": "token",
+      "kind": "Identifier",
+      "startByte": 22,
+      "endByte": 23
+    },
+    {
+      "category": "trivia",
+      "kind": "Whitespace",
+      "startByte": 23,
+      "endByte": 24
+    },
+    {
+      "category": "token",
+      "kind": "Underscore",
+      "startByte": 24,
+      "endByte": 25
+    },
+    {
+      "category": "trivia",
+      "kind": "Whitespace",
+      "startByte": 25,
+      "endByte": 26
+    },
+    {
+      "category": "token",
+      "kind": "Identifier",
+      "startByte": 26,
+      "endByte": 28
+    },
+    {
+      "category": "trivia",
+      "kind": "Whitespace",
+      "startByte": 28,
+      "endByte": 29
+    },
+    {
+      "category": "token",
+      "kind": "Identifier",
+      "startByte": 29,
+      "endByte": 34
+    },
+    {
+      "category": "trivia",
+      "kind": "Whitespace",
+      "startByte": 34,
+      "endByte": 35
+    },
+    {
+      "category": "token",
+      "kind": "Identifier",
+      "startByte": 35,
+      "endByte": 37
+    },
+    {
+      "category": "trivia",
+      "kind": "Whitespace",
+      "startByte": 37,
+      "endByte": 38
+    },
+    {
+      "category": "token",
+      "kind": "Identifier",
+      "startByte": 38,
+      "endByte": 42
+    },
+    {
+      "category": "trivia",
+      "kind": "Whitespace",
+      "startByte": 42,
+      "endByte": 43
+    },
+    {
+      "category": "token",
+      "kind": "Identifier",
+      "startByte": 43,
+      "endByte": 47
+    },
+    {
+      "category": "trivia",
+      "kind": "Whitespace",
+      "startByte": 47,
+      "endByte": 48
+    },
+    {
+      "category": "token",
+      "kind": "Identifier",
+      "startByte": 48,
+      "endByte": 56
+    },
+    {
+      "category": "token",
+      "kind": "Eof",
+      "startByte": 56,
+      "endByte": 56
+    }
+  ],
+  "diagnostics": []
+}

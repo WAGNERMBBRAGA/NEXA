@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "diagnostics": [],
+  "astDump": {
+    "imports": [],
+    "items": [
+      {
+        "exported": false,
+        "genericParams": [],
+        "kind": "InterfaceDeclaration",
+        "methods": [
+          {
+            "effects": [],
+            "name": "show",
+            "parameters": [],
+            "receiver": "self",
+            "returnType": "String"
+          },
+          {
+            "effects": [],
+            "name": "validate",
+            "parameters": [
+              {
+                "name": "value",
+                "type": "Int"
+              }
+            ],
+            "receiver": "self",
+            "returnType": "Bool"
+          }
+        ],
+        "name": "Display",
+        "span": {
+          "endByte": 85,
+          "startByte": 11
+        }
+      }
+    ],
+    "kind": "SourceUnit",
+    "module": {
+      "kind": "ModuleDeclaration",
+      "name": "app",
+      "span": {
+        "endByte": 10,
+        "startByte": 0
+      }
+    },
+    "span": {
+      "endByte": 86,
+      "startByte": 0
+    }
+  }
+}

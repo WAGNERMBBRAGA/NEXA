@@ -1,0 +1,11 @@
+[package]
+name = "nexa-wasm-validate"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+nexa-wasm-abi = { path = "../nexa-wasm-abi" }
+wasmparser = "0.258"
+
+[dev-dependencies]
+wasm-encoder = "0.258"

@@ -1,0 +1,7 @@
+module main
+
+function main() -> Int {
+    let x: Int32 = 5
+    let y: Int64 = x
+    return 0
+}

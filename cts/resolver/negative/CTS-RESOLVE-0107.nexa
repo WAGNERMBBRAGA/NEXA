@@ -1,0 +1,5 @@
+module main
+
+function f<T, T>(x: T) -> T {
+    return x
+}

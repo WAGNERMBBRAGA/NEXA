@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "tokens": [
+    {
+      "category": "token",
+      "kind": "CharLiteral",
+      "startByte": 0,
+      "endByte": 4
+    },
+    {
+      "category": "token",
+      "kind": "Eof",
+      "startByte": 4,
+      "endByte": 4
+    }
+  ],
+  "diagnostics": [
+    {
+      "code": "NEXA-LEX-0008",
+      "severity": "Error",
+      "category": "lexer",
+      "messageKey": "lexer.char_literal_scalar_count",
+      "message": "char literal must contain exactly one Unicode scalar value",
+      "primarySpan": {
+        "source": 0,
+        "start": 0,
+        "end": 4
+      },
+      "related": [],
+      "arguments": [
+        {
+          "key": "scalarCount",
+          "value": 2
+        }
+      ],
+      "help": null,
+      "fixes": []
+    }
+  ]
+}

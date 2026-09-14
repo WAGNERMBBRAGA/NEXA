@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "diagnostics": [
+    {
+      "code": "NEXA-PARSE-0002",
+      "severity": "Error",
+      "category": "parser",
+      "messageKey": "parser.expected_token",
+      "message": "expected parameter name, found `Colon`",
+      "primarySpan": {
+        "source": 0,
+        "start": 30,
+        "end": 31
+      },
+      "related": [],
+      "arguments": [],
+      "help": null,
+      "fixes": []
+    }
+  ],
+  "astDump": {
+    "imports": [],
+    "items": [
+      {
+        "body": {
+          "kind": "Block",
+          "span": {
+            "endByte": 60,
+            "startByte": 44
+          },
+          "statements": [
+            {
+              "kind": "ReturnStatement",
+              "span": {
+                "endByte": 58,
+                "startByte": 50
+              },
+              "value": {
+                "kind": "IntLiteral",
+                "span": {
+                  "endByte": 58,
+                  "startByte": 57
+                },
+                "value": 1
+              }
+            }
+          ]
+        },
+        "ensures": [],
+        "exported": false,
+        "genericParams": [],
+        "kind": "FunctionDeclaration",
+        "name": "bad_param",
+        "parameters": [
+          {
+            "name": "_",
+            "type": "Int"
+          }
+        ],
+        "requires": [],
+        "returnType": "Int",
+        "span": {
+          "endByte": 60,
+          "startByte": 11
+        },
+        "whereClause": []
+      }
+    ],
+    "kind": "SourceUnit",
+    "module": {
+      "kind": "ModuleDeclaration",
+      "name": "app",
+      "span": {
+        "endByte": 10,
+        "startByte": 0
+      }
+    },
+    "span": {
+      "endByte": 60,
+      "startByte": 0
+    }
+  }
+}

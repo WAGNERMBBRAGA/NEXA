@@ -1,0 +1,10 @@
+[package]
+name = "nexa-package"
+version = "0.0.1"
+edition = "2021"
+description = "NXP1 package format: deterministic container for NEXA packages (.nxp files)"
+
+[dependencies]
+thiserror = "2"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"

@@ -1,0 +1,8 @@
+module main
+
+import db::model
+
+action main() -> Unit {
+    let m = model::make()
+    return
+}

@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "diagnostics": [
+    {
+      "code": "NEXA-PARSE-0011",
+      "severity": "Error",
+      "category": "parser",
+      "messageKey": "parser.wildcard_import",
+      "message": "wildcard imports are not allowed",
+      "primarySpan": {
+        "source": 0,
+        "start": 27,
+        "end": 28
+      },
+      "related": [],
+      "arguments": [],
+      "help": null,
+      "fixes": []
+    }
+  ],
+  "astDump": {
+    "imports": [
+      {
+        "alias": null,
+        "kind": "ImportDeclaration",
+        "path": "std::io",
+        "span": {
+          "endByte": 28,
+          "startByte": 11
+        }
+      }
+    ],
+    "items": [],
+    "kind": "SourceUnit",
+    "module": {
+      "kind": "ModuleDeclaration",
+      "name": "app",
+      "span": {
+        "endByte": 10,
+        "startByte": 0
+      }
+    },
+    "span": {
+      "endByte": 28,
+      "startByte": 0
+    }
+  }
+}

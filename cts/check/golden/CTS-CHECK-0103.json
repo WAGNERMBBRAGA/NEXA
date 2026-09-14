@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "source": "CTS-CHECK-0103.nexa",
+  "parseDiagnostics": [],
+  "semanticDiagnostics": [],
+  "typeDiagnostics": [
+    {
+      "code": "NEXA-TYPE-0002",
+      "context": null,
+      "message": "array element type mismatch",
+      "severity": "error",
+      "span": {
+        "end": 65,
+        "source": 0,
+        "start": 61
+      }
+    }
+  ],
+  "flowDiagnostics": [],
+  "effectDiagnostics": [],
+  "summary": {
+    "effectCallEdges": 0,
+    "errors": 1,
+    "flowCfgs": 0,
+    "symbols": 45,
+    "typedExpressions": 3,
+    "warnings": 0
+  }
+}

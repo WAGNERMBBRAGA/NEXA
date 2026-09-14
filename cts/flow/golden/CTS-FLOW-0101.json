@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "source": "CTS-FLOW-0101.nexa",
+  "parseDiagnostics": [],
+  "semanticDiagnostics": [],
+  "typeDiagnostics": [],
+  "flowDiagnostics": [
+    {
+      "code": "NEXA-FLOW-0001",
+      "message": "a reachable path reaches the end of this callable without returning",
+      "severity": "error",
+      "span": {
+        "end": 81,
+        "source": 0,
+        "start": 13
+      }
+    }
+  ],
+  "effectDiagnostics": [],
+  "summary": {
+    "effectCallEdges": 0,
+    "errors": 1,
+    "flowCfgs": 1,
+    "symbols": 46,
+    "typedExpressions": 5,
+    "warnings": 0
+  }
+}

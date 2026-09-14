@@ -1,0 +1,10 @@
+{
+  "name": "License: Skill Creator",
+  "description": "License file (not a skill)",
+  "prompt": "Este arquivo e o texto de licenca importado. NAO e uma skill operacional e deve permanecer desativada.",
+  "enabled": false,
+  "category": "Geral",
+  "commands": [],
+  "createdAt": "2026-09-05T11:47:31.388Z",
+  "updatedAt": "2026-09-11T18:08:18.385Z"
+}

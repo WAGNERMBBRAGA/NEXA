@@ -1,0 +1,26 @@
+module main
+
+export struct Item {
+    id: Int
+}
+
+export function get_item() -> Item {
+    return Item { id: 1 }
+}
+
+export struct Inner {
+    name: String
+}
+
+export struct Outer {
+    inner: Inner
+}
+
+export enum Shape {
+    Circle(Inner)
+    Square
+}
+
+function main() -> Int {
+    return get_item().id
+}

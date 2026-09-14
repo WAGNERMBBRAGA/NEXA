@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "source": "CTS-CHECK-0129.nexa",
+  "parseDiagnostics": [],
+  "semanticDiagnostics": [
+    {
+      "code": "NEXA-SEM-0002",
+      "context": "previous method is symbol#58",
+      "message": "duplicate method 'describe' on type",
+      "severity": "error",
+      "span": {
+        "end": 304,
+        "source": 0,
+        "start": 246
+      }
+    }
+  ],
+  "typeDiagnostics": [
+    {
+      "code": "NEXA-TYPE-0005",
+      "context": null,
+      "message": "cannot determine type of local binding",
+      "severity": "error",
+      "span": {
+        "end": 205,
+        "source": 0,
+        "start": 200
+      }
+    },
+    {
+      "code": "NEXA-TYPE-0013",
+      "context": null,
+      "message": "type does not have fields: name",
+      "severity": "error",
+      "span": {
+        "end": 209,
+        "source": 0,
+        "start": 200
+      }
+    },
+    {
+      "code": "NEXA-TYPE-0034",
+      "context": null,
+      "message": "member `describe` is ambiguous: found in 2 applicable interfaces",
+      "severity": "error",
+      "span": {
+        "end": 365,
+        "source": 0,
+        "start": 352
+      }
+    }
+  ],
+  "flowDiagnostics": [],
+  "effectDiagnostics": [],
+  "summary": {
+    "effectCallEdges": 0,
+    "errors": 4,
+    "flowCfgs": 0,
+    "symbols": 62,
+    "typedExpressions": 6,
+    "warnings": 0
+  }
+}

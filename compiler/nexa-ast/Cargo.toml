@@ -1,0 +1,8 @@
+[package]
+name = "nexa-ast"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+nexa-source = { path = "../nexa-source" }

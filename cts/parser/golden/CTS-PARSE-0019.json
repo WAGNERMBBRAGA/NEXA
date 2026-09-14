@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 1,
+  "diagnostics": [],
+  "astDump": {
+    "imports": [],
+    "items": [
+      {
+        "exported": false,
+        "fields": [
+          {
+            "exported": false,
+            "name": "x",
+            "type": "Int"
+          },
+          {
+            "exported": false,
+            "name": "y",
+            "type": "Int"
+          }
+        ],
+        "genericParams": [],
+        "kind": "StructDeclaration",
+        "name": "Point",
+        "span": {
+          "endByte": 48,
+          "startByte": 11
+        }
+      },
+      {
+        "body": {
+          "kind": "Block",
+          "span": {
+            "endByte": 131,
+            "startByte": 81
+          },
+          "statements": [
+            {
+              "init": {
+                "kind": "MemberAccess",
+                "member": "x",
+                "span": {
+                  "endByte": 110,
+                  "startByte": 100
+                },
+                "target": {
+                  "arguments": [],
+                  "callee": {
+                    "kind": "Identifier",
+                    "name": "origin",
+                    "span": {
+                      "endByte": 107,
+                      "startByte": 100
+                    }
+                  },
+                  "kind": "CallExpression",
+                  "span": {
+                    "endByte": 109,
+                    "startByte": 100
+                  }
+                }
+              },
+              "kind": "LetStatement",
+              "name": "a",
+              "span": {
+                "endByte": 110,
+                "startByte": 87
+              },
+              "type": "Int"
+            },
+            {
+              "kind": "ReturnStatement",
+              "span": {
+                "endByte": 130,
+                "startByte": 115
+              },
+              "value": {
+                "kind": "BinaryExpression",
+                "left": {
+                  "kind": "MemberAccess",
+                  "member": "x",
+                  "span": {
+                    "endByte": 125,
+                    "startByte": 122
+                  },
+                  "target": {
+                    "kind": "Identifier",
+                    "name": "p",
+                    "span": {
+                      "endByte": 124,
+                      "startByte": 122
+                    }
+                  }
+                },
+                "operator": "+",
+                "right": {
+                  "kind": "Identifier",
+                  "name": "a",
+                  "span": {
+                    "endByte": 130,
+                    "startByte": 128
+                  }
+                },
+                "span": {
+                  "endByte": 130,
+                  "startByte": 122
+                }
+              }
+            }
+          ]
+        },
+        "ensures": [],
+        "exported": false,
+        "genericParams": [],
+        "kind": "FunctionDeclaration",
+        "name": "area",
+        "parameters": [
+          {
+            "name": "p",
+            "type": "Point"
+          }
+        ],
+        "requires": [],
+        "returnType": "Int",
+        "span": {
+          "endByte": 131,
+          "startByte": 50
+        },
+        "whereClause": []
+      }
+    ],
+    "kind": "SourceUnit",
+    "module": {
+      "kind": "ModuleDeclaration",
+      "name": "app",
+      "span": {
+        "endByte": 10,
+        "startByte": 0
+      }
+    },
+    "span": {
+      "endByte": 131,
+      "startByte": 0
+    }
+  }
+}

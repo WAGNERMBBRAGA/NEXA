@@ -1,0 +1,7 @@
+module app
+struct Point {
+    x: Int
+    y: Int
+function good() -> Int {
+    return 1
+}

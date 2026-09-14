@@ -1,0 +1,9 @@
+module main
+
+function identity<T>(x: T) -> T {
+    return x
+}
+
+struct Box<T> {
+    value: T
+}

@@ -1,0 +1,14 @@
+[package]
+name = "nexa-host-wasm"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+nexa-wasm-abi = { path = "../../compiler/nexa-wasm-abi" }
+nexa-wasm-validate = { path = "../../compiler/nexa-wasm-validate" }
+thiserror.workspace = true
+wasmparser = "0.258"
+
+[dev-dependencies]
+nexa-backend-wasm = { path = "../../compiler/nexa-backend-wasm" }
+wasm-encoder = "0.258"

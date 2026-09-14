@@ -1,0 +1,5 @@
+module foo
+
+function now() -> Int {
+    return 2
+}

@@ -1,0 +1,21 @@
+module main
+
+interface Show {
+    show() -> String
+}
+
+struct Item {
+    id: Int
+}
+
+implement Show for Item {
+    show(self) -> String {
+        return "a"
+    }
+}
+
+implement Show for Item {
+    show(self) -> String {
+        return "b"
+    }
+}

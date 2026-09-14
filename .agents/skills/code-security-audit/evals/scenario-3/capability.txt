@@ -1,0 +1,1 @@
+False positive filtering: apply hard exclusion rules, assess signal quality, filter out noise while retaining genuine vulnerabilities

@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "source": "CTS-CHECK-0117.nexa",
+  "parseDiagnostics": [],
+  "semanticDiagnostics": [],
+  "typeDiagnostics": [
+    {
+      "code": "NEXA-TYPE-0004",
+      "context": null,
+      "message": "type Raw does not satisfy interface `Show`",
+      "severity": "error",
+      "span": {
+        "end": 354,
+        "source": 0,
+        "start": 342
+      }
+    }
+  ],
+  "flowDiagnostics": [],
+  "effectDiagnostics": [],
+  "summary": {
+    "effectCallEdges": 0,
+    "errors": 1,
+    "flowCfgs": 0,
+    "symbols": 60,
+    "typedExpressions": 7,
+    "warnings": 0
+  }
+}

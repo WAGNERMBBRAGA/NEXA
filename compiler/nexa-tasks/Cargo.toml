@@ -1,0 +1,12 @@
+[package]
+name = "nexa-tasks"
+version = "0.0.1"
+edition = "2021"
+description = "Task linearity, MustUse, structured concurrency, Send/Share for NEXA"
+
+[dependencies]
+nexa-source = { path = "../nexa-source" }
+nexa-diagnostics = { path = "../nexa-diagnostics" }
+nexa-symbols = { path = "../nexa-symbols" }
+nexa-types = { path = "../nexa-types" }
+nexa-ownership = { path = "../nexa-ownership" }

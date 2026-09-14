@@ -1,0 +1,10 @@
+{
+  "name": "Construtor de Sistema Completo",
+  "description": "Regra principal do NEXA: entregar projetos COMPLETOS e funcionais cobrindo todos os modulos do pedido, nunca esqueleto.",
+  "prompt": "Ao construir qualquer projeto, NUNCA entregue esqueleto, pagina de boas-vindas padrao ou placeholders. Entregue um sistema COMPLETO e funcional: (1) Cubra TODOS os modulos do pedido (ex.: notas, tarefas, lembretes, calendario, dashboard, autenticacao, persistencia). (2) Crie arquivos reais e executaveis por modulo (modelos, rotas/controllers, interface/views com CSS, migracoes, testes). (3) Valide enquanto constroi: rode o projeto em servidor local e confirme HTTP 200, rode php -l / npm test / python para garantir que compila. (4) Rode inspect_project e audit_project ao final. (5) So declare o trabalho concluido quando o sistema rodar e todos os modulos do objetivo existirem; se faltar algum modulo, continue construindo.",
+  "enabled": true,
+  "category": "Sistema",
+  "commands": [],
+  "createdAt": "2026-09-11T00:00:00.000Z",
+  "updatedAt": "2026-09-11T00:00:00.000Z"
+}

@@ -1,0 +1,4 @@
+module demo
+// line comment
+let s = "hi ${name}!"
+let n = 1_000 + 2.5

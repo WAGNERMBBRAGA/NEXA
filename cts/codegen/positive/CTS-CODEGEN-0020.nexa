@@ -1,0 +1,10 @@
+module main
+
+action main() -> Unit effects [console::write] {
+    var values: Array<Int> = [10, 20, 30]
+    values[1] = 99
+    if values[1] == 99 {
+        Console::write("mutated")
+    }
+    return
+}

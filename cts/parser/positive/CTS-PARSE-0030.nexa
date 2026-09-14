@@ -1,0 +1,24 @@
+module app
+import std::io
+interface Display {
+    show() -> String
+}
+struct User {
+    name: String
+    age: Int
+}
+enum Role {
+    Admin
+    Guest
+}
+function describe(user: User) -> String {
+    let label: String = "user"
+    if user.age > 18 {
+        return label
+    }
+    return "minor"
+}
+action report(v: Int) -> Unit effects [std::io::write] {
+    discard v
+}
+const MAX: Int = 100

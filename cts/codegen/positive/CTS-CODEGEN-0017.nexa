@@ -1,0 +1,8 @@
+module main
+
+action main() -> Bool {
+    let zero: Int = 0
+    let safe_and: Bool = false && (10 / zero == 1)
+    let safe_or: Bool = true || (10 / zero == 1)
+    return safe_and || safe_or
+}

@@ -1,0 +1,5 @@
+module main
+
+function f() -> NotAType {
+    return 1
+}

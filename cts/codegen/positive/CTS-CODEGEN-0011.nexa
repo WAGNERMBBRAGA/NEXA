@@ -1,0 +1,7 @@
+module main
+
+action main() -> Unit effects [console::write] {
+    let greeting: String = "static-local-ok"
+    Console::write(greeting)
+    return
+}

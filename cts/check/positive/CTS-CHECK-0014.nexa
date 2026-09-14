@@ -1,0 +1,7 @@
+module main
+
+type Meters distinct = Int
+
+function main() -> Int {
+    return 0
+}

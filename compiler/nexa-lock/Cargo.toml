@@ -1,0 +1,12 @@
+[package]
+name = "nexa-lock"
+version = "0.0.1"
+edition = "2021"
+description = "Lock Format 1: deterministic serialization for nexa.lock files"
+
+[dependencies]
+thiserror.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+sha2 = "0.10"
+hex = "0.4"

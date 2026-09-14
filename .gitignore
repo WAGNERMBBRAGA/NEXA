@@ -1,0 +1,63 @@
+/target
+**/*.rs.bk
+/backend/config.json
+/backend/data/
+/dist/
+/**/node_modules/
+/frontend/dist/
+
+# Local builds, downloads and compiler scratch files
+/llama.cpp-build/
+/llama.cpp/bin/
+/Baixar_Instalador_Cpp/
+/.rusttest/
+/kimi-k3-in-c/
+/0
+/bump_allocator
+build/
+CMakeFiles/
+CMakeCache.txt
+*.exe
+*.dll
+*.so
+*.dylib
+*.a
+*.lib
+*.o
+*.obj
+*.pdb
+*.msi
+*.zip
+*.7z
+__pycache__/
+*.pyc
+*.log
+
+# Machine-specific toolchain settings (keep locally)
+/.cargo/config.toml
+
+# Private environment and credentials
+.env
+.env.*
+!.env.example
+!.env.sample
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa*
+id_ed25519*
+credentials.json
+
+# Downloaded model weights
+*.gguf
+*.ggml
+*.safetensors
+*.onnx
+*.pt
+*.pth
+*.bin
+
+# Compiled example (source remains tracked)
+/examples/hello/main.wasm
+secrets.json

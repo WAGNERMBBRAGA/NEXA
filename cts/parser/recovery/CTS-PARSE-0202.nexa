@@ -1,0 +1,6 @@
+module app
+function f() -> Int {
+    let x: Int =
+    let y: Int = 1
+    return y
+}

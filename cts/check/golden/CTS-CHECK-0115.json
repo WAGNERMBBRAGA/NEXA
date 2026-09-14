@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "source": "CTS-CHECK-0115.nexa",
+  "parseDiagnostics": [],
+  "semanticDiagnostics": [],
+  "typeDiagnostics": [
+    {
+      "code": "NEXA-TYPE-0026",
+      "context": null,
+      "message": "member `greet` does not match the interface signature",
+      "severity": "error",
+      "span": {
+        "end": 134,
+        "source": 0,
+        "start": 129
+      }
+    }
+  ],
+  "flowDiagnostics": [],
+  "effectDiagnostics": [],
+  "summary": {
+    "effectCallEdges": 0,
+    "errors": 1,
+    "flowCfgs": 0,
+    "symbols": 53,
+    "typedExpressions": 1,
+    "warnings": 0
+  }
+}

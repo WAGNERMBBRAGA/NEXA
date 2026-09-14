@@ -1,0 +1,1 @@
+GitHub Action integration: configure environment variables, run audit script on a PR, produce JSON findings output

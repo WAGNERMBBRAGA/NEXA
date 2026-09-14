@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "diagnostics": [
+    {
+      "code": "NEXA-PARSE-0002",
+      "severity": "Error",
+      "category": "parser",
+      "messageKey": "parser.expected_token",
+      "message": "expected ',' or '>', found `LeftParen`",
+      "primarySpan": {
+        "source": 0,
+        "start": 25,
+        "end": 26
+      },
+      "related": [],
+      "arguments": [],
+      "help": null,
+      "fixes": []
+    }
+  ],
+  "astDump": {
+    "imports": [],
+    "items": [
+      {
+        "body": {
+          "kind": "Block",
+          "span": {
+            "endByte": 53,
+            "startByte": 37
+          },
+          "statements": [
+            {
+              "kind": "ReturnStatement",
+              "span": {
+                "endByte": 52,
+                "startByte": 43
+              },
+              "value": {
+                "kind": "Identifier",
+                "name": "x",
+                "span": {
+                  "endByte": 52,
+                  "startByte": 50
+                }
+              }
+            }
+          ]
+        },
+        "ensures": [],
+        "exported": false,
+        "genericParams": [
+          {
+            "bounds": [],
+            "name": "T"
+          }
+        ],
+        "kind": "FunctionDeclaration",
+        "name": "bad",
+        "parameters": [
+          {
+            "name": "x",
+            "type": "T"
+          }
+        ],
+        "requires": [],
+        "returnType": "T",
+        "span": {
+          "endByte": 53,
+          "startByte": 11
+        },
+        "whereClause": []
+      }
+    ],
+    "kind": "SourceUnit",
+    "module": {
+      "kind": "ModuleDeclaration",
+      "name": "app",
+      "span": {
+        "endByte": 10,
+        "startByte": 0
+      }
+    },
+    "span": {
+      "endByte": 53,
+      "startByte": 0
+    }
+  }
+}

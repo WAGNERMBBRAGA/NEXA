@@ -1,0 +1,5 @@
+module main
+
+function greet(name: String) -> String {
+    return name
+}

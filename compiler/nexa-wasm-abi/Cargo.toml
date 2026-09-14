@@ -1,0 +1,6 @@
+[package]
+name = "nexa-wasm-abi"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]

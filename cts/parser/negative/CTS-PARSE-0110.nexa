@@ -1,0 +1,4 @@
+module app
+function check(a: Int, b: Int, c: Int) -> Bool {
+    return a < b < c
+}

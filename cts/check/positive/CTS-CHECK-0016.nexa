@@ -1,0 +1,8 @@
+module main
+
+function f(x: Int) -> Int {
+    return x
+    // Código abaixo é inalcançável (NEXA-FLOW-0002, warning).
+    let y = 2
+    return y
+}

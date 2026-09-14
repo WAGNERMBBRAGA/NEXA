@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "source": "CTS-CHECK-0137.nexa",
+  "parseDiagnostics": [],
+  "semanticDiagnostics": [
+    {
+      "code": "NEXA-SEM-0001",
+      "context": "namespace=type",
+      "message": "unknown type 'NotAType'",
+      "severity": "error",
+      "span": {
+        "end": 37,
+        "source": 0,
+        "start": 29
+      }
+    }
+  ],
+  "typeDiagnostics": [
+    {
+      "code": "NEXA-TYPE-0001",
+      "context": null,
+      "message": "unknown type `NotAType`",
+      "severity": "error",
+      "span": {
+        "end": 39,
+        "source": 0,
+        "start": 26
+      }
+    },
+    {
+      "code": "NEXA-TYPE-0001",
+      "context": null,
+      "message": "unknown type `NotAType`",
+      "severity": "error",
+      "span": {
+        "end": 39,
+        "source": 0,
+        "start": 26
+      }
+    }
+  ],
+  "flowDiagnostics": [],
+  "effectDiagnostics": [],
+  "summary": {
+    "effectCallEdges": 0,
+    "errors": 3,
+    "flowCfgs": 0,
+    "symbols": 45,
+    "typedExpressions": 1,
+    "warnings": 0
+  }
+}

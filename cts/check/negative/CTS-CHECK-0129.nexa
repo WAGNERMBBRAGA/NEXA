@@ -1,0 +1,29 @@
+module main
+
+interface A {
+    describe() -> String
+}
+
+interface B {
+    describe() -> String
+}
+
+struct User {
+    name: String
+}
+
+implement A for User {
+    describe(self) -> String {
+        return self.name
+    }
+}
+
+implement B for User {
+    describe(self) -> String {
+        return self.name
+    }
+}
+
+function use(u: User) -> String {
+    return u.describe()
+}

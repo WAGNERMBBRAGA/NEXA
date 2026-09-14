@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "diagnostics": [
+    {
+      "code": "NEXA-PARSE-0010",
+      "severity": "Error",
+      "category": "parser",
+      "messageKey": "parser.missing_return_type",
+      "message": "named callables require an explicit `->` return type (§370-372)",
+      "primarySpan": {
+        "source": 0,
+        "start": 43,
+        "end": 44
+      },
+      "related": [],
+      "arguments": [],
+      "help": null,
+      "fixes": []
+    },
+    {
+      "code": "NEXA-PARSE-0002",
+      "severity": "Error",
+      "category": "parser",
+      "messageKey": "parser.expected_token",
+      "message": "expected `->` return type, found end of file",
+      "primarySpan": {
+        "source": 0,
+        "start": 20,
+        "end": 34
+      },
+      "related": [],
+      "arguments": [],
+      "help": null,
+      "fixes": []
+    }
+  ],
+  "astDump": {
+    "imports": [],
+    "items": [
+      {
+        "body": {
+          "kind": "Block",
+          "span": {
+            "endByte": 59,
+            "startByte": 43
+          },
+          "statements": [
+            {
+              "kind": "ReturnStatement",
+              "span": {
+                "endByte": 58,
+                "startByte": 49
+              },
+              "value": {
+                "kind": "Identifier",
+                "name": "a",
+                "span": {
+                  "endByte": 58,
+                  "startByte": 56
+                }
+              }
+            }
+          ]
+        },
+        "ensures": [],
+        "exported": false,
+        "genericParams": [],
+        "kind": "FunctionDeclaration",
+        "name": "missing_return",
+        "parameters": [
+          {
+            "name": "a",
+            "type": "Int"
+          }
+        ],
+        "requires": [],
+        "returnType": null,
+        "span": {
+          "endByte": 59,
+          "startByte": 11
+        },
+        "whereClause": []
+      }
+    ],
+    "kind": "SourceUnit",
+    "module": {
+      "kind": "ModuleDeclaration",
+      "name": "app",
+      "span": {
+        "endByte": 10,
+        "startByte": 0
+      }
+    },
+    "span": {
+      "endByte": 59,
+      "startByte": 0
+    }
+  }
+}

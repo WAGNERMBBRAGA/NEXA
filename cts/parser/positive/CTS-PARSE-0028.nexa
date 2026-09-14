@@ -1,0 +1,6 @@
+module app
+function weighted(base: Int, scale: Int) -> Int {
+    let total: Int = base * scale +
+        scale
+    return total
+}

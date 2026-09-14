@@ -1,0 +1,16 @@
+[package]
+name = "nxr-ai"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "NEXA AIProvider contract: typed AiRequest/AiResponse, privacy classification and routing"
+
+[dependencies]
+nxr-core = { path = "../nxr-core" }
+nxr-security = { path = "../nxr-security" }
+nxr-observability = { path = "../nxr-observability" }
+serde.workspace = true
+thiserror.workspace = true
+ollama-rs = "0.2"
+
+[dev-dependencies]

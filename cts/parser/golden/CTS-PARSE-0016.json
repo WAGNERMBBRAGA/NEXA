@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "diagnostics": [],
+  "astDump": {
+    "imports": [],
+    "items": [
+      {
+        "body": {
+          "kind": "Block",
+          "span": {
+            "endByte": 155,
+            "startByte": 53
+          },
+          "statements": [
+            {
+              "init": {
+                "kind": "IntLiteral",
+                "span": {
+                  "endByte": 77,
+                  "startByte": 76
+                },
+                "value": 0
+              },
+              "kind": "VarStatement",
+              "name": "total",
+              "span": {
+                "endByte": 77,
+                "startByte": 59
+              },
+              "type": "Int"
+            },
+            {
+              "expression": {
+                "bindingMode": "value",
+                "body": {
+                  "kind": "Block",
+                  "span": {
+                    "endByte": 137,
+                    "startByte": 100
+                  },
+                  "statements": [
+                    {
+                      "kind": "AssignStatement",
+                      "operator": "=",
+                      "span": {
+                        "endByte": 131,
+                        "startByte": 110
+                      },
+                      "target": {
+                        "kind": "Identifier",
+                        "name": "total"
+                      },
+                      "value": {
+                        "kind": "BinaryExpression",
+                        "left": {
+                          "kind": "Identifier",
+                          "name": "total",
+                          "span": {
+                            "endByte": 125,
+                            "startByte": 118
+                          }
+                        },
+                        "operator": "+",
+                        "right": {
+                          "kind": "Identifier",
+                          "name": "item",
+                          "span": {
+                            "endByte": 131,
+                            "startByte": 126
+                          }
+                        },
+                        "span": {
+                          "endByte": 131,
+                          "startByte": 118
+                        }
+                      }
+                    }
+                  ]
+                },
+                "iterable": {
+                  "kind": "Identifier",
+                  "name": "items",
+                  "span": {
+                    "endByte": 101,
+                    "startByte": 94
+                  }
+                },
+                "kind": "ForExpression",
+                "span": {
+                  "endByte": 137,
+                  "startByte": 82
+                },
+                "variable": "item"
+              },
+              "kind": "ExpressionStatement",
+              "span": {
+                "endByte": 137,
+                "startByte": 82
+              }
+            },
+            {
+              "kind": "ReturnStatement",
+              "span": {
+                "endByte": 154,
+                "startByte": 141
+              },
+              "value": {
+                "kind": "Identifier",
+                "name": "total",
+                "span": {
+                  "endByte": 154,
+                  "startByte": 148
+                }
+              }
+            }
+          ]
+        },
+        "ensures": [],
+        "exported": false,
+        "genericParams": [],
+        "kind": "FunctionDeclaration",
+        "name": "sum_all",
+        "parameters": [
+          {
+            "name": "items",
+            "type": "List<Int>"
+          }
+        ],
+        "requires": [],
+        "returnType": "Int",
+        "span": {
+          "endByte": 155,
+          "startByte": 11
+        },
+        "whereClause": []
+      }
+    ],
+    "kind": "SourceUnit",
+    "module": {
+      "kind": "ModuleDeclaration",
+      "name": "app",
+      "span": {
+        "endByte": 10,
+        "startByte": 0
+      }
+    },
+    "span": {
+      "endByte": 155,
+      "startByte": 0
+    }
+  }
+}

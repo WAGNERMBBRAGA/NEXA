@@ -1,0 +1,4 @@
+module app
+function bad_param(: Int) -> Int {
+    return 1
+}

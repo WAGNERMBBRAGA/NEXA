@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "diagnostics": [],
+  "astDump": {
+    "imports": [],
+    "items": [
+      {
+        "body": {
+          "kind": "Block",
+          "span": {
+            "endByte": 38,
+            "startByte": 35
+          },
+          "statements": []
+        },
+        "effects": [],
+        "ensures": [],
+        "exported": false,
+        "genericParams": [],
+        "isAsync": false,
+        "kind": "ActionDeclaration",
+        "name": "notify",
+        "parameters": [],
+        "requires": [],
+        "returnType": "Unit",
+        "span": {
+          "endByte": 38,
+          "startByte": 11
+        },
+        "whereClause": []
+      }
+    ],
+    "kind": "SourceUnit",
+    "module": {
+      "kind": "ModuleDeclaration",
+      "name": "app",
+      "span": {
+        "endByte": 10,
+        "startByte": 0
+      }
+    },
+    "span": {
+      "endByte": 38,
+      "startByte": 0
+    }
+  }
+}

@@ -1,0 +1,7 @@
+module app
+const N: Int = 10
+function sum() -> Int {
+    let a: Int = 1
+    var b: Int = 2
+    return a + b + N
+}

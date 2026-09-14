@@ -1,0 +1,24 @@
+module main
+
+interface Stringify {
+    to_string() -> String
+    describe(prefix: String) -> String
+}
+
+struct Widget {
+    tag: String
+}
+
+implement Stringify for Widget {
+    to_string(self) -> String {
+        return self.tag
+    }
+    describe(self, prefix: String) -> String {
+        let out: String = prefix
+        return out
+    }
+}
+
+function render(w: Widget) -> String {
+    return w.describe("item: ")
+}

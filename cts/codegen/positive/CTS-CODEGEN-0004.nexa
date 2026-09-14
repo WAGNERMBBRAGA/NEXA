@@ -1,0 +1,10 @@
+module main
+
+action do_nothing() -> Unit {
+    return
+}
+
+action main() -> Unit {
+    do_nothing()
+    return
+}

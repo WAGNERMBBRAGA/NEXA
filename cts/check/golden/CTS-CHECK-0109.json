@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "source": "CTS-CHECK-0109.nexa",
+  "parseDiagnostics": [],
+  "semanticDiagnostics": [],
+  "typeDiagnostics": [
+    {
+      "code": "NEXA-TYPE-0019",
+      "context": null,
+      "message": "missing field `y`",
+      "severity": "error",
+      "span": {
+        "end": 108,
+        "source": 0,
+        "start": 93
+      }
+    }
+  ],
+  "flowDiagnostics": [],
+  "effectDiagnostics": [],
+  "summary": {
+    "effectCallEdges": 0,
+    "errors": 1,
+    "flowCfgs": 0,
+    "symbols": 48,
+    "typedExpressions": 2,
+    "warnings": 0
+  }
+}

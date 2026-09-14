@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "source": "CTS-CHECK-0114.nexa",
+  "parseDiagnostics": [],
+  "semanticDiagnostics": [],
+  "typeDiagnostics": [
+    {
+      "code": "NEXA-TYPE-0025",
+      "context": null,
+      "message": "interface member `farewell` is not implemented",
+      "severity": "error",
+      "span": {
+        "end": 136,
+        "source": 0,
+        "start": 129
+      }
+    }
+  ],
+  "flowDiagnostics": [],
+  "effectDiagnostics": [],
+  "summary": {
+    "effectCallEdges": 0,
+    "errors": 1,
+    "flowCfgs": 0,
+    "symbols": 55,
+    "typedExpressions": 1,
+    "warnings": 0
+  }
+}

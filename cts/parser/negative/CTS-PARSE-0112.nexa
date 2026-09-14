@@ -1,0 +1,5 @@
+module app
+function bad() -> Int {
+    1 = 2
+    return 0
+}

@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 1,
+  "diagnostics": [],
+  "astDump": {
+    "imports": [],
+    "items": [
+      {
+        "body": {
+          "kind": "Block",
+          "span": {
+            "endByte": 140,
+            "startByte": 47
+          },
+          "statements": [
+            {
+              "expression": {
+                "condition": {
+                  "kind": "BinaryExpression",
+                  "left": {
+                    "kind": "Identifier",
+                    "name": "x",
+                    "span": {
+                      "endByte": 59,
+                      "startByte": 56
+                    }
+                  },
+                  "operator": ">",
+                  "right": {
+                    "kind": "IntLiteral",
+                    "span": {
+                      "endByte": 61,
+                      "startByte": 60
+                    },
+                    "value": 0
+                  },
+                  "span": {
+                    "endByte": 61,
+                    "startByte": 56
+                  }
+                },
+                "else": {
+                  "kind": "Block",
+                  "span": {
+                    "endByte": 139,
+                    "startByte": 101
+                  },
+                  "statements": [
+                    {
+                      "kind": "ReturnStatement",
+                      "span": {
+                        "endByte": 132,
+                        "startByte": 111
+                      },
+                      "value": {
+                        "kind": "StringLiteral",
+                        "multiline": false,
+                        "parts": [
+                          {
+                            "kind": "Text",
+                            "text": "non-positive"
+                          }
+                        ],
+                        "span": {
+                          "endByte": 132,
+                          "startByte": 118
+                        }
+                      }
+                    }
+                  ]
+                },
+                "elseIfs": [],
+                "kind": "IfExpression",
+                "span": {
+                  "endByte": 139,
+                  "startByte": 53
+                },
+                "then": {
+                  "kind": "Block",
+                  "span": {
+                    "endByte": 100,
+                    "startByte": 62
+                  },
+                  "statements": [
+                    {
+                      "kind": "ReturnStatement",
+                      "span": {
+                        "endByte": 89,
+                        "startByte": 72
+                      },
+                      "value": {
+                        "kind": "StringLiteral",
+                        "multiline": false,
+                        "parts": [
+                          {
+                            "kind": "Text",
+                            "text": "positive"
+                          }
+                        ],
+                        "span": {
+                          "endByte": 89,
+                          "startByte": 79
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "kind": "ExpressionStatement",
+              "span": {
+                "endByte": 139,
+                "startByte": 53
+              }
+            }
+          ]
+        },
+        "ensures": [],
+        "exported": false,
+        "genericParams": [],
+        "kind": "FunctionDeclaration",
+        "name": "classify",
+        "parameters": [
+          {
+            "name": "x",
+            "type": "Int"
+          }
+        ],
+        "requires": [],
+        "returnType": "String",
+        "span": {
+          "endByte": 140,
+          "startByte": 11
+        },
+        "whereClause": []
+      }
+    ],
+    "kind": "SourceUnit",
+    "module": {
+      "kind": "ModuleDeclaration",
+      "name": "app",
+      "span": {
+        "endByte": 10,
+        "startByte": 0
+      }
+    },
+    "span": {
+      "endByte": 140,
+      "startByte": 0
+    }
+  }
+}

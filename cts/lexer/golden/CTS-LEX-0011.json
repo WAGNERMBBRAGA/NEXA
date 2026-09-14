@@ -1,0 +1,203 @@
+{
+  "schemaVersion": 1,
+  "tokens": [
+    {
+      "category": "token",
+      "kind": "Keyword",
+      "keyword": "module",
+      "startByte": 0,
+      "endByte": 6
+    },
+    {
+      "category": "trivia",
+      "kind": "Whitespace",
+      "startByte": 6,
+      "endByte": 7
+    },
+    {
+      "category": "token",
+      "kind": "Identifier",
+      "startByte": 7,
+      "endByte": 11
+    },
+    {
+      "category": "token",
+      "kind": "Newline",
+      "startByte": 11,
+      "endByte": 12
+    },
+    {
+      "category": "trivia",
+      "kind": "LineComment",
+      "startByte": 12,
+      "endByte": 27
+    },
+    {
+      "category": "token",
+      "kind": "Newline",
+      "startByte": 27,
+      "endByte": 28
+    },
+    {
+      "category": "token",
+      "kind": "Keyword",
+      "keyword": "let",
+      "startByte": 28,
+      "endByte": 31
+    },
+    {
+      "category": "trivia",
+      "kind": "Whitespace",
+      "startByte": 31,
+      "endByte": 32
+    },
+    {
+      "category": "token",
+      "kind": "Identifier",
+      "startByte": 32,
+      "endByte": 33
+    },
+    {
+      "category": "trivia",
+      "kind": "Whitespace",
+      "startByte": 33,
+      "endByte": 34
+    },
+    {
+      "category": "token",
+      "kind": "Equal",
+      "startByte": 34,
+      "endByte": 35
+    },
+    {
+      "category": "trivia",
+      "kind": "Whitespace",
+      "startByte": 35,
+      "endByte": 36
+    },
+    {
+      "category": "token",
+      "kind": "StringStart",
+      "style": "Normal",
+      "startByte": 36,
+      "endByte": 37
+    },
+    {
+      "category": "token",
+      "kind": "StringText",
+      "startByte": 37,
+      "endByte": 40
+    },
+    {
+      "category": "token",
+      "kind": "InterpolationStart",
+      "startByte": 40,
+      "endByte": 42
+    },
+    {
+      "category": "token",
+      "kind": "Identifier",
+      "startByte": 42,
+      "endByte": 46
+    },
+    {
+      "category": "token",
+      "kind": "InterpolationEnd",
+      "startByte": 46,
+      "endByte": 47
+    },
+    {
+      "category": "token",
+      "kind": "StringText",
+      "startByte": 47,
+      "endByte": 48
+    },
+    {
+      "category": "token",
+      "kind": "StringEnd",
+      "style": "Normal",
+      "startByte": 48,
+      "endByte": 49
+    },
+    {
+      "category": "token",
+      "kind": "Newline",
+      "startByte": 49,
+      "endByte": 50
+    },
+    {
+      "category": "token",
+      "kind": "Keyword",
+      "keyword": "let",
+      "startByte": 50,
+      "endByte": 53
+    },
+    {
+      "category": "trivia",
+      "kind": "Whitespace",
+      "startByte": 53,
+      "endByte": 54
+    },
+    {
+      "category": "token",
+      "kind": "Identifier",
+      "startByte": 54,
+      "endByte": 55
+    },
+    {
+      "category": "trivia",
+      "kind": "Whitespace",
+      "startByte": 55,
+      "endByte": 56
+    },
+    {
+      "category": "token",
+      "kind": "Equal",
+      "startByte": 56,
+      "endByte": 57
+    },
+    {
+      "category": "trivia",
+      "kind": "Whitespace",
+      "startByte": 57,
+      "endByte": 58
+    },
+    {
+      "category": "token",
+      "kind": "IntegerLiteral",
+      "startByte": 58,
+      "endByte": 63
+    },
+    {
+      "category": "trivia",
+      "kind": "Whitespace",
+      "startByte": 63,
+      "endByte": 64
+    },
+    {
+      "category": "token",
+      "kind": "Plus",
+      "startByte": 64,
+      "endByte": 65
+    },
+    {
+      "category": "trivia",
+      "kind": "Whitespace",
+      "startByte": 65,
+      "endByte": 66
+    },
+    {
+      "category": "token",
+      "kind": "FloatLiteral",
+      "startByte": 66,
+      "endByte": 69
+    },
+    {
+      "category": "token",
+      "kind": "Eof",
+      "startByte": 69,
+      "endByte": 69
+    }
+  ],
+  "diagnostics": []
+}

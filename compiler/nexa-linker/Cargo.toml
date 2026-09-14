@@ -1,0 +1,15 @@
+[package]
+name = "nexa-linker"
+version = "0.0.1"
+edition = "2021"
+description = "NIR linker: cross-package symbol resolution, public API verification, WASM linking"
+
+[dependencies]
+thiserror = "2"
+nexa-manifest = { path = "../nexa-manifest" }
+nexa-package = { path = "../nexa-package" }
+nexa-lock = { path = "../nexa-lock" }
+wasm-encoder = "0.258"
+
+[dev-dependencies]
+wasmparser = "0.258"

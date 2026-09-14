@@ -1,0 +1,6 @@
+module main
+
+function abs(n: Int) -> Int {
+    let positive = n
+    return positive
+}

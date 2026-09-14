@@ -1,0 +1,5 @@
+module main
+
+action main() -> Unit effects [console::write] {
+    return
+}

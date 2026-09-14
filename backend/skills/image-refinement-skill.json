@@ -1,0 +1,10 @@
+{
+  "name": "Image Refinement",
+  "description": "Refine an existing image while preserving invariants",
+  "prompt": "# Image Refinement\r\n\r\nUse when the user supplies an existing image and asks for a bounded edit, correction, cleanup, or variant.\r\n\r\n## Workflow\r\n\r\n1. Require an authorized source image plus requested changes, preservation constraints, exclusions, target format, intended use, and acceptance criteria. Resolve ambiguity where an edit could destroy an invariant.\r\n2. Inspect the source's real format, dimensions, aspect ratio, transparency/animation requirements, composition, and visible defects.\r\n3. Read `references/color.md` for palette/color work and `references/anti-ai-slop.md` when stylistic regeneration could introduce generic artifacts.\r\n4. Use only the available `capacidade de edição de imagem disponível` capability; state concretely what must change and what must remain. Do not assume a vendor, model, endpoint, CLI, or runtime.\r\n5. Save to an authorized workspace location without overwriting the source unless explicitly requested. Confirm that the result exists, is non-empty, decodes as the requested real image type, preserves required content and composition, and contains no new crop, watermark, unrelated logo, accidental text, or generation defect.\r\n6. Compare the result against every declared invariant. Report validation performed and any limitation truthfully; never substitute a placeholder or claim an unavailable image exists.\r\n\r\nIf the request asks for several alternatives followed by card selection, route it through `image-generation`'s three-direction `interface de seleção disponível` protocol rather than inventing an implicit selection flow here.",
+  "enabled": true,
+  "category": "Imagem",
+  "commands": [],
+  "createdAt": "2026-09-05T11:47:28.448Z",
+  "updatedAt": "2026-09-11T18:08:18.375Z"
+}

@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "diagnostics": [],
+  "astDump": {
+    "imports": [],
+    "items": [
+      {
+        "body": {
+          "kind": "Block",
+          "span": {
+            "endByte": 72,
+            "startByte": 48
+          },
+          "statements": [
+            {
+              "kind": "ReturnStatement",
+              "span": {
+                "endByte": 69,
+                "startByte": 55
+              },
+              "value": {
+                "kind": "BinaryExpression",
+                "left": {
+                  "kind": "Identifier",
+                  "name": "a",
+                  "span": {
+                    "endByte": 65,
+                    "startByte": 62
+                  }
+                },
+                "operator": "+",
+                "right": {
+                  "kind": "Identifier",
+                  "name": "b",
+                  "span": {
+                    "endByte": 69,
+                    "startByte": 66
+                  }
+                },
+                "span": {
+                  "endByte": 69,
+                  "startByte": 62
+                }
+              }
+            }
+          ]
+        },
+        "ensures": [],
+        "exported": false,
+        "genericParams": [],
+        "kind": "FunctionDeclaration",
+        "name": "add",
+        "parameters": [
+          {
+            "name": "a",
+            "type": "Int"
+          },
+          {
+            "name": "b",
+            "type": "Int"
+          }
+        ],
+        "requires": [],
+        "returnType": "Int",
+        "span": {
+          "endByte": 72,
+          "startByte": 12
+        },
+        "whereClause": []
+      }
+    ],
+    "kind": "SourceUnit",
+    "module": {
+      "kind": "ModuleDeclaration",
+      "name": "app",
+      "span": {
+        "endByte": 10,
+        "startByte": 0
+      }
+    },
+    "span": {
+      "endByte": 72,
+      "startByte": 0
+    }
+  }
+}

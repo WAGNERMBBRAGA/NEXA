@@ -1,0 +1,36 @@
+{
+  "format": 1,
+  "resolver": {
+    "name": "nexa-reference",
+    "version": "0.0.1-dev"
+  },
+  "root": {
+    "name": "cts.simple",
+    "version": "1.0.0",
+    "source": {
+      "Path": {
+        "path": "."
+      }
+    }
+  },
+  "packages": [
+    {
+      "id": {
+        "name": "cts.simple",
+        "version": "1.0.0",
+        "source": {
+          "Path": {
+            "path": "."
+          }
+        }
+      },
+      "source": {
+        "Path": {
+          "path": "."
+        }
+      },
+      "digest": "c115395ff1649f7ef6a6424e654c32ec3a4b076b9e07233120a111a1d6f4d39b",
+      "dependencies": []
+    }
+  ]
+}

@@ -1,0 +1,266 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEXA AI</title>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <link rel="stylesheet" href="styles.css?v=20260914">
+</head>
+<body>
+
+    <!-- ============================ SIDEBAR ============================ -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <span class="logo-icon">&#x1F916;</span>
+                <h1>NEXA</h1>
+            </div>
+        </div>
+
+        <div class="sidebar-content">
+            <button id="btn-new-chat" class="new-chat-btn">+ Nova conversa</button>
+            <button id="btn-link-project" class="new-chat-btn secondary-chat-btn">&#x1F4C1; Abrir projeto nesta conversa</button>
+
+            <div class="conversations-section workspace-section-list">
+                <div class="conv-header"><span>PROJETOS</span></div>
+                <div id="workspace-list" class="conv-list"></div>
+            </div>
+
+            <div class="conversations-section">
+                <div class="conv-header">
+                    <span>CONVERSAS</span>
+                    <button id="btn-refresh-convs" class="refresh-btn" title="Atualizar">&#x21BB;</button>
+                </div>
+                <div id="conv-list" class="conv-list"></div>
+            </div>
+
+            <div id="project-section" class="project-section hidden">
+                <div class="conv-header">
+                    <span>&#x1F4C1; PROJETO</span>
+                </div>
+                <div id="project-info-sidebar" class="project-info-sidebar"></div>
+                <div id="project-tree-sidebar" class="project-tree-sidebar"></div>
+            </div>
+
+        </div>
+
+        <nav class="sidebar-nav">
+            <div class="nav-block sidebar-status-note">O modelo e as skills desta conversa ficam no topo do chat.</div>
+        </nav>
+
+        <div class="sidebar-footer">
+            <button id="btn-config" class="config-btn">&#x2699;&#xFE0F; Configura&#xE7;&#xF5;es da IA</button>
+        </div>
+    </aside>
+
+    <!-- ============================ MAIN ============================ -->
+    <main class="main">
+        <div class="chat-panel">
+            <header class="chat-toolbar" aria-label="Controles da conversa">
+                <div class="chat-toolbar-group">
+                    <select id="provider-select" class="chat-control" title="Provedor de IA">
+                        <option value="local">NEXA Local</option>
+                        <option value="openai">OpenAI API</option>
+                    </select>
+                    <select id="model-select" class="chat-control chat-model-control" title="Modelo usado nesta conversa">
+                        <option value="0">Selecione um modelo...</option>
+                    </select>
+                    <div id="active-project-chip" class="active-project-chip" title="Projeto vinculado a esta conversa">Sem projeto vinculado</div>
+                    <div id="ai-status" class="status-badge">Conectando...</div>
+                </div>
+                <details class="skills-dropdown">
+                    <summary>&#x2728; Skills ativas</summary>
+                    <div class="skills-dropdown-menu">
+                        <div class="skills-dropdown-header"><span>Ative nesta conversa</span><button id="btn-manage-skills" class="refresh-btn" title="Gerenciar Skills">&#x2699;</button></div>
+                        <div id="skills-sidebar-list" class="skills-sidebar-list"></div>
+                    </div>
+                </details>
+            </header>
+            <div id="messages" class="messages">
+                <div class="welcome">
+                    <div class="welcome-logo">&#x1F916;</div>
+                    <h2>NEXA AI Assistant</h2>
+                    <p>Como posso ajud&#xE1;-lo hoje?</p>
+                </div>
+                <section id="model-onboarding" class="model-onboarding hidden" aria-live="polite">
+                    <div class="onboarding-icon">&#x2728;</div>
+                    <div class="onboarding-copy">
+                        <strong>Prepare a IA para começar</strong>
+                        <span>Instale um modelo local ou conecte um provedor compatível. As ferramentas de projeto continuarão vinculadas a esta conversa.</span>
+                    </div>
+                    <div class="onboarding-actions">
+                        <button id="btn-onboarding-model" type="button" class="btn-primary">Instalar modelo local</button>
+                        <button id="btn-onboarding-provider" type="button" class="btn-secondary">Conectar provedor</button>
+                    </div>
+                </section>
+            </div>
+
+            <div class="composer-wrap">
+                <div id="attachments" class="attachments hidden"></div>
+                <form id="language-form" class="language-bar">
+                    <input id="language-input" type="text" class="language-input" placeholder="Linguagem do projeto (ex.: Python)" autocomplete="off">
+                    <button type="button" class="language-suggest-btn" id="btn-suggest-language" title="Sugerir linguagem para o seu pedido">&#x1F4A1; Sugerir</button>
+                </form>
+                <form id="chat-form" class="input-area">
+                    <label for="file-input" class="attach-btn" title="Anexar imagem/arquivo">&#x1F4CE;</label>
+                    <input type="file" id="file-input" accept="image/*,.pdf,.txt,.md,.js,.py,.json,.html,.css,.c,.cpp,.java,.go,.ts" multiple hidden>
+                    <textarea id="user-input" placeholder="Digite sua mensagem..." rows="1" required></textarea>
+                    <button type="submit" class="send-btn" id="send-btn" title="Enviar">&#x27A4;</button>
+                </form>
+                <p class="input-hint">NEXA pode cometer erros. Verifique informa&#xE7;&#xF5;es importantes.
+                    <button id="btn-open-memory" class="memory-link" type="button">&#x1F9E0; Mem&#xF3;ria desta conversa</button>
+                </p>
+            </div>
+
+            <div id="memory-panel" class="memory-panel hidden">
+                <div class="memory-header">
+                    <span>&#x1F9E0; Mem&#xF3;ria da IA</span>
+                    <button id="btn-save-memory" class="memory-save" title="Salvar mem&#xF3;ria">&#x1F4BE; Salvar</button>
+                    <button id="btn-close-memory" class="modal-close">&#x2716;</button>
+                </div>
+                <textarea id="memory-text" placeholder="A IA consultar&#xE1; esta mem&#xF3;ria em toda mensagem desta conversa."></textarea>
+            </div>
+        </div>
+    </main>
+
+    <!-- ============================ MODEL STORE MODAL ============================ -->
+    <div id="model-store-modal" class="store-modal-overlay" style="display:none">
+        <div class="store-modal">
+            <div class="store-modal-header">
+                <h2>Model Store</h2>
+                <button id="store-close-btn" class="store-close">&times;</button>
+            </div>
+            <div class="store-modal-body">
+                <div class="store-search">
+                    <input type="text" id="store-search-input" placeholder="Buscar modelos (ex: mistral, qwen, vision...)">
+                    <button id="store-search-btn" class="btn-primary">Buscar</button>
+                </div>
+                <div class="store-filters">
+                    <button class="filter-btn active" data-filter="all">Todos</button>
+                    <button class="filter-btn" data-filter="text-generation">Texto</button>
+                    <button class="filter-btn" data-filter="code">&#xC3;digo</button>
+                    <button class="filter-btn" data-filter="vision">Vis&#xE3;o</button>
+                    <select id="store-sort">
+                        <option value="downloads">Mais Baixados</option>
+                        <option value="likes">Mais Curtidos</option>
+                        <option value="modified">Mais Recentes</option>
+                    </select>
+                </div>
+                <div id="store-grid" class="store-grid"></div>
+                <div id="store-loading" class="store-loading" style="display:none">Carregando modelos...</div>
+                <div id="store-downloads" class="store-downloads" style="display:none">
+                    <h3>Downloads Ativos</h3>
+                    <div id="downloads-list"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================ SETTINGS MODAL ============================ -->
+    <div id="config-modal" class="modal-overlay hidden">
+        <div class="modal" style="max-width:700px">
+            <div class="modal-header">
+                <h2>&#x2699;&#xFE0F; Configura&#xE7;&#xF5;es da IA</h2>
+                <button id="btn-close-config" class="modal-close">&#x2716;</button>
+            </div>
+            <div class="modal-body">
+                <div class="config-tabs" style="display:flex;gap:4px;margin-bottom:16px;border-bottom:1px solid #333;padding-bottom:8px">
+                    <button class="config-tab active" data-tab="general" style="background:none;border:none;color:#a78bfa;cursor:pointer;padding:6px 12px;font-weight:600;border-bottom:2px solid #a78bfa">Geral</button>
+                    <button class="config-tab" data-tab="skills" style="background:none;border:none;color:#666;cursor:pointer;padding:6px 12px">Skills</button>
+                </div>
+
+                <div id="tab-general" class="config-tab-content">
+                    <div class="config-section">
+                        <h3>Provedor</h3>
+                        <select id="cfg-provider" class="form-control">
+                            <option value="local">NEXA Local (llama.cpp)</option>
+                            <option value="openai">OpenAI API</option>
+                        </select>
+                    </div>
+                    <div id="cfg-local-section" class="config-section">
+                        <h3>NEXA Local (llama.cpp)</h3>
+                        <label class="form-label">URL do Servidor</label>
+                        <input type="text" id="cfg-local-url" class="form-control" value="http://127.0.0.1:8080">
+                        <label class="form-label">Modelo</label>
+                        <select id="cfg-local-model" class="form-control">
+                            <option value="">Carregando modelos...</option>
+                        </select>
+                    </div>
+                    <div id="cfg-openai-section" class="config-section hidden">
+                        <h3>OpenAI API</h3>
+                        <label class="form-label">URL da API</label>
+                        <input type="text" id="cfg-openai-url" class="form-control" placeholder="https://api.openai.com/v1">
+                        <label class="form-label">Chave da API (OpenAI)</label>
+                        <input type="password" id="cfg-openai-key" class="form-control" placeholder="sk-...">
+                        <label class="form-label">Modelo padr&#xE3;o</label>
+                        <input type="text" id="cfg-openai-model" class="form-control" placeholder="gpt-3.5-turbo">
+                    </div>
+                    <div class="config-section">
+                        <h3>Busca semântica</h3>
+                        <label class="form-label"><input type="checkbox" id="cfg-embedding-enabled"> Ativar embeddings reais</label>
+                        <label class="form-label">URL OpenAI-compatible</label>
+                        <input type="text" id="cfg-embedding-url" class="form-control" placeholder="http://127.0.0.1:8081/v1">
+                        <label class="form-label">Modelo de embeddings</label>
+                        <input type="text" id="cfg-embedding-model" class="form-control" placeholder="nomic-embed-text">
+                        <label class="form-label">Chave opcional</label>
+                        <input type="password" id="cfg-embedding-key" class="form-control" placeholder="Somente para provedores autenticados">
+                        <p class="config-help">O NEXA só marca a busca como semântica quando o provedor retorna vetores reais.</p>
+                    </div>
+                </div>
+
+                <div id="tab-skills" class="config-tab-content hidden">
+                    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">
+                        <h3 style="margin:0">Skills da IA</h3>
+                        <div style="display:flex;gap:6px">
+                            <button id="btn-import-folder" style="background:#0ea5e9;color:#fff;border:none;padding:6px 12px;border-radius:6px;cursor:pointer;font-size:12px">&#x1F4C2; Importar Pasta</button>
+                            <button id="btn-import-skills" style="background:#059669;color:#fff;border:none;padding:6px 12px;border-radius:6px;cursor:pointer;font-size:12px">&#x1F4E5; JSON</button>
+                            <button id="btn-export-skills" style="background:#d97706;color:#fff;border:none;padding:6px 12px;border-radius:6px;cursor:pointer;font-size:12px">&#x1F4E4; Exportar</button>
+                            <button id="btn-new-skill" style="background:#7c3aed;color:#fff;border:none;padding:6px 12px;border-radius:6px;cursor:pointer;font-size:12px">+ Nova</button>
+                        </div>
+                    </div>
+                    <input type="file" id="skill-file-input" accept=".json" style="display:none">
+
+                    <div id="folder-import-panel" class="hidden" style="border:1px solid #333;border-radius:8px;padding:12px;margin-bottom:12px;background:#0a0a1a">
+                        <h4 style="margin:0 0 8px 0;color:#0ea5e9;font-size:13px">Importar de Pasta</h4>
+                        <p style="color:#888;font-size:11px;margin-bottom:8px">Selecione uma pasta e todos os arquivos .md serao importados como skills.</p>
+                        <button id="btn-select-folder" style="background:#0ea5e9;color:#fff;border:none;padding:10px 20px;border-radius:6px;cursor:pointer;font-size:13px;font-weight:600">&#x1F4C2; Selecionar Pasta</button>
+                        <div id="folder-scan-result" style="margin-top:8px;max-height:200px;overflow-y:auto"></div>
+                        <div style="display:flex;gap:6px;margin-top:8px;justify-content:flex-end">
+                            <button id="btn-cancel-folder-import" style="background:#333;color:#fff;border:none;padding:6px 12px;border-radius:6px;cursor:pointer;font-size:12px">Cancelar</button>
+                            <button id="btn-confirm-folder-import" class="hidden" style="background:#0ea5e9;color:#fff;border:none;padding:6px 12px;border-radius:6px;cursor:pointer;font-size:12px">Importar Tudo</button>
+                        </div>
+                    </div>
+
+                    <div id="skills-list" style="max-height:400px;overflow-y:auto"></div>
+
+                    <div id="skill-editor" class="hidden" style="margin-top:16px;border:1px solid #333;border-radius:8px;padding:16px;background:#0a0a1a">
+                        <h4 id="skill-editor-title" style="margin:0 0 12px 0;color:#a78bfa">Nova Skill</h4>
+                        <input type="hidden" id="skill-edit-id">
+                        <label class="form-label">Nome</label>
+                        <input type="text" id="skill-name" class="form-control" placeholder="Ex: Backup Automatico">
+                        <label class="form-label">Categoria</label>
+                        <input type="text" id="skill-category" class="form-control" placeholder="Ex: Sistema, Codigo, Deploy">
+                        <label class="form-label">Descricao</label>
+                        <input type="text" id="skill-description" class="form-control" placeholder="O que esta skill faz">
+                        <label class="form-label">Prompt (instrucoes para a IA)</label>
+                        <textarea id="skill-prompt" class="form-control" rows="6" placeholder="Ex: Quando o usuario pedir backup, copie a pasta do projeto usando Copy-Item..."></textarea>
+                        <div style="display:flex;gap:8px;margin-top:12px;justify-content:flex-end">
+                            <button id="btn-skill-cancel" style="background:#333;color:#fff;border:none;padding:6px 14px;border-radius:6px;cursor:pointer">Cancelar</button>
+                            <button id="btn-skill-save" style="background:#7c3aed;color:#fff;border:none;padding:6px 14px;border-radius:6px;cursor:pointer">Salvar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <span id="cfg-status" class="cfg-status"></span>
+                <button id="btn-save-config" class="btn-primary">Salvar</button>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="/app.js"></script>
+</body>
+</html>

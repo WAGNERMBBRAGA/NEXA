@@ -1,0 +1,11 @@
+[package]
+name = "nexa-contracts"
+version = "0.0.1"
+edition = "2021"
+description = "Contract system (require, ensure, result, old) for NEXA"
+
+[dependencies]
+nexa-source = { path = "../nexa-source" }
+nexa-diagnostics = { path = "../nexa-diagnostics" }
+nexa-symbols = { path = "../nexa-symbols" }
+nexa-types = { path = "../nexa-types" }

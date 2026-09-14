@@ -1,0 +1,9 @@
+[package]
+name = "nxr-tasks"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+nxr-core = { path = "../nxr-core" }
+nxr-security = { path = "../nxr-security" }
+nxr-resources = { path = "../nxr-resources" }

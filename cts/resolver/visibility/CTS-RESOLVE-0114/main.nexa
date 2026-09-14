@@ -1,0 +1,13 @@
+module main
+
+import direct::util
+
+action main() -> Unit {
+    let a = util::ok()
+    return
+}
+
+action broken() -> Unit {
+    let b = trans::foo::now()
+    return
+}

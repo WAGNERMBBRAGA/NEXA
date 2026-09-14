@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "source": "CTS-FLOW-0107.nexa",
+  "parseDiagnostics": [],
+  "semanticDiagnostics": [],
+  "typeDiagnostics": [],
+  "flowDiagnostics": [
+    {
+      "code": "NEXA-FLOW-0006",
+      "message": "variable #46 may be used before it is initialized",
+      "severity": "error",
+      "span": {
+        "end": 101,
+        "source": 0,
+        "start": 99
+      }
+    }
+  ],
+  "effectDiagnostics": [],
+  "summary": {
+    "effectCallEdges": 0,
+    "errors": 1,
+    "flowCfgs": 1,
+    "symbols": 47,
+    "typedExpressions": 4,
+    "warnings": 0
+  }
+}

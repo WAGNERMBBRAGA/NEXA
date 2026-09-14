@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 1,
+  "diagnostics": [],
+  "astDump": {
+    "imports": [],
+    "items": [
+      {
+        "body": {
+          "kind": "Block",
+          "span": {
+            "endByte": 153,
+            "startByte": 46
+          },
+          "statements": [
+            {
+              "init": {
+                "kind": "Identifier",
+                "name": "n",
+                "span": {
+                  "endByte": 73,
+                  "startByte": 71
+                }
+              },
+              "kind": "VarStatement",
+              "name": "current",
+              "span": {
+                "endByte": 73,
+                "startByte": 52
+              },
+              "type": "Int"
+            },
+            {
+              "expression": {
+                "body": {
+                  "kind": "Block",
+                  "span": {
+                    "endByte": 133,
+                    "startByte": 95
+                  },
+                  "statements": [
+                    {
+                      "kind": "AssignStatement",
+                      "operator": "=",
+                      "span": {
+                        "endByte": 126,
+                        "startByte": 105
+                      },
+                      "target": {
+                        "kind": "Identifier",
+                        "name": "current"
+                      },
+                      "value": {
+                        "kind": "BinaryExpression",
+                        "left": {
+                          "kind": "Identifier",
+                          "name": "current",
+                          "span": {
+                            "endByte": 124,
+                            "startByte": 115
+                          }
+                        },
+                        "operator": "-",
+                        "right": {
+                          "kind": "IntLiteral",
+                          "span": {
+                            "endByte": 126,
+                            "startByte": 125
+                          },
+                          "value": 1
+                        },
+                        "span": {
+                          "endByte": 126,
+                          "startByte": 115
+                        }
+                      }
+                    }
+                  ]
+                },
+                "condition": {
+                  "kind": "BinaryExpression",
+                  "left": {
+                    "kind": "Identifier",
+                    "name": "current",
+                    "span": {
+                      "endByte": 92,
+                      "startByte": 83
+                    }
+                  },
+                  "operator": ">",
+                  "right": {
+                    "kind": "IntLiteral",
+                    "span": {
+                      "endByte": 94,
+                      "startByte": 93
+                    },
+                    "value": 0
+                  },
+                  "span": {
+                    "endByte": 94,
+                    "startByte": 83
+                  }
+                },
+                "kind": "WhileExpression",
+                "span": {
+                  "endByte": 133,
+                  "startByte": 77
+                }
+              },
+              "kind": "ExpressionStatement",
+              "span": {
+                "endByte": 133,
+                "startByte": 77
+              }
+            },
+            {
+              "kind": "ReturnStatement",
+              "span": {
+                "endByte": 152,
+                "startByte": 137
+              },
+              "value": {
+                "kind": "Identifier",
+                "name": "current",
+                "span": {
+                  "endByte": 152,
+                  "startByte": 144
+                }
+              }
+            }
+          ]
+        },
+        "ensures": [],
+        "exported": false,
+        "genericParams": [],
+        "kind": "FunctionDeclaration",
+        "name": "count_down",
+        "parameters": [
+          {
+            "name": "n",
+            "type": "Int"
+          }
+        ],
+        "requires": [],
+        "returnType": "Int",
+        "span": {
+          "endByte": 153,
+          "startByte": 11
+        },
+        "whereClause": []
+      }
+    ],
+    "kind": "SourceUnit",
+    "module": {
+      "kind": "ModuleDeclaration",
+      "name": "app",
+      "span": {
+        "endByte": 10,
+        "startByte": 0
+      }
+    },
+    "span": {
+      "endByte": 153,
+      "startByte": 0
+    }
+  }
+}

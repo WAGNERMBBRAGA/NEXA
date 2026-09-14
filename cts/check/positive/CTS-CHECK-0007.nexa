@@ -1,0 +1,31 @@
+module main
+
+struct Point {
+    x: Int
+    y: Int
+}
+
+struct User {
+    id: Int
+    name: String
+}
+
+function make_point() -> Point {
+    let p = Point { x: 1, y: 2 }
+    return p
+}
+
+function shift(p: Point) -> Point {
+    return Point { x: p.x + 1, y: p.y + 1 }
+}
+
+function main() -> Unit {
+    let o = Point { x: 10, y: 20 }
+    let u = User { id: 7, name: "ada" }
+    let id: Int = 3
+    let name: String = "b"
+    let shorthand = User { id, name }
+    let total: Int = o.x + o.y
+    let sum: Int = total + shorthand.id
+    let uname: String = u.name
+}

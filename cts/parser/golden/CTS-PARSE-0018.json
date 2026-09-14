@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "diagnostics": [],
+  "astDump": {
+    "imports": [],
+    "items": [
+      {
+        "body": {
+          "kind": "Block",
+          "span": {
+            "endByte": 136,
+            "startByte": 47
+          },
+          "statements": [
+            {
+              "kind": "ReturnStatement",
+              "span": {
+                "endByte": 135,
+                "startByte": 53
+              },
+              "value": {
+                "arms": [
+                  {
+                    "body": {
+                      "kind": "StringLiteral",
+                      "multiline": false,
+                      "parts": [
+                        {
+                          "kind": "Text",
+                          "text": "zero"
+                        }
+                      ],
+                      "span": {
+                        "endByte": 89,
+                        "startByte": 83
+                      }
+                    },
+                    "guard": null,
+                    "pattern": {
+                      "kind": "LiteralPattern",
+                      "span": {
+                        "endByte": 79,
+                        "startByte": 78
+                      },
+                      "value": {
+                        "kind": "IntLiteral",
+                        "span": {
+                          "endByte": 79,
+                          "startByte": 78
+                        },
+                        "value": 0
+                      }
+                    }
+                  },
+                  {
+                    "body": {
+                      "kind": "StringLiteral",
+                      "multiline": false,
+                      "parts": [
+                        {
+                          "kind": "Text",
+                          "text": "one"
+                        }
+                      ],
+                      "span": {
+                        "endByte": 108,
+                        "startByte": 103
+                      }
+                    },
+                    "guard": null,
+                    "pattern": {
+                      "kind": "LiteralPattern",
+                      "span": {
+                        "endByte": 99,
+                        "startByte": 98
+                      },
+                      "value": {
+                        "kind": "IntLiteral",
+                        "span": {
+                          "endByte": 99,
+                          "startByte": 98
+                        },
+                        "value": 1
+                      }
+                    }
+                  },
+                  {
+                    "body": {
+                      "kind": "StringLiteral",
+                      "multiline": false,
+                      "parts": [
+                        {
+                          "kind": "Text",
+                          "text": "many"
+                        }
+                      ],
+                      "span": {
+                        "endByte": 128,
+                        "startByte": 122
+                      }
+                    },
+                    "guard": null,
+                    "pattern": {
+                      "kind": "WildcardPattern",
+                      "span": {
+                        "endByte": 118,
+                        "startByte": 117
+                      }
+                    }
+                  }
+                ],
+                "kind": "MatchExpression",
+                "scrutinee": {
+                  "kind": "Identifier",
+                  "name": "x",
+                  "span": {
+                    "endByte": 69,
+                    "startByte": 66
+                  }
+                },
+                "span": {
+                  "endByte": 135,
+                  "startByte": 60
+                }
+              }
+            }
+          ]
+        },
+        "ensures": [],
+        "exported": false,
+        "genericParams": [],
+        "kind": "FunctionDeclaration",
+        "name": "describe",
+        "parameters": [
+          {
+            "name": "x",
+            "type": "Int"
+          }
+        ],
+        "requires": [],
+        "returnType": "String",
+        "span": {
+          "endByte": 136,
+          "startByte": 11
+        },
+        "whereClause": []
+      }
+    ],
+    "kind": "SourceUnit",
+    "module": {
+      "kind": "ModuleDeclaration",
+      "name": "app",
+      "span": {
+        "endByte": 10,
+        "startByte": 0
+      }
+    },
+    "span": {
+      "endByte": 136,
+      "startByte": 0
+    }
+  }
+}

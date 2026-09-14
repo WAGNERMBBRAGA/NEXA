@@ -1,0 +1,170 @@
+{
+  "schemaVersion": 1,
+  "diagnostics": [
+    {
+      "code": "NEXA-PARSE-0002",
+      "severity": "Error",
+      "category": "parser",
+      "messageKey": "parser.expected_token",
+      "message": "expected ',' or ')', found `Colon`",
+      "primarySpan": {
+        "source": 0,
+        "start": 50,
+        "end": 51
+      },
+      "related": [],
+      "arguments": [],
+      "help": null,
+      "fixes": []
+    },
+    {
+      "code": "NEXA-PARSE-0008",
+      "severity": "Error",
+      "category": "parser",
+      "messageKey": "parser.missing_statement_terminator",
+      "message": "expected a new line, found integer literal",
+      "primarySpan": {
+        "source": 0,
+        "start": 52,
+        "end": 53
+      },
+      "related": [],
+      "arguments": [],
+      "help": null,
+      "fixes": []
+    },
+    {
+      "code": "NEXA-PARSE-0008",
+      "severity": "Error",
+      "category": "parser",
+      "messageKey": "parser.missing_statement_terminator",
+      "message": "expected a new line, found `RightParen`",
+      "primarySpan": {
+        "source": 0,
+        "start": 53,
+        "end": 54
+      },
+      "related": [],
+      "arguments": [],
+      "help": null,
+      "fixes": []
+    }
+  ],
+  "astDump": {
+    "imports": [],
+    "items": [
+      {
+        "body": {
+          "kind": "Block",
+          "span": {
+            "endByte": 56,
+            "startByte": 34
+          },
+          "statements": [
+            {
+              "kind": "ReturnStatement",
+              "span": {
+                "endByte": 51,
+                "startByte": 40
+              },
+              "value": {
+                "arguments": [
+                  {
+                    "kind": "Identifier",
+                    "name": "x",
+                    "span": {
+                      "endByte": 51,
+                      "startByte": 49
+                    }
+                  }
+                ],
+                "callee": {
+                  "kind": "Identifier",
+                  "name": "f",
+                  "span": {
+                    "endByte": 49,
+                    "startByte": 47
+                  }
+                },
+                "kind": "CallExpression",
+                "span": {
+                  "endByte": 51,
+                  "startByte": 47
+                }
+              }
+            },
+            {
+              "expression": {
+                "kind": "Underscore",
+                "span": {
+                  "endByte": 51,
+                  "startByte": 50
+                }
+              },
+              "kind": "ExpressionStatement",
+              "span": {
+                "endByte": 51,
+                "startByte": 50
+              }
+            },
+            {
+              "expression": {
+                "kind": "IntLiteral",
+                "span": {
+                  "endByte": 53,
+                  "startByte": 52
+                },
+                "value": 1
+              },
+              "kind": "ExpressionStatement",
+              "span": {
+                "endByte": 53,
+                "startByte": 52
+              }
+            },
+            {
+              "expression": {
+                "kind": "Underscore",
+                "span": {
+                  "endByte": 54,
+                  "startByte": 53
+                }
+              },
+              "kind": "ExpressionStatement",
+              "span": {
+                "endByte": 54,
+                "startByte": 53
+              }
+            }
+          ]
+        },
+        "ensures": [],
+        "exported": false,
+        "genericParams": [],
+        "kind": "FunctionDeclaration",
+        "name": "call",
+        "parameters": [],
+        "requires": [],
+        "returnType": "Int",
+        "span": {
+          "endByte": 56,
+          "startByte": 11
+        },
+        "whereClause": []
+      }
+    ],
+    "kind": "SourceUnit",
+    "module": {
+      "kind": "ModuleDeclaration",
+      "name": "app",
+      "span": {
+        "endByte": 10,
+        "startByte": 0
+      }
+    },
+    "span": {
+      "endByte": 56,
+      "startByte": 0
+    }
+  }
+}

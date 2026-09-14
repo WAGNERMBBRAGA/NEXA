@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "diagnostics": [],
+  "astDump": {
+    "imports": [],
+    "items": [
+      {
+        "body": {
+          "kind": "Block",
+          "span": {
+            "endByte": 103,
+            "startByte": 80
+          },
+          "statements": [
+            {
+              "kind": "DiscardStatement",
+              "span": {
+                "endByte": 102,
+                "startByte": 86
+              },
+              "value": {
+                "kind": "Identifier",
+                "name": "message",
+                "span": {
+                  "endByte": 102,
+                  "startByte": 94
+                }
+              }
+            }
+          ]
+        },
+        "effects": [
+          "std::io::write"
+        ],
+        "ensures": [],
+        "exported": false,
+        "genericParams": [],
+        "isAsync": false,
+        "kind": "ActionDeclaration",
+        "name": "log_message",
+        "parameters": [
+          {
+            "name": "message",
+            "type": "String"
+          }
+        ],
+        "requires": [],
+        "returnType": "Unit",
+        "span": {
+          "endByte": 103,
+          "startByte": 11
+        },
+        "whereClause": []
+      }
+    ],
+    "kind": "SourceUnit",
+    "module": {
+      "kind": "ModuleDeclaration",
+      "name": "app",
+      "span": {
+        "endByte": 10,
+        "startByte": 0
+      }
+    },
+    "span": {
+      "endByte": 103,
+      "startByte": 0
+    }
+  }
+}

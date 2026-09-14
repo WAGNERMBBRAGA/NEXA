@@ -1,0 +1,7 @@
+module main
+
+import self::util
+
+function read(u: util::Helper) -> String {
+    return "h"
+}

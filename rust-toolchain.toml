@@ -1,0 +1,8 @@
+# Fixa a toolchain deste projeto.
+#
+# O host não possui MSVC Build Tools (link.exe ausente), então o workspace
+# usa a toolchain GNU com o MinGW-w64 (WinLibs) como linker. Se um dia o
+# Visual Studio Build Tools for instalado, este arquivo pode ser removido
+# para voltar ao x86_64-pc-windows-msvc.
+[toolchain]
+channel = "stable-x86_64-pc-windows-gnu"

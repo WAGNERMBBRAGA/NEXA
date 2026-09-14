@@ -1,0 +1,1 @@
+Custom scan instructions: apply domain-specific security categories for compliance, financial services, e-commerce, or GraphQL applications

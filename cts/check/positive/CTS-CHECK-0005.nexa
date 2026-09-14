@@ -1,0 +1,13 @@
+module main
+
+function logic(a: Bool, b: Bool) -> Bool {
+    return a && b
+}
+
+function inverted(a: Bool) -> Bool {
+    return !a
+}
+
+function compare(x: Int, y: Int) -> Bool {
+    return x < y
+}

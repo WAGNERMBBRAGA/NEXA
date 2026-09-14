@@ -1,0 +1,5 @@
+module app
+@derive(Eq, Hash)
+struct User {
+    name: String
+}

@@ -1,0 +1,16 @@
+module main
+
+interface Greeter {
+    greet() -> String
+    farewell() -> String
+}
+
+struct Person {
+    name: String
+}
+
+implement Greeter for Person {
+    greet(self) -> String {
+        return "hello"
+    }
+}

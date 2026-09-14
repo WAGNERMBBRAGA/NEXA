@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "diagnostics": [],
+  "astDump": {
+    "imports": [
+      {
+        "alias": null,
+        "kind": "ImportDeclaration",
+        "path": "std::io",
+        "span": {
+          "endByte": 25,
+          "startByte": 11
+        }
+      }
+    ],
+    "items": [],
+    "kind": "SourceUnit",
+    "module": {
+      "kind": "ModuleDeclaration",
+      "name": "app",
+      "span": {
+        "endByte": 10,
+        "startByte": 0
+      }
+    },
+    "span": {
+      "endByte": 25,
+      "startByte": 0
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "source": "CTS-CHECK-0128.nexa",
+  "parseDiagnostics": [],
+  "semanticDiagnostics": [],
+  "typeDiagnostics": [
+    {
+      "code": "NEXA-TYPE-0031",
+      "context": null,
+      "message": "type `Box` expects 1 generic argument(s), found 2",
+      "severity": "error",
+      "span": {
+        "end": 76,
+        "source": 0,
+        "start": 60
+      }
+    },
+    {
+      "code": "NEXA-TYPE-0031",
+      "context": null,
+      "message": "type `Box` expects 1 generic argument(s), found 2",
+      "severity": "error",
+      "span": {
+        "end": 76,
+        "source": 0,
+        "start": 60
+      }
+    }
+  ],
+  "flowDiagnostics": [],
+  "effectDiagnostics": [],
+  "summary": {
+    "effectCallEdges": 0,
+    "errors": 2,
+    "flowCfgs": 0,
+    "symbols": 49,
+    "typedExpressions": 1,
+    "warnings": 0
+  }
+}

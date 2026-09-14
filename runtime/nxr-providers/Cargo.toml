@@ -1,0 +1,14 @@
+[package]
+name = "nxr-providers"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+nxr-core = { path = "../nxr-core" }
+nxr-security = { path = "../nxr-security" }
+nxr-resources = { path = "../nxr-resources" }
+
+# Config API & UI dependencies
+serde_json = "1.0"
+envy = "0.4"
+tokio = { version = "1", features = ["full"] }

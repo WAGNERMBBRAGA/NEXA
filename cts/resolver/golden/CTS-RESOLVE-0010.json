@@ -1,0 +1,686 @@
+{
+  "modules": [
+    {
+      "id": 0,
+      "name": "nexa_prelude",
+      "package": 0,
+      "path": "nexa_prelude",
+      "public": true,
+      "rootScope": 0,
+      "source": null,
+      "span": {
+        "end": 0,
+        "start": 0
+      },
+      "symbol": null,
+      "symbolName": null
+    },
+    {
+      "id": 1,
+      "name": "main",
+      "package": 0,
+      "path": "main",
+      "public": true,
+      "rootScope": 1,
+      "source": 0,
+      "span": {
+        "end": 96,
+        "start": 0
+      },
+      "symbol": 43,
+      "symbolName": "main"
+    },
+    {
+      "id": 2,
+      "name": "model",
+      "package": 1,
+      "path": "model",
+      "public": true,
+      "rootScope": 2,
+      "source": 1,
+      "span": {
+        "end": 48,
+        "start": 0
+      },
+      "symbol": 44,
+      "symbolName": "model"
+    }
+  ],
+  "references": [
+    {
+      "kind": "Import",
+      "scope": 1,
+      "span": {
+        "end": 29,
+        "source": 0,
+        "start": 13
+      },
+      "symbol": 44,
+      "symbolName": "model"
+    },
+    {
+      "kind": "Import",
+      "scope": 1,
+      "span": {
+        "end": 29,
+        "source": 0,
+        "start": 13
+      },
+      "symbol": 48,
+      "symbolName": "model"
+    },
+    {
+      "kind": "Import",
+      "scope": 3,
+      "span": {
+        "end": 57,
+        "source": 0,
+        "start": 52
+      },
+      "symbol": 48,
+      "symbolName": "model"
+    },
+    {
+      "kind": "Type",
+      "scope": 3,
+      "span": {
+        "end": 63,
+        "source": 0,
+        "start": 59
+      },
+      "symbol": 47,
+      "symbolName": "User"
+    },
+    {
+      "kind": "Type",
+      "scope": 3,
+      "span": {
+        "end": 74,
+        "source": 0,
+        "start": 68
+      },
+      "symbol": 17,
+      "symbolName": "String"
+    },
+    {
+      "kind": "Type",
+      "scope": 4,
+      "span": {
+        "end": 46,
+        "source": 1,
+        "start": 43
+      },
+      "symbol": 3,
+      "symbolName": "Int"
+    }
+  ],
+  "schemaVersion": 1,
+  "semanticDiagnostics": [],
+  "symbols": [
+    {
+      "bodyScope": null,
+      "id": 0,
+      "kind": "Struct",
+      "module": 0,
+      "name": "Unit",
+      "nameSpan": null,
+      "owner": null,
+      "scope": 0,
+      "visibility": "public"
+    },
+    {
+      "bodyScope": null,
+      "id": 1,
+      "kind": "Struct",
+      "module": 0,
+      "name": "Never",
+      "nameSpan": null,
+      "owner": null,
+      "scope": 0,
+      "visibility": "public"
+    },
+    {
+      "bodyScope": null,
+      "id": 2,
+      "kind": "Struct",
+      "module": 0,
+      "name": "Bool",
+      "nameSpan": null,
+      "owner": null,
+      "scope": 0,
+      "visibility": "public"
+    },
+    {
+      "bodyScope": null,
+      "id": 3,
+      "kind": "Struct",
+      "module": 0,
+      "name": "Int",
+      "nameSpan": null,
+      "owner": null,
+      "scope": 0,
+      "visibility": "public"
+    },
+    {
+      "bodyScope": null,
+      "id": 4,
+      "kind": "Struct",
+      "module": 0,
+      "name": "UInt",
+      "nameSpan": null,
+      "owner": null,
+      "scope": 0,
+      "visibility": "public"
+    },
+    {
+      "bodyScope": null,
+      "id": 5,
+      "kind": "Struct",
+      "module": 0,
+      "name": "Int8",
+      "nameSpan": null,
+      "owner": null,
+      "scope": 0,
+      "visibility": "public"
+    },
+    {
+      "bodyScope": null,
+      "id": 6,
+      "kind": "Struct",
+      "module": 0,
+      "name": "Int16",
+      "nameSpan": null,
+      "owner": null,
+      "scope": 0,
+      "visibility": "public"
+    },
+    {
+      "bodyScope": null,
+      "id": 7,
+      "kind": "Struct",
+      "module": 0,
+      "name": "Int32",
+      "nameSpan": null,
+      "owner": null,
+      "scope": 0,
+      "visibility": "public"
+    },
+    {
+      "bodyScope": null,
+      "id": 8,
+      "kind": "Struct",
+      "module": 0,
+      "name": "Int64",
+      "nameSpan": null,
+      "owner": null,
+      "scope": 0,
+      "visibility": "public"
+    },
+    {
+      "bodyScope": null,
+      "id": 9,
+      "kind": "Struct",
+      "module": 0,
+      "name": "UInt8",
+      "nameSpan": null,
+      "owner": null,
+      "scope": 0,
+      "visibility": "public"
+    },
+    {
+      "bodyScope": null,
+      "id": 10,
+      "kind": "Struct",
+      "module": 0,
+      "name": "UInt16",
+      "nameSpan": null,
+      "owner": null,
+      "scope": 0,
+      "visibility": "public"
+    },
+    {
+      "bodyScope": null,
+      "id": 11,
+      "kind": "Struct",
+      "module": 0,
+      "name": "UInt32",
+      "nameSpan": null,
+      "owner": null,
+      "scope": 0,
+      "visibility": "public"
+    },
+    {
+      "bodyScope": null,
+      "id": 12,
+      "kind": "Struct",
+      "module": 0,
+      "name": "UInt64",
+      "nameSpan": null,
+      "owner": null,
+      "scope": 0,
+      "visibility": "public"
+    },
+    {
+      "bodyScope": null,
+      "id": 13,
+      "kind": "Struct",
+      "module": 0,
+      "name": "Float32",
+      "nameSpan": null,
+      "owner": null,
+      "scope": 0,
+      "visibility": "public"
+    },
+    {
+      "bodyScope": null,
+      "id": 14,
+      "kind": "Struct",
+      "module": 0,
+      "name": "Float64",
+      "nameSpan": null,
+      "owner": null,
+      "scope": 0,
+      "visibility": "public"
+    },
+    {
+      "bodyScope": null,
+      "id": 15,
+      "kind": "Struct",
+      "module": 0,
+      "name": "Byte",
+      "nameSpan": null,
+      "owner": null,
+      "scope": 0,
+      "visibility": "public"
+    },
+    {
+      "bodyScope": null,
+      "id": 16,
+      "kind": "Struct",
+      "module": 0,
+      "name": "Char",
+      "nameSpan": null,
+      "owner": null,
+      "scope": 0,
+      "visibility": "public"
+    },
+    {
+      "bodyScope": null,
+      "id": 17,
+      "kind": "Struct",
+      "module": 0,
+      "name": "String",
+      "nameSpan": null,
+      "owner": null,
+      "scope": 0,
+      "visibility": "public"
+    },
+    {
+      "bodyScope": null,
+      "id": 18,
+      "kind": "Struct",
+      "module": 0,
+      "name": "Bytes",
+      "nameSpan": null,
+      "owner": null,
+      "scope": 0,
+      "visibility": "public"
+    },
+    {
+      "bodyScope": null,
+      "id": 19,
+      "kind": "Struct",
+      "module": 0,
+      "name": "Optional",
+      "nameSpan": null,
+      "owner": null,
+      "scope": 0,
+      "visibility": "public"
+    },
+    {
+      "bodyScope": null,
+      "id": 20,
+      "kind": "Struct",
+      "module": 0,
+      "name": "Result",
+      "nameSpan": null,
+      "owner": null,
+      "scope": 0,
+      "visibility": "public"
+    },
+    {
+      "bodyScope": null,
+      "id": 21,
+      "kind": "Struct",
+      "module": 0,
+      "name": "Array",
+      "nameSpan": null,
+      "owner": null,
+      "scope": 0,
+      "visibility": "public"
+    },
+    {
+      "bodyScope": null,
+      "id": 22,
+      "kind": "Struct",
+      "module": 0,
+      "name": "Map",
+      "nameSpan": null,
+      "owner": null,
+      "scope": 0,
+      "visibility": "public"
+    },
+    {
+      "bodyScope": null,
+      "id": 23,
+      "kind": "Struct",
+      "module": 0,
+      "name": "Set",
+      "nameSpan": null,
+      "owner": null,
+      "scope": 0,
+      "visibility": "public"
+    },
+    {
+      "bodyScope": null,
+      "id": 24,
+      "kind": "Struct",
+      "module": 0,
+      "name": "Task",
+      "nameSpan": null,
+      "owner": null,
+      "scope": 0,
+      "visibility": "public"
+    },
+    {
+      "bodyScope": null,
+      "id": 25,
+      "kind": "Struct",
+      "module": 0,
+      "name": "Future",
+      "nameSpan": null,
+      "owner": null,
+      "scope": 0,
+      "visibility": "public"
+    },
+    {
+      "bodyScope": null,
+      "id": 26,
+      "kind": "Interface",
+      "module": 0,
+      "name": "Copy",
+      "nameSpan": null,
+      "owner": null,
+      "scope": 0,
+      "visibility": "public"
+    },
+    {
+      "bodyScope": null,
+      "id": 27,
+      "kind": "Interface",
+      "module": 0,
+      "name": "Clone",
+      "nameSpan": null,
+      "owner": null,
+      "scope": 0,
+      "visibility": "public"
+    },
+    {
+      "bodyScope": null,
+      "id": 28,
+      "kind": "Interface",
+      "module": 0,
+      "name": "Eq",
+      "nameSpan": null,
+      "owner": null,
+      "scope": 0,
+      "visibility": "public"
+    },
+    {
+      "bodyScope": null,
+      "id": 29,
+      "kind": "Interface",
+      "module": 0,
+      "name": "Hash",
+      "nameSpan": null,
+      "owner": null,
+      "scope": 0,
+      "visibility": "public"
+    },
+    {
+      "bodyScope": null,
+      "id": 30,
+      "kind": "Interface",
+      "module": 0,
+      "name": "Comparable",
+      "nameSpan": null,
+      "owner": null,
+      "scope": 0,
+      "visibility": "public"
+    },
+    {
+      "bodyScope": null,
+      "id": 31,
+      "kind": "Interface",
+      "module": 0,
+      "name": "Ordering",
+      "nameSpan": null,
+      "owner": null,
+      "scope": 0,
+      "visibility": "public"
+    },
+    {
+      "bodyScope": null,
+      "id": 32,
+      "kind": "Interface",
+      "module": 0,
+      "name": "Display",
+      "nameSpan": null,
+      "owner": null,
+      "scope": 0,
+      "visibility": "public"
+    },
+    {
+      "bodyScope": null,
+      "id": 33,
+      "kind": "Interface",
+      "module": 0,
+      "name": "Send",
+      "nameSpan": null,
+      "owner": null,
+      "scope": 0,
+      "visibility": "public"
+    },
+    {
+      "bodyScope": null,
+      "id": 34,
+      "kind": "Interface",
+      "module": 0,
+      "name": "Share",
+      "nameSpan": null,
+      "owner": null,
+      "scope": 0,
+      "visibility": "public"
+    },
+    {
+      "bodyScope": null,
+      "id": 35,
+      "kind": "Struct",
+      "module": 0,
+      "name": "Console",
+      "nameSpan": null,
+      "owner": null,
+      "scope": 0,
+      "visibility": "public"
+    },
+    {
+      "bodyScope": null,
+      "id": 36,
+      "kind": "Function",
+      "module": 0,
+      "name": "assert",
+      "nameSpan": null,
+      "owner": null,
+      "scope": 0,
+      "visibility": "public"
+    },
+    {
+      "bodyScope": null,
+      "id": 37,
+      "kind": "Function",
+      "module": 0,
+      "name": "panic",
+      "nameSpan": null,
+      "owner": null,
+      "scope": 0,
+      "visibility": "public"
+    },
+    {
+      "bodyScope": null,
+      "id": 38,
+      "kind": "EnumVariant",
+      "module": 0,
+      "name": "Some",
+      "nameSpan": null,
+      "owner": 19,
+      "scope": 0,
+      "visibility": "public"
+    },
+    {
+      "bodyScope": null,
+      "id": 39,
+      "kind": "EnumVariant",
+      "module": 0,
+      "name": "None",
+      "nameSpan": null,
+      "owner": 19,
+      "scope": 0,
+      "visibility": "public"
+    },
+    {
+      "bodyScope": null,
+      "id": 40,
+      "kind": "EnumVariant",
+      "module": 0,
+      "name": "Success",
+      "nameSpan": null,
+      "owner": 20,
+      "scope": 0,
+      "visibility": "public"
+    },
+    {
+      "bodyScope": null,
+      "id": 41,
+      "kind": "EnumVariant",
+      "module": 0,
+      "name": "Failure",
+      "nameSpan": null,
+      "owner": 20,
+      "scope": 0,
+      "visibility": "public"
+    },
+    {
+      "bodyScope": null,
+      "id": 42,
+      "kind": "Action",
+      "module": 0,
+      "name": "write",
+      "nameSpan": null,
+      "owner": 35,
+      "scope": 0,
+      "visibility": "public"
+    },
+    {
+      "bodyScope": null,
+      "id": 43,
+      "kind": "Module",
+      "module": 1,
+      "name": "main",
+      "nameSpan": null,
+      "owner": null,
+      "scope": 1,
+      "visibility": "public"
+    },
+    {
+      "bodyScope": null,
+      "id": 44,
+      "kind": "Module",
+      "module": 2,
+      "name": "model",
+      "nameSpan": null,
+      "owner": null,
+      "scope": 2,
+      "visibility": "public"
+    },
+    {
+      "bodyScope": 3,
+      "id": 45,
+      "kind": "Function",
+      "module": 1,
+      "name": "describe",
+      "nameSpan": [
+        40,
+        48
+      ],
+      "owner": null,
+      "scope": 1,
+      "visibility": "module_private"
+    },
+    {
+      "bodyScope": null,
+      "id": 46,
+      "kind": "Parameter",
+      "module": 1,
+      "name": "u",
+      "nameSpan": [
+        49,
+        50
+      ],
+      "owner": null,
+      "scope": 3,
+      "visibility": "module_private"
+    },
+    {
+      "bodyScope": null,
+      "id": 47,
+      "kind": "Struct",
+      "module": 2,
+      "name": "User",
+      "nameSpan": [
+        28,
+        32
+      ],
+      "owner": null,
+      "scope": 2,
+      "visibility": "public"
+    },
+    {
+      "bodyScope": null,
+      "id": 48,
+      "kind": "ImportAlias",
+      "module": 1,
+      "name": "model",
+      "nameSpan": [
+        13,
+        29
+      ],
+      "owner": null,
+      "scope": 1,
+      "visibility": "module_private"
+    },
+    {
+      "bodyScope": 4,
+      "id": 49,
+      "kind": "Field",
+      "module": 2,
+      "name": "id",
+      "nameSpan": [
+        39,
+        41
+      ],
+      "owner": 47,
+      "scope": 4,
+      "visibility": "module_private"
+    }
+  ]
+}

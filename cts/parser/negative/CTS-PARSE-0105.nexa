@@ -1,0 +1,2 @@
+module app
+let x: Int = 1

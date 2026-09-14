@@ -1,0 +1,12 @@
+[package]
+name = "nxr-host-wasm"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+nxr-core = { path = "../nxr-core" }
+nxr-security = { path = "../nxr-security" }
+nxr-providers = { path = "../nxr-providers" }
+nxr-resources = { path = "../nxr-resources" }
+nxr-tasks = { path = "../nxr-tasks" }
+nxr-observability = { path = "../nxr-observability" }

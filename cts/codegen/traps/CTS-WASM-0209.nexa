@@ -1,0 +1,12 @@
+module main
+
+action update(index: Int) -> Unit {
+    var values: Array<Int> = [10, 20, 30]
+    values[index] = 77
+    return
+}
+
+action main() -> Unit {
+    update(9)
+    return
+}

@@ -1,0 +1,15 @@
+[package]
+name = "nxr-tools"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "NEXA typed tool registry, tool descriptors and schema-validated invocation"
+
+[dependencies]
+nxr-core = { path = "../nxr-core" }
+nxr-security = { path = "../nxr-security" }
+nxr-observability = { path = "../nxr-observability" }
+nxr-ai = { path = "../nxr-ai" }
+serde.workspace = true
+serde_json.workspace = true
+thiserror.workspace = true

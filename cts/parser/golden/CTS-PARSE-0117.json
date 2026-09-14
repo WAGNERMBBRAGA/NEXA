@@ -1,0 +1,264 @@
+{
+  "schemaVersion": 1,
+  "diagnostics": [
+    {
+      "code": "NEXA-PARSE-0005",
+      "severity": "Error",
+      "category": "parser",
+      "messageKey": "parser.invalid_pattern",
+      "message": "expected a pattern, found `DotDot`",
+      "primarySpan": {
+        "source": 0,
+        "start": 74,
+        "end": 76
+      },
+      "related": [],
+      "arguments": [],
+      "help": null,
+      "fixes": []
+    },
+    {
+      "code": "NEXA-PARSE-0008",
+      "severity": "Error",
+      "category": "parser",
+      "messageKey": "parser.missing_statement_terminator",
+      "message": "expected a new line or closing brace after match arm",
+      "primarySpan": {
+        "source": 0,
+        "start": 76,
+        "end": 77
+      },
+      "related": [],
+      "arguments": [],
+      "help": null,
+      "fixes": []
+    },
+    {
+      "code": "NEXA-PARSE-0005",
+      "severity": "Error",
+      "category": "parser",
+      "messageKey": "parser.invalid_pattern",
+      "message": "expected a pattern, found `DotDot`",
+      "primarySpan": {
+        "source": 0,
+        "start": 78,
+        "end": 80
+      },
+      "related": [],
+      "arguments": [],
+      "help": null,
+      "fixes": []
+    },
+    {
+      "code": "NEXA-PARSE-0008",
+      "severity": "Error",
+      "category": "parser",
+      "messageKey": "parser.missing_statement_terminator",
+      "message": "expected a new line or closing brace after match arm",
+      "primarySpan": {
+        "source": 0,
+        "start": 80,
+        "end": 81
+      },
+      "related": [],
+      "arguments": [],
+      "help": null,
+      "fixes": []
+    },
+    {
+      "code": "NEXA-PARSE-0008",
+      "severity": "Error",
+      "category": "parser",
+      "messageKey": "parser.missing_statement_terminator",
+      "message": "expected a new line or closing brace after match arm",
+      "primarySpan": {
+        "source": 0,
+        "start": 82,
+        "end": 84
+      },
+      "related": [],
+      "arguments": [],
+      "help": null,
+      "fixes": []
+    }
+  ],
+  "astDump": {
+    "imports": [],
+    "items": [
+      {
+        "body": {
+          "kind": "Block",
+          "span": {
+            "endByte": 109,
+            "startByte": 39
+          },
+          "statements": [
+            {
+              "kind": "ReturnStatement",
+              "span": {
+                "endByte": 108,
+                "startByte": 45
+              },
+              "value": {
+                "arms": [
+                  {
+                    "body": {
+                      "kind": "Underscore",
+                      "span": {
+                        "endByte": 76,
+                        "startByte": 74
+                      }
+                    },
+                    "guard": null,
+                    "pattern": {
+                      "elements": [
+                        {
+                          "kind": "IdentifierPattern",
+                          "name": "a",
+                          "span": {
+                            "endByte": 72,
+                            "startByte": 71
+                          }
+                        },
+                        {
+                          "kind": "IdentifierPattern",
+                          "name": "_",
+                          "span": {
+                            "endByte": 76,
+                            "startByte": 74
+                          }
+                        }
+                      ],
+                      "kind": "TuplePattern",
+                      "span": {
+                        "endByte": 76,
+                        "startByte": 70
+                      }
+                    }
+                  },
+                  {
+                    "body": {
+                      "kind": "Underscore",
+                      "span": {
+                        "endByte": 80,
+                        "startByte": 78
+                      }
+                    },
+                    "guard": null,
+                    "pattern": {
+                      "kind": "IdentifierPattern",
+                      "name": "_",
+                      "span": {
+                        "endByte": 80,
+                        "startByte": 78
+                      }
+                    }
+                  },
+                  {
+                    "body": {
+                      "kind": "Underscore",
+                      "span": {
+                        "endByte": 81,
+                        "startByte": 80
+                      }
+                    },
+                    "guard": null,
+                    "pattern": {
+                      "kind": "IdentifierPattern",
+                      "name": "_",
+                      "span": {
+                        "endByte": 81,
+                        "startByte": 80
+                      }
+                    }
+                  },
+                  {
+                    "body": {
+                      "kind": "IntLiteral",
+                      "span": {
+                        "endByte": 86,
+                        "startByte": 85
+                      },
+                      "value": 1
+                    },
+                    "guard": null,
+                    "pattern": {
+                      "kind": "IdentifierPattern",
+                      "name": "_",
+                      "span": {
+                        "endByte": 84,
+                        "startByte": 82
+                      }
+                    }
+                  },
+                  {
+                    "body": {
+                      "kind": "IntLiteral",
+                      "span": {
+                        "endByte": 101,
+                        "startByte": 100
+                      },
+                      "value": 0
+                    },
+                    "guard": null,
+                    "pattern": {
+                      "kind": "WildcardPattern",
+                      "span": {
+                        "endByte": 96,
+                        "startByte": 95
+                      }
+                    }
+                  }
+                ],
+                "kind": "MatchExpression",
+                "scrutinee": {
+                  "kind": "Identifier",
+                  "name": "x",
+                  "span": {
+                    "endByte": 61,
+                    "startByte": 58
+                  }
+                },
+                "span": {
+                  "endByte": 108,
+                  "startByte": 52
+                }
+              }
+            }
+          ]
+        },
+        "ensures": [],
+        "exported": false,
+        "genericParams": [],
+        "kind": "FunctionDeclaration",
+        "name": "bad",
+        "parameters": [
+          {
+            "name": "x",
+            "type": "Int"
+          }
+        ],
+        "requires": [],
+        "returnType": "Int",
+        "span": {
+          "endByte": 109,
+          "startByte": 11
+        },
+        "whereClause": []
+      }
+    ],
+    "kind": "SourceUnit",
+    "module": {
+      "kind": "ModuleDeclaration",
+      "name": "app",
+      "span": {
+        "endByte": 10,
+        "startByte": 0
+      }
+    },
+    "span": {
+      "endByte": 109,
+      "startByte": 0
+    }
+  }
+}

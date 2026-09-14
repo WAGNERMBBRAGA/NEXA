@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "source": "CTS-EFFECTS-0102.nexa",
+  "parseDiagnostics": [],
+  "semanticDiagnostics": [],
+  "typeDiagnostics": [],
+  "flowDiagnostics": [],
+  "effectDiagnostics": [
+    {
+      "code": "NEXA-EFFECT-0001",
+      "message": "functions cannot call actions",
+      "severity": "error",
+      "span": {
+        "end": 88,
+        "source": 0,
+        "start": 83
+      }
+    }
+  ],
+  "summary": {
+    "effectCallEdges": 1,
+    "errors": 1,
+    "flowCfgs": 2,
+    "symbols": 46,
+    "typedExpressions": 1,
+    "warnings": 0
+  }
+}

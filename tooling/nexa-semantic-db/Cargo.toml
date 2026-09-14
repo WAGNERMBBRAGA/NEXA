@@ -1,0 +1,21 @@
+[package]
+name = "nexa-semantic-db"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "NEXA incremental semantic database: SemanticSnapshot, RevisionId and query-based dependency tracking"
+
+[dependencies]
+nexa-source = { path = "../../compiler/nexa-source" }
+nexa-diagnostics = { path = "../../compiler/nexa-diagnostics" }
+nexa-ast = { path = "../../compiler/nexa-ast" }
+nexa-lexer = { path = "../../compiler/nexa-lexer" }
+nexa-parser = { path = "../../compiler/nexa-parser" }
+nexa-symbols = { path = "../../compiler/nexa-symbols" }
+nexa-resolver = { path = "../../compiler/nexa-resolver" }
+nexa-types = { path = "../../compiler/nexa-types" }
+nexa-typecheck = { path = "../../compiler/nexa-typecheck" }
+nexa-diagnostic-schema = { path = "../nexa-diagnostic-schema" }
+serde.workspace = true
+serde_json.workspace = true
+thiserror.workspace = true

@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 1,
+  "diagnostics": [],
+  "astDump": {
+    "imports": [],
+    "items": [
+      {
+        "body": {
+          "kind": "Block",
+          "span": {
+            "endByte": 63,
+            "startByte": 39
+          },
+          "statements": [
+            {
+              "kind": "ReturnStatement",
+              "span": {
+                "endByte": 62,
+                "startByte": 45
+              },
+              "value": {
+                "kind": "BinaryExpression",
+                "left": {
+                  "kind": "Identifier",
+                  "name": "a",
+                  "span": {
+                    "endByte": 55,
+                    "startByte": 52
+                  }
+                },
+                "operator": "+",
+                "right": {
+                  "kind": "BinaryExpression",
+                  "left": {
+                    "kind": "Identifier",
+                    "name": "b",
+                    "span": {
+                      "endByte": 59,
+                      "startByte": 56
+                    }
+                  },
+                  "operator": "*",
+                  "right": {
+                    "kind": "Identifier",
+                    "name": "c",
+                    "span": {
+                      "endByte": 62,
+                      "startByte": 60
+                    }
+                  },
+                  "span": {
+                    "endByte": 62,
+                    "startByte": 56
+                  }
+                },
+                "span": {
+                  "endByte": 62,
+                  "startByte": 52
+                }
+              }
+            }
+          ]
+        },
+        "ensures": [],
+        "exported": false,
+        "genericParams": [],
+        "kind": "FunctionDeclaration",
+        "name": "evaluated",
+        "parameters": [],
+        "requires": [],
+        "returnType": "Int",
+        "span": {
+          "endByte": 63,
+          "startByte": 11
+        },
+        "whereClause": []
+      }
+    ],
+    "kind": "SourceUnit",
+    "module": {
+      "kind": "ModuleDeclaration",
+      "name": "app",
+      "span": {
+        "endByte": 10,
+        "startByte": 0
+      }
+    },
+    "span": {
+      "endByte": 63,
+      "startByte": 0
+    }
+  }
+}

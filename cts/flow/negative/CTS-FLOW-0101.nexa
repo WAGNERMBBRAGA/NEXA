@@ -1,0 +1,7 @@
+module main
+
+function f(x: Int) -> Int {
+    if x > 0 {
+        return 1
+    }
+}

@@ -1,0 +1,7 @@
+module main
+
+action main() -> Unit {
+    let answer: Int = 40 + 2
+    answer * 2
+    return
+}

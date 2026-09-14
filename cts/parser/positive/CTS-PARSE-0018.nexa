@@ -1,0 +1,8 @@
+module app
+function describe(x: Int) -> String {
+    return match x {
+        0 => "zero"
+        1 => "one"
+        _ => "many"
+    }
+}

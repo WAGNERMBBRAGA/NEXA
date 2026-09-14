@@ -1,0 +1,11 @@
+[package]
+name = "nexa-diagnostics"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "NEXA structured diagnostics (machine-readable, schema versioned)"
+
+[dependencies]
+nexa-source = { path = "../nexa-source" }
+serde.workspace = true
+serde_json.workspace = true

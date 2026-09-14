@@ -1,0 +1,8 @@
+module app
+function sum_all(items: List<Int>) -> Int {
+    var total: Int = 0
+    for item in items {
+        total = total + item
+    }
+    return total
+}

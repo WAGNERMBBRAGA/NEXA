@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "source": "CTS-FLOW-0108.nexa",
+  "parseDiagnostics": [],
+  "semanticDiagnostics": [],
+  "typeDiagnostics": [],
+  "flowDiagnostics": [
+    {
+      "code": "NEXA-FLOW-0001",
+      "message": "a reachable path reaches the end of this callable without returning",
+      "severity": "error",
+      "span": {
+        "end": 88,
+        "source": 0,
+        "start": 13
+      }
+    },
+    {
+      "code": "NEXA-FLOW-0009",
+      "message": "match is not exhaustive (no wildcard, 1 arms)",
+      "severity": "error",
+      "span": {
+        "end": 86,
+        "source": 0,
+        "start": 49
+      }
+    }
+  ],
+  "effectDiagnostics": [],
+  "summary": {
+    "effectCallEdges": 0,
+    "errors": 2,
+    "flowCfgs": 1,
+    "symbols": 46,
+    "typedExpressions": 4,
+    "warnings": 0
+  }
+}

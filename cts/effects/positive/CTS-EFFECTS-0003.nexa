@@ -1,0 +1,5 @@
+module main
+
+action log() -> Unit effects [console::write] {
+    return
+}

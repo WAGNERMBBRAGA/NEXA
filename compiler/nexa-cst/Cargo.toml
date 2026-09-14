@@ -1,0 +1,10 @@
+[package]
+name = "nexa-cst"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+nexa-source = { path = "../nexa-source" }
+nexa-lexer = { path = "../nexa-lexer" }
+serde.workspace = true

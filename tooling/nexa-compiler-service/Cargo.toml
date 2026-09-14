@@ -1,0 +1,13 @@
+[package]
+name = "nexa-compiler-service"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "NEXA Compiler Service: queryable semantic API over the incremental semantic database"
+
+[dependencies]
+nexa-diagnostics = { path = "../../compiler/nexa-diagnostics" }
+nexa-diagnostic-schema = { path = "../nexa-diagnostic-schema" }
+nexa-tooling-protocol = { path = "../nexa-tooling-protocol" }
+nexa-semantic-db = { path = "../nexa-semantic-db" }
+thiserror.workspace = true

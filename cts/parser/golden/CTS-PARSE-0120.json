@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "diagnostics": [
+    {
+      "code": "NEXA-LEX-0002",
+      "severity": "Error",
+      "category": "lexer",
+      "messageKey": "lexer.invalid_token",
+      "message": "invalid token",
+      "primarySpan": {
+        "source": 0,
+        "start": 51,
+        "end": 53
+      },
+      "related": [],
+      "arguments": [],
+      "help": null,
+      "fixes": []
+    },
+    {
+      "code": "NEXA-PARSE-0008",
+      "severity": "Error",
+      "category": "parser",
+      "messageKey": "parser.missing_statement_terminator",
+      "message": "expected a new line, found `InvalidToken`",
+      "primarySpan": {
+        "source": 0,
+        "start": 51,
+        "end": 53
+      },
+      "related": [],
+      "arguments": [],
+      "help": null,
+      "fixes": []
+    },
+    {
+      "code": "NEXA-PARSE-0008",
+      "severity": "Error",
+      "category": "parser",
+      "messageKey": "parser.missing_statement_terminator",
+      "message": "expected a new line, found keyword `return`",
+      "primarySpan": {
+        "source": 0,
+        "start": 57,
+        "end": 63
+      },
+      "related": [],
+      "arguments": [],
+      "help": null,
+      "fixes": []
+    }
+  ],
+  "astDump": {
+    "imports": [],
+    "items": [
+      {
+        "body": {
+          "kind": "Block",
+          "span": {
+            "endByte": 67,
+            "startByte": 31
+          },
+          "statements": [
+            {
+              "init": {
+                "kind": "IntLiteral",
+                "span": {
+                  "endByte": 51,
+                  "startByte": 50
+                },
+                "value": 1
+              },
+              "kind": "LetStatement",
+              "name": "x",
+              "span": {
+                "endByte": 51,
+                "startByte": 37
+              },
+              "type": "Int"
+            },
+            {
+              "expression": {
+                "kind": "Underscore",
+                "span": {
+                  "endByte": 53,
+                  "startByte": 51
+                }
+              },
+              "kind": "ExpressionStatement",
+              "span": {
+                "endByte": 53,
+                "startByte": 51
+              }
+            },
+            {
+              "kind": "ReturnStatement",
+              "span": {
+                "endByte": 66,
+                "startByte": 57
+              },
+              "value": {
+                "kind": "Identifier",
+                "name": "x",
+                "span": {
+                  "endByte": 66,
+                  "startByte": 64
+                }
+              }
+            }
+          ]
+        },
+        "ensures": [],
+        "exported": false,
+        "genericParams": [],
+        "kind": "FunctionDeclaration",
+        "name": "f",
+        "parameters": [],
+        "requires": [],
+        "returnType": "Int",
+        "span": {
+          "endByte": 67,
+          "startByte": 11
+        },
+        "whereClause": []
+      }
+    ],
+    "kind": "SourceUnit",
+    "module": {
+      "kind": "ModuleDeclaration",
+      "name": "app",
+      "span": {
+        "endByte": 10,
+        "startByte": 0
+      }
+    },
+    "span": {
+      "endByte": 67,
+      "startByte": 0
+    }
+  }
+}

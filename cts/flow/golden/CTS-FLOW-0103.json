@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "source": "CTS-FLOW-0103.nexa",
+  "parseDiagnostics": [],
+  "semanticDiagnostics": [],
+  "typeDiagnostics": [],
+  "flowDiagnostics": [
+    {
+      "code": "NEXA-FLOW-0009",
+      "message": "match is not exhaustive (no wildcard, 1 arms)",
+      "severity": "error",
+      "span": {
+        "end": 87,
+        "source": 0,
+        "start": 50
+      }
+    }
+  ],
+  "effectDiagnostics": [],
+  "summary": {
+    "effectCallEdges": 0,
+    "errors": 1,
+    "flowCfgs": 1,
+    "symbols": 46,
+    "typedExpressions": 4,
+    "warnings": 0
+  }
+}

@@ -1,0 +1,168 @@
+{
+  "schemaVersion": 1,
+  "diagnostics": [
+    {
+      "code": "NEXA-PARSE-0005",
+      "severity": "Error",
+      "category": "parser",
+      "messageKey": "parser.invalid_pattern",
+      "message": "expected a pattern, found `FatArrow`",
+      "primarySpan": {
+        "source": 0,
+        "start": 68,
+        "end": 70
+      },
+      "related": [],
+      "arguments": [],
+      "help": null,
+      "fixes": []
+    }
+  ],
+  "astDump": {
+    "imports": [],
+    "items": [
+      {
+        "body": {
+          "kind": "Block",
+          "span": {
+            "endByte": 96,
+            "startByte": 37
+          },
+          "statements": [
+            {
+              "kind": "ReturnStatement",
+              "span": {
+                "endByte": 94,
+                "startByte": 43
+              },
+              "value": {
+                "arms": [
+                  {
+                    "body": {
+                      "kind": "IntLiteral",
+                      "span": {
+                        "endByte": 72,
+                        "startByte": 71
+                      },
+                      "value": 1
+                    },
+                    "guard": null,
+                    "pattern": {
+                      "kind": "IdentifierPattern",
+                      "name": "_",
+                      "span": {
+                        "endByte": 70,
+                        "startByte": 68
+                      }
+                    }
+                  },
+                  {
+                    "body": {
+                      "kind": "IntLiteral",
+                      "span": {
+                        "endByte": 87,
+                        "startByte": 86
+                      },
+                      "value": 2
+                    },
+                    "guard": null,
+                    "pattern": {
+                      "kind": "WildcardPattern",
+                      "span": {
+                        "endByte": 82,
+                        "startByte": 81
+                      }
+                    }
+                  }
+                ],
+                "kind": "MatchExpression",
+                "scrutinee": {
+                  "kind": "Identifier",
+                  "name": "x",
+                  "span": {
+                    "endByte": 59,
+                    "startByte": 56
+                  }
+                },
+                "span": {
+                  "endByte": 94,
+                  "startByte": 50
+                }
+              }
+            }
+          ]
+        },
+        "ensures": [],
+        "exported": false,
+        "genericParams": [],
+        "kind": "FunctionDeclaration",
+        "name": "f",
+        "parameters": [
+          {
+            "name": "x",
+            "type": "Int"
+          }
+        ],
+        "requires": [],
+        "returnType": "Int",
+        "span": {
+          "endByte": 96,
+          "startByte": 11
+        },
+        "whereClause": []
+      },
+      {
+        "body": {
+          "kind": "Block",
+          "span": {
+            "endByte": 135,
+            "startByte": 119
+          },
+          "statements": [
+            {
+              "kind": "ReturnStatement",
+              "span": {
+                "endByte": 133,
+                "startByte": 125
+              },
+              "value": {
+                "kind": "IntLiteral",
+                "span": {
+                  "endByte": 133,
+                  "startByte": 132
+                },
+                "value": 0
+              }
+            }
+          ]
+        },
+        "ensures": [],
+        "exported": false,
+        "genericParams": [],
+        "kind": "FunctionDeclaration",
+        "name": "good",
+        "parameters": [],
+        "requires": [],
+        "returnType": "Int",
+        "span": {
+          "endByte": 135,
+          "startByte": 96
+        },
+        "whereClause": []
+      }
+    ],
+    "kind": "SourceUnit",
+    "module": {
+      "kind": "ModuleDeclaration",
+      "name": "app",
+      "span": {
+        "endByte": 10,
+        "startByte": 0
+      }
+    },
+    "span": {
+      "endByte": 135,
+      "startByte": 0
+    }
+  }
+}

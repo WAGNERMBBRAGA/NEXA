@@ -1,0 +1,222 @@
+{
+  "schemaVersion": 1,
+  "diagnostics": [
+    {
+      "code": "NEXA-PARSE-0002",
+      "severity": "Error",
+      "category": "parser",
+      "messageKey": "parser.expected_token",
+      "message": "expected ',' or ')', found `Arrow`",
+      "primarySpan": {
+        "source": 0,
+        "start": 37,
+        "end": 39
+      },
+      "related": [],
+      "arguments": [],
+      "help": null,
+      "fixes": []
+    },
+    {
+      "code": "NEXA-PARSE-0002",
+      "severity": "Error",
+      "category": "parser",
+      "messageKey": "parser.expected_token",
+      "message": "expected ':', found `LeftBrace`",
+      "primarySpan": {
+        "source": 0,
+        "start": 44,
+        "end": 45
+      },
+      "related": [],
+      "arguments": [],
+      "help": null,
+      "fixes": []
+    },
+    {
+      "code": "NEXA-PARSE-0002",
+      "severity": "Error",
+      "category": "parser",
+      "messageKey": "parser.expected_token",
+      "message": "expected parameter name, found keyword `return`",
+      "primarySpan": {
+        "source": 0,
+        "start": 50,
+        "end": 56
+      },
+      "related": [],
+      "arguments": [],
+      "help": null,
+      "fixes": []
+    },
+    {
+      "code": "NEXA-PARSE-0002",
+      "severity": "Error",
+      "category": "parser",
+      "messageKey": "parser.expected_token",
+      "message": "expected ':', found `Plus`",
+      "primarySpan": {
+        "source": 0,
+        "start": 59,
+        "end": 60
+      },
+      "related": [],
+      "arguments": [],
+      "help": null,
+      "fixes": []
+    },
+    {
+      "code": "NEXA-PARSE-0002",
+      "severity": "Error",
+      "category": "parser",
+      "messageKey": "parser.expected_token",
+      "message": "expected ':', found a new line",
+      "primarySpan": {
+        "source": 0,
+        "start": 62,
+        "end": 63
+      },
+      "related": [],
+      "arguments": [],
+      "help": null,
+      "fixes": []
+    },
+    {
+      "code": "NEXA-PARSE-0002",
+      "severity": "Error",
+      "category": "parser",
+      "messageKey": "parser.expected_token",
+      "message": "expected ')', found `RightBrace`",
+      "primarySpan": {
+        "source": 0,
+        "start": 63,
+        "end": 64
+      },
+      "related": [],
+      "arguments": [],
+      "help": null,
+      "fixes": []
+    },
+    {
+      "code": "NEXA-PARSE-0002",
+      "severity": "Error",
+      "category": "parser",
+      "messageKey": "parser.expected_token",
+      "message": "expected `->` return type, found a new line",
+      "primarySpan": {
+        "source": 0,
+        "start": 20,
+        "end": 21
+      },
+      "related": [],
+      "arguments": [],
+      "help": null,
+      "fixes": []
+    }
+  ],
+  "astDump": {
+    "imports": [],
+    "items": [
+      {
+        "body": {
+          "kind": "Block",
+          "span": {
+            "endByte": 65,
+            "startByte": 63
+          },
+          "statements": []
+        },
+        "ensures": [],
+        "exported": false,
+        "genericParams": [],
+        "kind": "FunctionDeclaration",
+        "name": "f",
+        "parameters": [
+          {
+            "name": "a",
+            "type": "Int"
+          },
+          {
+            "name": "b",
+            "type": "Int"
+          },
+          {
+            "name": "Int",
+            "type": "Unit"
+          },
+          {
+            "name": "_",
+            "type": "Unit"
+          },
+          {
+            "name": "a",
+            "type": "Unit"
+          },
+          {
+            "name": "b",
+            "type": "Unit"
+          }
+        ],
+        "requires": [],
+        "returnType": null,
+        "span": {
+          "endByte": 65,
+          "startByte": 11
+        },
+        "whereClause": []
+      },
+      {
+        "body": {
+          "kind": "Block",
+          "span": {
+            "endByte": 104,
+            "startByte": 88
+          },
+          "statements": [
+            {
+              "kind": "ReturnStatement",
+              "span": {
+                "endByte": 102,
+                "startByte": 94
+              },
+              "value": {
+                "kind": "IntLiteral",
+                "span": {
+                  "endByte": 102,
+                  "startByte": 101
+                },
+                "value": 0
+              }
+            }
+          ]
+        },
+        "ensures": [],
+        "exported": false,
+        "genericParams": [],
+        "kind": "FunctionDeclaration",
+        "name": "good",
+        "parameters": [],
+        "requires": [],
+        "returnType": "Int",
+        "span": {
+          "endByte": 104,
+          "startByte": 65
+        },
+        "whereClause": []
+      }
+    ],
+    "kind": "SourceUnit",
+    "module": {
+      "kind": "ModuleDeclaration",
+      "name": "app",
+      "span": {
+        "endByte": 10,
+        "startByte": 0
+      }
+    },
+    "span": {
+      "endByte": 104,
+      "startByte": 0
+    }
+  }
+}

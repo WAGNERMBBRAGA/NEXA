@@ -1,0 +1,30 @@
+module main
+
+interface Show {
+    show() -> String
+}
+
+struct Item {
+    id: Int
+}
+
+implement Show for Item {
+    show(self) -> String {
+        return "item"
+    }
+}
+
+struct Raw {
+    value: Int
+}
+
+function describe<T>(x: T) -> String
+where T: Show
+{
+    return x.show()
+}
+
+function main() -> String {
+    let r = Raw { value: 1 }
+    return describe(r)
+}

@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "source": "CTS-CHECK-0142.nexa",
+  "parseDiagnostics": [],
+  "semanticDiagnostics": [],
+  "typeDiagnostics": [
+    {
+      "code": "NEXA-TYPE-0043",
+      "context": null,
+      "message": "public const requires an explicit type",
+      "severity": "error",
+      "span": {
+        "end": 34,
+        "source": 0,
+        "start": 20
+      }
+    }
+  ],
+  "flowDiagnostics": [],
+  "effectDiagnostics": [],
+  "summary": {
+    "effectCallEdges": 0,
+    "errors": 1,
+    "flowCfgs": 0,
+    "symbols": 45,
+    "typedExpressions": 1,
+    "warnings": 0
+  }
+}

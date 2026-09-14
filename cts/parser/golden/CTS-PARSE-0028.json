@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 1,
+  "diagnostics": [],
+  "astDump": {
+    "imports": [],
+    "items": [
+      {
+        "body": {
+          "kind": "Block",
+          "span": {
+            "endByte": 129,
+            "startByte": 59
+          },
+          "statements": [
+            {
+              "init": {
+                "kind": "BinaryExpression",
+                "left": {
+                  "kind": "BinaryExpression",
+                  "left": {
+                    "kind": "Identifier",
+                    "name": "base",
+                    "span": {
+                      "endByte": 88,
+                      "startByte": 82
+                    }
+                  },
+                  "operator": "*",
+                  "right": {
+                    "kind": "Identifier",
+                    "name": "scale",
+                    "span": {
+                      "endByte": 96,
+                      "startByte": 89
+                    }
+                  },
+                  "span": {
+                    "endByte": 96,
+                    "startByte": 82
+                  }
+                },
+                "operator": "+",
+                "right": {
+                  "kind": "Identifier",
+                  "name": "scale",
+                  "span": {
+                    "endByte": 111,
+                    "startByte": 105
+                  }
+                },
+                "span": {
+                  "endByte": 111,
+                  "startByte": 82
+                }
+              },
+              "kind": "LetStatement",
+              "name": "total",
+              "span": {
+                "endByte": 111,
+                "startByte": 65
+              },
+              "type": "Int"
+            },
+            {
+              "kind": "ReturnStatement",
+              "span": {
+                "endByte": 128,
+                "startByte": 115
+              },
+              "value": {
+                "kind": "Identifier",
+                "name": "total",
+                "span": {
+                  "endByte": 128,
+                  "startByte": 122
+                }
+              }
+            }
+          ]
+        },
+        "ensures": [],
+        "exported": false,
+        "genericParams": [],
+        "kind": "FunctionDeclaration",
+        "name": "weighted",
+        "parameters": [
+          {
+            "name": "base",
+            "type": "Int"
+          },
+          {
+            "name": "scale",
+            "type": "Int"
+          }
+        ],
+        "requires": [],
+        "returnType": "Int",
+        "span": {
+          "endByte": 129,
+          "startByte": 11
+        },
+        "whereClause": []
+      }
+    ],
+    "kind": "SourceUnit",
+    "module": {
+      "kind": "ModuleDeclaration",
+      "name": "app",
+      "span": {
+        "endByte": 10,
+        "startByte": 0
+      }
+    },
+    "span": {
+      "endByte": 129,
+      "startByte": 0
+    }
+  }
+}

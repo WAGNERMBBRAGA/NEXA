@@ -1,0 +1,7 @@
+module app
+function bad(x: Int) -> Int {
+    return match x {
+        (a, .., ..) => 1
+        _ => 0
+    }
+}

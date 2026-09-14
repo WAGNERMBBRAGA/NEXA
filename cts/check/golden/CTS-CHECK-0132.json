@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "source": "CTS-CHECK-0132.nexa",
+  "parseDiagnostics": [],
+  "semanticDiagnostics": [],
+  "typeDiagnostics": [
+    {
+      "code": "NEXA-TYPE-0017",
+      "context": null,
+      "message": "type is not indexable",
+      "severity": "error",
+      "span": {
+        "end": 69,
+        "source": 0,
+        "start": 64
+      }
+    }
+  ],
+  "flowDiagnostics": [],
+  "effectDiagnostics": [],
+  "summary": {
+    "effectCallEdges": 0,
+    "errors": 1,
+    "flowCfgs": 0,
+    "symbols": 47,
+    "typedExpressions": 5,
+    "warnings": 0
+  }
+}

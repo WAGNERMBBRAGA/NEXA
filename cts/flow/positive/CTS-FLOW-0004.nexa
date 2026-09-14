@@ -1,0 +1,10 @@
+module main
+
+function sign(flag: Bool) -> Int {
+    match flag {
+        true => 1
+        false => 0
+        _ => -1
+    }
+    return 0
+}

@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "currentPackage": "app",
+  "dependencyAliases": [ { "alias": "direct", "package": "direct" } ],
+  "packages": [
+    { "name": "app", "modules": [
+      { "file": "main.nexa", "path": "main", "public": true }
+    ] },
+    { "name": "direct", "modules": [
+      { "file": "direct.nexa", "path": "util", "public": true }
+    ] },
+    { "name": "trans", "modules": [
+      { "file": "trans.nexa", "path": "foo", "public": true }
+    ] }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "source": "CTS-CHECK-0125.nexa",
+  "parseDiagnostics": [],
+  "semanticDiagnostics": [],
+  "typeDiagnostics": [
+    {
+      "code": "NEXA-TYPE-0023",
+      "context": null,
+      "message": "match arm type does not match previous arms: expected `Int`, found `String`",
+      "severity": "error",
+      "span": {
+        "end": 193,
+        "source": 0,
+        "start": 170
+      }
+    }
+  ],
+  "flowDiagnostics": [],
+  "effectDiagnostics": [],
+  "summary": {
+    "effectCallEdges": 0,
+    "errors": 1,
+    "flowCfgs": 0,
+    "symbols": 51,
+    "typedExpressions": 7,
+    "warnings": 0
+  }
+}

@@ -1,0 +1,9 @@
+module main
+
+function f() -> Int {
+    let x = 1
+    if true {
+        let x = 2
+    }
+    return x
+}

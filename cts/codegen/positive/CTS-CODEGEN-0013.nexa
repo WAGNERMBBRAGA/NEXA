@@ -1,0 +1,8 @@
+module main
+
+action main() -> Unit effects [console::write] {
+    for item in ["a", "b", "c"] {
+        Console::write(item)
+    }
+    return
+}

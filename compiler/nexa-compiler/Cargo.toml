@@ -1,0 +1,30 @@
+[package]
+name = "nexa-compiler"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "NEXA compiler pipeline driver (Implementação 02): source → validation → lexing → parsing → output"
+
+[dependencies]
+nexa-source = { path = "../nexa-source" }
+nexa-diagnostics = { path = "../nexa-diagnostics" }
+nexa-lexer = { path = "../nexa-lexer" }
+nexa-ast = { path = "../nexa-ast" }
+nexa-parser = { path = "../nexa-parser" }
+nexa-resolver = { path = "../nexa-resolver" }
+nexa-typecheck = { path = "../nexa-typecheck" }
+nexa-flow = { path = "../nexa-flow" }
+nexa-effects = { path = "../nexa-effects" }
+nexa-project = { path = "../nexa-project" }
+nexa-symbols = { path = "../nexa-symbols" }
+nexa-lowering = { path = "../nexa-lowering" }
+nexa-nir = { path = "../nexa-nir" }
+nexa-nir-verify = { path = "../nexa-nir-verify" }
+nexa-backend-wasm = { path = "../nexa-backend-wasm" }
+nexa-wasm-abi = { path = "../nexa-wasm-abi" }
+serde.workspace = true
+serde_json.workspace = true
+thiserror.workspace = true
+
+[dev-dependencies]
+nexa-host-wasm = { path = "../../runtime/nexa-host-wasm" }

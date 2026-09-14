@@ -1,0 +1,11 @@
+module main
+
+function add(left: Int, right: Int) -> Int {
+    return left + right
+}
+
+action main() -> Unit {
+    let answer: Int = add(40, 2)
+    answer * 2
+    return
+}

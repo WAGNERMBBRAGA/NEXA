@@ -1,0 +1,11 @@
+[package]
+name = "nexa-effects"
+version = "0.0.1"
+edition = "2021"
+description = "Effect system, effect registry, call graph, and effect analysis for NEXA"
+
+[dependencies]
+nexa-source = { path = "../nexa-source" }
+nexa-diagnostics = { path = "../nexa-diagnostics" }
+nexa-symbols = { path = "../nexa-symbols" }
+nexa-types = { path = "../nexa-types" }

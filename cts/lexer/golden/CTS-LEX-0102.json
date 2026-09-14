@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "tokens": [
+    {
+      "category": "token",
+      "kind": "Keyword",
+      "keyword": "let",
+      "startByte": 0,
+      "endByte": 3
+    },
+    {
+      "category": "trivia",
+      "kind": "Whitespace",
+      "startByte": 3,
+      "endByte": 4
+    },
+    {
+      "category": "token",
+      "kind": "Identifier",
+      "startByte": 4,
+      "endByte": 5
+    },
+    {
+      "category": "trivia",
+      "kind": "Whitespace",
+      "startByte": 5,
+      "endByte": 6
+    },
+    {
+      "category": "token",
+      "kind": "Equal",
+      "startByte": 6,
+      "endByte": 7
+    },
+    {
+      "category": "trivia",
+      "kind": "Whitespace",
+      "startByte": 7,
+      "endByte": 8
+    },
+    {
+      "category": "token",
+      "kind": "StringStart",
+      "style": "Normal",
+      "startByte": 8,
+      "endByte": 9
+    },
+    {
+      "category": "token",
+      "kind": "StringText",
+      "startByte": 9,
+      "endByte": 12
+    },
+    {
+      "category": "token",
+      "kind": "Eof",
+      "startByte": 12,
+      "endByte": 12
+    }
+  ],
+  "diagnostics": [
+    {
+      "code": "NEXA-LEX-0003",
+      "severity": "Error",
+      "category": "lexer",
+      "messageKey": "lexer.unterminated_string",
+      "message": "unterminated string literal",
+      "primarySpan": {
+        "source": 0,
+        "start": 8,
+        "end": 9
+      },
+      "related": [],
+      "arguments": [],
+      "help": null,
+      "fixes": []
+    }
+  ]
+}

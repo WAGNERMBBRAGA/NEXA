@@ -1,0 +1,11 @@
+[package]
+name = "nexa-resolver-pkg"
+version = "0.0.1"
+edition = "2021"
+description = "PubGrub-style dependency resolver for NEXA packages"
+
+[dependencies]
+thiserror = "2"
+nexa-manifest = { path = "../nexa-manifest" }
+nexa-lock = { path = "../nexa-lock" }
+nexa-registry = { path = "../nexa-registry" }

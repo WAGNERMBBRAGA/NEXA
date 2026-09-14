@@ -1,0 +1,6 @@
+module tests
+
+@test
+function smoke() -> Unit {
+    return
+}

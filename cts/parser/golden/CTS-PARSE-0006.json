@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "diagnostics": [],
+  "astDump": {
+    "imports": [],
+    "items": [
+      {
+        "body": {
+          "kind": "Block",
+          "span": {
+            "endByte": 48,
+            "startByte": 45
+          },
+          "statements": []
+        },
+        "effects": [],
+        "ensures": [],
+        "exported": false,
+        "genericParams": [],
+        "isAsync": true,
+        "kind": "ActionDeclaration",
+        "name": "fetch_data",
+        "parameters": [],
+        "requires": [],
+        "returnType": "Unit",
+        "span": {
+          "endByte": 48,
+          "startByte": 11
+        },
+        "whereClause": []
+      }
+    ],
+    "kind": "SourceUnit",
+    "module": {
+      "kind": "ModuleDeclaration",
+      "name": "app",
+      "span": {
+        "endByte": 10,
+        "startByte": 0
+      }
+    },
+    "span": {
+      "endByte": 48,
+      "startByte": 0
+    }
+  }
+}

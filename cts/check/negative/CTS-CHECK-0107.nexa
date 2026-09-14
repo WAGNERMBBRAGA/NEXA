@@ -1,0 +1,19 @@
+module main
+
+interface Describe {
+    describe() -> String
+}
+
+enum Shape {
+    Circle
+}
+
+implement Describe for Shape {
+    describe() -> String {
+        return "shape"
+    }
+}
+
+function too_many(s: Shape) -> String {
+    return s.describe(1)
+}

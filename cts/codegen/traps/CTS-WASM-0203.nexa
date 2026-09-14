@@ -1,0 +1,5 @@
+module main
+
+action main() -> Int {
+    return 3037000500 * 3037000500
+}

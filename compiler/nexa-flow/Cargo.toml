@@ -1,0 +1,12 @@
+[package]
+name = "nexa-flow"
+version = "0.0.1"
+edition = "2021"
+description = "CFG, flow analysis, reachability, definite assignment, and match exhaustiveness for NEXA"
+
+[dependencies]
+nexa-source = { path = "../nexa-source" }
+nexa-diagnostics = { path = "../nexa-diagnostics" }
+nexa-ast = { path = "../nexa-ast" }
+nexa-symbols = { path = "../nexa-symbols" }
+nexa-types = { path = "../nexa-types" }

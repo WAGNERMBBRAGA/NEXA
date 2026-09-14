@@ -1,0 +1,10 @@
+{
+  "name": "shadcn/ui Helper",
+  "description": "shadcn/ui install, config, theming, and troubleshooting",
+  "prompt": "# shadcn/ui Helper\r\n\r\n## 什么时候用\r\n- 要在 React/Next.js/Vite/Remix/Astro 框架中接入或升级 shadcn/ui\r\n- 需要通过 CLI 安装组件、查看 props/依赖、调试交互或主题\r\n- Tailwind、Radix、暗黑模式等集成出现冲突，或需要排查 SSR/CSR、Hydration、TS 配置问题\r\n\r\n## 必须先看文档\r\n1. 访问唯一入口 `https://ui.shadcn.com/llms.txt`（官方索引）。\r\n2. 在索引里搜索所需主题或组件，复制对应 Markdown URL。\r\n3. 用 `leitor web disponível <URL>` 拉取内容，完整阅读依赖、props、slot、可访问性提示，再开始实现。\r\n4. 如果实现中遇到新问题，重新回到索引查找相关条目，切勿凭记忆编写。\r\n\r\n## 示例流程\r\n\r\n### 示例 1：安装 Button 组件\r\n1. 打开 `llms.txt`，找到 Button 条目并获取 URL。\r\n2. `leitor web disponível` 阅读 Button 文档，确认依赖（如 `lucide-react`）与 variant/size props。\r\n3. 运行 `npx shadcn-ui@latest add button`，检查 `components/` 和 `lib/` 新文件。\r\n4. 在页面中引用新组件，按文档测试 hover/focus/disabled 状态。\r\n\r\n### 示例 2：开启暗色主题\r\n1. 在 `llms.txt` 搜索 Dark mode/Theming 两个条目，分别 `leitor web disponível` 阅读。\r\n2. 按文档更新 `components.json`（如 `style: \"default\"`）、`tailwind.config.ts`、`globals.css` 中的 CSS 变量。\r\n3. 为根节点添加 `class=\"dark\"` 的切换逻辑，验证浅色/深色模式与 token 映射。\r\n4. 若有自定义 tokens，再回到索引寻找 Theming 文档的延伸章节确认写法。",
+  "enabled": true,
+  "category": "Frontend",
+  "commands": [],
+  "createdAt": "2026-09-05T11:47:31.107Z",
+  "updatedAt": "2026-09-11T18:08:18.381Z"
+}

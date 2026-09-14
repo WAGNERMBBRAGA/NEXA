@@ -1,0 +1,9 @@
+module app
+interface Display {
+    show() -> String
+}
+function render<T>(value: T) -> String
+where T: Display
+{
+    return "rendered"
+}

@@ -1,0 +1,8 @@
+module main
+
+import self::util as helper
+
+action main() -> Unit {
+    let u = helper::lift()
+    return
+}

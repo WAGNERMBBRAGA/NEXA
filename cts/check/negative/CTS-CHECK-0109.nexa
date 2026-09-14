@@ -1,0 +1,10 @@
+module main
+
+struct Point {
+    x: Int
+    y: Int
+}
+
+function broken() -> Point {
+    return Point { x: 1 }
+}

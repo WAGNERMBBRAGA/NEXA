@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 1,
+  "diagnostics": [
+    {
+      "code": "NEXA-PARSE-0006",
+      "severity": "Error",
+      "category": "parser",
+      "messageKey": "parser.chained_comparison",
+      "message": "chained comparisons are not allowed (§157-162)",
+      "primarySpan": {
+        "source": 0,
+        "start": 77,
+        "end": 78
+      },
+      "related": [],
+      "arguments": [],
+      "help": null,
+      "fixes": []
+    }
+  ],
+  "astDump": {
+    "imports": [],
+    "items": [
+      {
+        "body": {
+          "kind": "Block",
+          "span": {
+            "endByte": 82,
+            "startByte": 58
+          },
+          "statements": [
+            {
+              "kind": "ReturnStatement",
+              "span": {
+                "endByte": 81,
+                "startByte": 64
+              },
+              "value": {
+                "kind": "BinaryExpression",
+                "left": {
+                  "kind": "BinaryExpression",
+                  "left": {
+                    "kind": "Identifier",
+                    "name": "a",
+                    "span": {
+                      "endByte": 74,
+                      "startByte": 71
+                    }
+                  },
+                  "operator": "<",
+                  "right": {
+                    "kind": "Identifier",
+                    "name": "b",
+                    "span": {
+                      "endByte": 78,
+                      "startByte": 75
+                    }
+                  },
+                  "span": {
+                    "endByte": 78,
+                    "startByte": 71
+                  }
+                },
+                "operator": "<",
+                "right": {
+                  "kind": "Identifier",
+                  "name": "c",
+                  "span": {
+                    "endByte": 81,
+                    "startByte": 79
+                  }
+                },
+                "span": {
+                  "endByte": 81,
+                  "startByte": 71
+                }
+              }
+            }
+          ]
+        },
+        "ensures": [],
+        "exported": false,
+        "genericParams": [],
+        "kind": "FunctionDeclaration",
+        "name": "check",
+        "parameters": [
+          {
+            "name": "a",
+            "type": "Int"
+          },
+          {
+            "name": "b",
+            "type": "Int"
+          },
+          {
+            "name": "c",
+            "type": "Int"
+          }
+        ],
+        "requires": [],
+        "returnType": "Bool",
+        "span": {
+          "endByte": 82,
+          "startByte": 11
+        },
+        "whereClause": []
+      }
+    ],
+    "kind": "SourceUnit",
+    "module": {
+      "kind": "ModuleDeclaration",
+      "name": "app",
+      "span": {
+        "endByte": 10,
+        "startByte": 0
+      }
+    },
+    "span": {
+      "endByte": 82,
+      "startByte": 0
+    }
+  }
+}

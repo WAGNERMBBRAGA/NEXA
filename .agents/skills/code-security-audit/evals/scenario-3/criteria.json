@@ -1,0 +1,55 @@
+{
+  "criteria": [
+    {
+      "name": "SQL injection kept",
+      "description": "Finding #1 (SQL injection) is correctly kept — it's a real, high-confidence vulnerability",
+      "points": 10
+    },
+    {
+      "name": "Rate limiting removed",
+      "description": "Finding #2 (missing rate limiting) is correctly removed per hard exclusion rule #2",
+      "points": 10
+    },
+    {
+      "name": "DoS removed",
+      "description": "Finding #3 (DoS/resource exhaustion) is correctly removed per hard exclusion rule #1",
+      "points": 10
+    },
+    {
+      "name": "Test file finding removed",
+      "description": "Finding #4 (test file secret) is correctly removed per hard exclusion rule #9 (test files)",
+      "points": 10
+    },
+    {
+      "name": "Command injection kept",
+      "description": "Finding #5 (command injection) is correctly kept — real RCE vulnerability",
+      "points": 10
+    },
+    {
+      "name": "Client-side SSRF removed",
+      "description": "Finding #6 (SSRF in .tsx file) is correctly removed per hard exclusion rule #7 (SSRF in client-side code)",
+      "points": 10
+    },
+    {
+      "name": "Path traversal in HTTP removed",
+      "description": "Finding #7 (path traversal in HTTP) is correctly removed per hard exclusion rule #20",
+      "points": 10
+    },
+    {
+      "name": "Deserialization RCE kept",
+      "description": "Finding #8 (pickle deserialization) is correctly kept — critical RCE vulnerability",
+      "points": 10
+    },
+    {
+      "name": "Log spoofing removed",
+      "description": "Finding #10 (log spoofing) is correctly removed per hard exclusion rule #12",
+      "points": 10
+    },
+    {
+      "name": "Only high-confidence findings in output",
+      "description": "Final filtered output contains only findings with confidence >= 8 in the correct format",
+      "points": 10
+    }
+  ],
+  "total_points": 100
+}

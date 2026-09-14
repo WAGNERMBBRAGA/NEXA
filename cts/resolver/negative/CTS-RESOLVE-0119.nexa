@@ -1,0 +1,6 @@
+module main
+
+action main() -> Unit {
+    let p = Missing::Thing
+    return
+}

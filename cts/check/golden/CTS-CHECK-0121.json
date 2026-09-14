@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "source": "CTS-CHECK-0121.nexa",
+  "parseDiagnostics": [],
+  "semanticDiagnostics": [],
+  "typeDiagnostics": [
+    {
+      "code": "NEXA-TYPE-0030",
+      "context": null,
+      "message": "type `Node` has a recursive layout cycle",
+      "severity": "error",
+      "span": {
+        "end": 24,
+        "source": 0,
+        "start": 20
+      }
+    }
+  ],
+  "flowDiagnostics": [],
+  "effectDiagnostics": [],
+  "summary": {
+    "effectCallEdges": 0,
+    "errors": 1,
+    "flowCfgs": 0,
+    "symbols": 47,
+    "typedExpressions": 1,
+    "warnings": 0
+  }
+}

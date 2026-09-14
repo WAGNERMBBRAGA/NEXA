@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "currentPackage": "app",
+  "dependencyAliases": [],
+  "packages": [
+    { "name": "app", "modules": [
+      { "file": "main.nexa", "path": "main", "public": true },
+      { "file": "util.nexa", "path": "util", "public": false }
+    ] }
+  ]
+}

@@ -1,0 +1,3 @@
+module app
+async action fetch_data() -> Unit {
+}

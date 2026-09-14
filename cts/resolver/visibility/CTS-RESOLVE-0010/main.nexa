@@ -1,0 +1,7 @@
+module main
+
+import db::model
+
+function describe(u: model::User) -> String {
+    return "user"
+}

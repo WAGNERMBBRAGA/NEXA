@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "source": "CTS-CHECK-0138.nexa",
+  "parseDiagnostics": [],
+  "semanticDiagnostics": [],
+  "typeDiagnostics": [
+    {
+      "code": "NEXA-TYPE-0039",
+      "context": null,
+      "message": "pattern literal type does not match scrutinee",
+      "severity": "error",
+      "span": {
+        "end": 82,
+        "source": 0,
+        "start": 79
+      }
+    }
+  ],
+  "flowDiagnostics": [],
+  "effectDiagnostics": [],
+  "summary": {
+    "effectCallEdges": 0,
+    "errors": 1,
+    "flowCfgs": 0,
+    "symbols": 46,
+    "typedExpressions": 6,
+    "warnings": 0
+  }
+}

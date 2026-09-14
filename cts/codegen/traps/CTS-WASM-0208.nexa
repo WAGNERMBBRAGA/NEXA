@@ -1,0 +1,10 @@
+module main
+
+action choose(index: Int) -> Int {
+    let values: Array<Int> = [11, 22, 33]
+    return values[index]
+}
+
+action main() -> Int {
+    return choose(8)
+}

@@ -1,0 +1,9 @@
+module main
+
+function f(c: Bool) -> Int {
+    var x: Int
+    if c {
+        x = 1
+    }
+    return x
+}

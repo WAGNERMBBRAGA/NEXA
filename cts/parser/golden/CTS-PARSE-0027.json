@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 1,
+  "diagnostics": [],
+  "astDump": {
+    "imports": [],
+    "items": [
+      {
+        "body": {
+          "kind": "Block",
+          "span": {
+            "endByte": 93,
+            "startByte": 41
+          },
+          "statements": [
+            {
+              "expression": {
+                "kind": "UnsafeExpression",
+                "span": {
+                  "endByte": 79,
+                  "startByte": 47
+                },
+                "statements": [
+                  {
+                    "kind": "ReturnStatement",
+                    "span": {
+                      "endByte": 72,
+                      "startByte": 64
+                    },
+                    "value": {
+                      "kind": "IntLiteral",
+                      "span": {
+                        "endByte": 72,
+                        "startByte": 71
+                      },
+                      "value": 1
+                    }
+                  }
+                ]
+              },
+              "kind": "ExpressionStatement",
+              "span": {
+                "endByte": 79,
+                "startByte": 47
+              }
+            },
+            {
+              "kind": "ReturnStatement",
+              "span": {
+                "endByte": 91,
+                "startByte": 83
+              },
+              "value": {
+                "kind": "IntLiteral",
+                "span": {
+                  "endByte": 91,
+                  "startByte": 90
+                },
+                "value": 0
+              }
+            }
+          ]
+        },
+        "ensures": [],
+        "exported": false,
+        "genericParams": [],
+        "kind": "FunctionDeclaration",
+        "name": "get_raw_ptr",
+        "parameters": [],
+        "requires": [],
+        "returnType": "Int",
+        "span": {
+          "endByte": 93,
+          "startByte": 11
+        },
+        "whereClause": []
+      }
+    ],
+    "kind": "SourceUnit",
+    "module": {
+      "kind": "ModuleDeclaration",
+      "name": "app",
+      "span": {
+        "endByte": 10,
+        "startByte": 0
+      }
+    },
+    "span": {
+      "endByte": 93,
+      "startByte": 0
+    }
+  }
+}

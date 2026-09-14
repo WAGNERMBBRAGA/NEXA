@@ -1,0 +1,14 @@
+module main
+
+function default_if_none(x: Optional<Int>) -> Int {
+    let v = x
+    return 1
+}
+
+function make() -> Optional<Int> {
+    return Some(10)
+}
+
+function make_string() -> Optional<String> {
+    return Some("value")
+}

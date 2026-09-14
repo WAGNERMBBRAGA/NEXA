@@ -1,0 +1,5 @@
+module model
+
+export struct User {
+    id: Int
+}

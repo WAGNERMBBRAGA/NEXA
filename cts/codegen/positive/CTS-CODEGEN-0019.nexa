@@ -1,0 +1,12 @@
+module main
+
+action main() -> Unit effects [console::write] {
+    if true {
+        let local: String = "scoped"
+        Console::write(local)
+    } else {
+        let local: String = "wrong"
+        Console::write(local)
+    }
+    return
+}

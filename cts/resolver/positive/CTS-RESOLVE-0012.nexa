@@ -1,0 +1,9 @@
+module main
+
+struct user {
+    id: Int
+}
+
+function user(x: Int) -> Int {
+    return x
+}

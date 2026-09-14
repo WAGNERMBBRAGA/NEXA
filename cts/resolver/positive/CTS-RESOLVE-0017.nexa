@@ -1,0 +1,11 @@
+module main
+
+interface Maker {
+    make() -> Self
+}
+
+implement Maker for String {
+    make() -> Self {
+        return ()
+    }
+}

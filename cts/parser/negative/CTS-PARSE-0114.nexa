@@ -1,0 +1,4 @@
+module app
+function default_arg(a: Int = 1) -> Int {
+    return a
+}

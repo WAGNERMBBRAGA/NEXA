@@ -1,0 +1,4 @@
+module app
+async function get_value() -> Int {
+    return 1
+}

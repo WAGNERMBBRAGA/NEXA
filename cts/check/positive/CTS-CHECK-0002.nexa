@@ -1,0 +1,28 @@
+module main
+
+interface Describe {
+    describe() -> String
+    prefix(pre: String) -> String
+}
+
+enum Shape {
+    Circle
+    Square
+}
+
+implement Describe for Shape {
+    describe() -> String {
+        return "shape"
+    }
+    prefix(pre: String) -> String {
+        return pre
+    }
+}
+
+function label(s: Shape) -> String {
+    return s.describe()
+}
+
+function decorate(s: Shape) -> String {
+    return s.prefix("item: ")
+}

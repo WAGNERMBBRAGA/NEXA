@@ -1,0 +1,5 @@
+module main
+
+function mixed() -> Array<Int> {
+    return [1, true]
+}

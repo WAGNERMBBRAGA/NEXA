@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "source": "CTS-CHECK-0122.nexa",
+  "parseDiagnostics": [],
+  "semanticDiagnostics": [],
+  "typeDiagnostics": [
+    {
+      "code": "NEXA-TYPE-0030",
+      "context": null,
+      "message": "type alias cycle: `A` -> `B` -> `A`",
+      "severity": "error",
+      "span": {
+        "end": 24,
+        "source": 0,
+        "start": 13
+      }
+    },
+    {
+      "code": "NEXA-TYPE-0030",
+      "context": null,
+      "message": "type alias cycle: `B` -> `A` -> `B`",
+      "severity": "error",
+      "span": {
+        "end": 35,
+        "source": 0,
+        "start": 24
+      }
+    }
+  ],
+  "flowDiagnostics": [],
+  "effectDiagnostics": [],
+  "summary": {
+    "effectCallEdges": 0,
+    "errors": 2,
+    "flowCfgs": 0,
+    "symbols": 47,
+    "typedExpressions": 1,
+    "warnings": 0
+  }
+}

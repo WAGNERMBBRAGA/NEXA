@@ -1,0 +1,4 @@
+module app
+function evaluated() -> Int {
+    return a + b * c
+}

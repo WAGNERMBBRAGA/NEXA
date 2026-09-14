@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "source": "CTS-CHECK-0119.nexa",
+  "parseDiagnostics": [],
+  "semanticDiagnostics": [],
+  "typeDiagnostics": [
+    {
+      "code": "NEXA-TYPE-0044",
+      "context": null,
+      "message": "public API of `leak` exposes non-public type `Secret`",
+      "severity": "error",
+      "span": {
+        "end": 66,
+        "source": 0,
+        "start": 62
+      }
+    }
+  ],
+  "flowDiagnostics": [],
+  "effectDiagnostics": [],
+  "summary": {
+    "effectCallEdges": 0,
+    "errors": 1,
+    "flowCfgs": 0,
+    "symbols": 48,
+    "typedExpressions": 3,
+    "warnings": 0
+  }
+}

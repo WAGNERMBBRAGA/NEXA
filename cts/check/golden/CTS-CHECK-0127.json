@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "source": "CTS-CHECK-0127.nexa",
+  "parseDiagnostics": [],
+  "semanticDiagnostics": [
+    {
+      "code": "NEXA-SEM-0002",
+      "context": "previous method is symbol#57",
+      "message": "duplicate method 'render' on type",
+      "severity": "error",
+      "span": {
+        "end": 323,
+        "source": 0,
+        "start": 273
+      }
+    }
+  ],
+  "typeDiagnostics": [
+    {
+      "code": "NEXA-TYPE-0042",
+      "context": null,
+      "message": "overlapping implementation: `Renderable` is already implemented for this type",
+      "severity": "error",
+      "span": {
+        "end": 255,
+        "source": 0,
+        "start": 245
+      }
+    }
+  ],
+  "flowDiagnostics": [],
+  "effectDiagnostics": [],
+  "summary": {
+    "effectCallEdges": 0,
+    "errors": 2,
+    "flowCfgs": 0,
+    "symbols": 61,
+    "typedExpressions": 2,
+    "warnings": 0
+  }
+}

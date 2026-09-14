@@ -1,0 +1,7 @@
+module main
+
+function f(flag: Bool) -> Unit {
+    match flag {
+        true => 1
+    }
+}

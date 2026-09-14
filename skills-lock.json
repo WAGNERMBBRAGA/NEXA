@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "skills": {
+    "code-security-audit": {
+      "source": "leonmelamud/claude-code-security-review",
+      "sourceType": "github",
+      "skillPath": "SKILL.md",
+      "computedHash": "aa8a2dc31e158626956f9ff31fafc0438df8b558fbc554f797c5b66d702981cf"
+    },
+    "playwright": {
+      "source": "secondsky/claude-skills",
+      "sourceType": "github",
+      "skillPath": "plugins/playwright/skills/playwright/SKILL.md",
+      "computedHash": "a44af8116d01d802f2c6b1b19a24070ff75c34021cba4f10d9622cf9b8bc2780"
+    }
+  }
+}

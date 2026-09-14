@@ -1,0 +1,12 @@
+[package]
+name = "nexa-nir-verify"
+version = "0.0.1"
+edition = "2021"
+description = "NIR Verifier: structural, SSA, CFG, type, call, effect, ownership, resource, task verification"
+
+[dependencies]
+nexa-source = { path = "../nexa-source" }
+nexa-diagnostics = { path = "../nexa-diagnostics" }
+nexa-symbols = { path = "../nexa-symbols" }
+nexa-nir = { path = "../nexa-nir" }
+nexa-mnir = { path = "../nexa-mnir" }

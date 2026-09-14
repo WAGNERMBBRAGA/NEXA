@@ -1,0 +1,5 @@
+module main
+
+function f(x: Int, x: Int) -> Int {
+    return x
+}

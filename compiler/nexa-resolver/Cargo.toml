@@ -1,0 +1,14 @@
+[package]
+name = "nexa-resolver"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "NEXA semantic resolver: scopes, name resolution, imports, visibility, semantic index"
+
+[dependencies]
+nexa-source = { path = "../nexa-source" }
+nexa-diagnostics = { path = "../nexa-diagnostics" }
+nexa-lexer = { path = "../nexa-lexer" }
+nexa-ast = { path = "../nexa-ast" }
+nexa-symbols = { path = "../nexa-symbols" }
+nexa-project = { path = "../nexa-project" }

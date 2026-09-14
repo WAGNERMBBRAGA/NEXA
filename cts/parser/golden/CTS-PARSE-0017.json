@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 1,
+  "diagnostics": [],
+  "astDump": {
+    "imports": [],
+    "items": [
+      {
+        "body": {
+          "kind": "Block",
+          "span": {
+            "endByte": 89,
+            "startByte": 42
+          },
+          "statements": [
+            {
+              "expression": {
+                "body": {
+                  "kind": "Block",
+                  "span": {
+                    "endByte": 75,
+                    "startByte": 53
+                  },
+                  "statements": [
+                    {
+                      "kind": "BreakStatement",
+                      "span": {
+                        "endByte": 69,
+                        "startByte": 63
+                      },
+                      "value": null
+                    }
+                  ]
+                },
+                "kind": "LoopExpression",
+                "span": {
+                  "endByte": 75,
+                  "startByte": 48
+                }
+              },
+              "kind": "ExpressionStatement",
+              "span": {
+                "endByte": 75,
+                "startByte": 48
+              }
+            },
+            {
+              "kind": "ReturnStatement",
+              "span": {
+                "endByte": 87,
+                "startByte": 79
+              },
+              "value": {
+                "kind": "IntLiteral",
+                "span": {
+                  "endByte": 87,
+                  "startByte": 86
+                },
+                "value": 0
+              }
+            }
+          ]
+        },
+        "ensures": [],
+        "exported": false,
+        "genericParams": [],
+        "kind": "FunctionDeclaration",
+        "name": "wait_forever",
+        "parameters": [],
+        "requires": [],
+        "returnType": "Int",
+        "span": {
+          "endByte": 89,
+          "startByte": 11
+        },
+        "whereClause": []
+      }
+    ],
+    "kind": "SourceUnit",
+    "module": {
+      "kind": "ModuleDeclaration",
+      "name": "app",
+      "span": {
+        "endByte": 10,
+        "startByte": 0
+      }
+    },
+    "span": {
+      "endByte": 89,
+      "startByte": 0
+    }
+  }
+}

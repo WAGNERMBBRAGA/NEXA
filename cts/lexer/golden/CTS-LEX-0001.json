@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "tokens": [
+    {
+      "category": "token",
+      "kind": "Keyword",
+      "keyword": "module",
+      "startByte": 0,
+      "endByte": 6
+    },
+    {
+      "category": "trivia",
+      "kind": "Whitespace",
+      "startByte": 6,
+      "endByte": 7
+    },
+    {
+      "category": "token",
+      "kind": "Identifier",
+      "startByte": 7,
+      "endByte": 11
+    },
+    {
+      "category": "token",
+      "kind": "Eof",
+      "startByte": 11,
+      "endByte": 11
+    }
+  ],
+  "diagnostics": []
+}

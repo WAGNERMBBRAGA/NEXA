@@ -1,0 +1,7 @@
+module app
+function broken( -> Int {
+    return 1
+}
+function good() -> Int {
+    return 2
+}

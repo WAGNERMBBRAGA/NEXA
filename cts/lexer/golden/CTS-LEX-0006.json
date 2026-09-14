@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 1,
+  "tokens": [
+    {
+      "category": "token",
+      "kind": "StringStart",
+      "style": "Normal",
+      "startByte": 0,
+      "endByte": 1
+    },
+    {
+      "category": "token",
+      "kind": "StringText",
+      "startByte": 1,
+      "endByte": 6
+    },
+    {
+      "category": "token",
+      "kind": "StringEnd",
+      "style": "Normal",
+      "startByte": 6,
+      "endByte": 7
+    },
+    {
+      "category": "token",
+      "kind": "Newline",
+      "startByte": 7,
+      "endByte": 8
+    },
+    {
+      "category": "token",
+      "kind": "StringStart",
+      "style": "Normal",
+      "startByte": 8,
+      "endByte": 9
+    },
+    {
+      "category": "token",
+      "kind": "StringText",
+      "startByte": 9,
+      "endByte": 13
+    },
+    {
+      "category": "token",
+      "kind": "StringEnd",
+      "style": "Normal",
+      "startByte": 13,
+      "endByte": 14
+    },
+    {
+      "category": "token",
+      "kind": "Newline",
+      "startByte": 14,
+      "endByte": 15
+    },
+    {
+      "category": "token",
+      "kind": "StringStart",
+      "style": "Normal",
+      "startByte": 15,
+      "endByte": 16
+    },
+    {
+      "category": "token",
+      "kind": "StringText",
+      "startByte": 16,
+      "endByte": 25
+    },
+    {
+      "category": "token",
+      "kind": "StringEnd",
+      "style": "Normal",
+      "startByte": 25,
+      "endByte": 26
+    },
+    {
+      "category": "token",
+      "kind": "Newline",
+      "startByte": 26,
+      "endByte": 27
+    },
+    {
+      "category": "token",
+      "kind": "RawStringLiteral",
+      "startByte": 27,
+      "endByte": 36
+    },
+    {
+      "category": "token",
+      "kind": "Newline",
+      "startByte": 36,
+      "endByte": 37
+    },
+    {
+      "category": "token",
+      "kind": "ByteStringLiteral",
+      "startByte": 37,
+      "endByte": 44
+    },
+    {
+      "category": "token",
+      "kind": "Newline",
+      "startByte": 44,
+      "endByte": 45
+    },
+    {
+      "category": "token",
+      "kind": "StringStart",
+      "style": "Multiline",
+      "startByte": 45,
+      "endByte": 48
+    },
+    {
+      "category": "token",
+      "kind": "StringText",
+      "startByte": 48,
+      "endByte": 59
+    },
+    {
+      "category": "token",
+      "kind": "StringEnd",
+      "style": "Multiline",
+      "startByte": 59,
+      "endByte": 62
+    },
+    {
+      "category": "token",
+      "kind": "Eof",
+      "startByte": 62,
+      "endByte": 62
+    }
+  ],
+  "diagnostics": []
+}

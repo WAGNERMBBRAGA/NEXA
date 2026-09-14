@@ -1,0 +1,44 @@
+module main
+
+struct Rect {
+    width: Int
+    height: Int
+}
+
+struct Circle {
+    radius: Int
+}
+
+interface Shape {
+    area() -> Int
+    scale(factor: Int) -> Shape
+}
+
+implement Shape for Rect {
+    area(self) -> Int {
+        return self.width * self.height
+    }
+    scale(self, factor: Int) -> Shape {
+        return Rect { width: self.width * factor, height: self.height * factor }
+    }
+}
+
+implement Shape for Circle {
+    area(self) -> Int {
+        return self.radius * self.radius
+    }
+    scale(self, factor: Int) -> Shape {
+        return Circle { radius: self.radius * factor }
+    }
+}
+
+function measure(r: Rect) -> Int {
+    let bigger: Shape = r.scale(2)
+    return bigger.area()
+}
+
+function main() -> Unit {
+    let r = Rect { width: 3, height: 4 }
+    let c = Circle { radius: 5 }
+    let total: Int = r.area() + c.area()
+}

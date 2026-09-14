@@ -1,0 +1,9 @@
+module main
+
+type Meters distinct = Int
+
+function main() -> Int {
+    let m: Meters = 5
+    let i: Int = m
+    return 0
+}

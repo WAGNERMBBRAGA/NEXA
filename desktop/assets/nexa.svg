@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="NEXA">
+  <defs>
+    <linearGradient id="g" x1="70" y1="54" x2="442" y2="458" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7c5cff"/>
+      <stop offset=".52" stop-color="#16b9ff"/>
+      <stop offset="1" stop-color="#18e0a7"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="116" fill="#0b1020"/>
+  <rect x="24" y="24" width="464" height="464" rx="96" fill="none" stroke="#27345c" stroke-width="8"/>
+  <path d="M135 365V147h53l136 143V147h54v218h-48L189 215v150z" fill="url(#g)"/>
+  <circle cx="383" cy="135" r="23" fill="#18e0a7"/>
+</svg>

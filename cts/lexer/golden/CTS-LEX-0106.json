@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "tokens": [
+    {
+      "category": "trivia",
+      "kind": "Whitespace",
+      "startByte": 0,
+      "endByte": 3
+    },
+    {
+      "category": "token",
+      "kind": "Keyword",
+      "keyword": "module",
+      "startByte": 3,
+      "endByte": 9
+    },
+    {
+      "category": "trivia",
+      "kind": "Whitespace",
+      "startByte": 9,
+      "endByte": 10
+    },
+    {
+      "category": "token",
+      "kind": "Identifier",
+      "startByte": 10,
+      "endByte": 11
+    },
+    {
+      "category": "token",
+      "kind": "Newline",
+      "startByte": 11,
+      "endByte": 12
+    },
+    {
+      "category": "token",
+      "kind": "Eof",
+      "startByte": 12,
+      "endByte": 12
+    }
+  ],
+  "diagnostics": [
+    {
+      "code": "NEXA-LEX-0007",
+      "severity": "Error",
+      "category": "lexer",
+      "messageKey": "lexer.unexpected_bom",
+      "message": "unexpected byte order mark",
+      "primarySpan": {
+        "source": 0,
+        "start": 0,
+        "end": 3
+      },
+      "related": [],
+      "arguments": [],
+      "help": null,
+      "fixes": []
+    }
+  ]
+}

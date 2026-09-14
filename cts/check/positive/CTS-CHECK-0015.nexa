@@ -1,0 +1,20 @@
+module main
+
+enum Shape {
+    Circle(Int)
+    Square
+}
+
+function classify(s: Shape) -> Int {
+    return match s {
+        Shape::Circle(r) if r > 0 => r
+        Shape::Circle(_) => 0
+        Shape::Square => 0
+    }
+}
+
+function main() -> Int {
+    let c = Shape::Circle(5)
+    let u = Shape::Square
+    return classify(c) + classify(u)
+}

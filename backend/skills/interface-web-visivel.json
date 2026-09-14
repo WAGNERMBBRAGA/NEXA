@@ -1,0 +1,10 @@
+{
+  "name": "Interface Web Visivel",
+  "description": "Garante paginas web reais para o canvas/preview: login, dashboard e listagens com CSS, nunca a pagina padrao do framework.",
+  "prompt": "Todo sistema web precisa ter interface visivel no canvas (preview). Apos criar o backend/rotas: (1) Garanta que o servidor sirva paginas reais renderizadas no navegador: login, dashboard e listagens com CSS proprio, em vez da pagina de boas-vindas padrao (ex.: 'Welcome to My App'). (2) Se for projeto estatico (web/index.html ou public/), monte a landing real e funcional com estilo. (3) Conecte as views aos dados (rotas/controllers) para o usuario ver CRUD funcionando no navegador. (4) Mantenha um servidor local aberto e confirme HTTP 200 apos cada mudanca de view/CSS.",
+  "enabled": true,
+  "category": "Frontend",
+  "commands": [],
+  "createdAt": "2026-09-11T00:00:00.000Z",
+  "updatedAt": "2026-09-11T00:00:00.000Z"
+}

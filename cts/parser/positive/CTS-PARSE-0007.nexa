@@ -1,0 +1,5 @@
+module app
+struct User {
+    name: String
+    age: Int
+}

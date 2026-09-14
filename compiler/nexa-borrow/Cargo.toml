@@ -1,0 +1,12 @@
+[package]
+name = "nexa-borrow"
+version = "0.0.1"
+edition = "2021"
+description = "Borrow checker, Ref/MutRef, NLL, and borrow conflict detection for NEXA"
+
+[dependencies]
+nexa-source = { path = "../nexa-source" }
+nexa-diagnostics = { path = "../nexa-diagnostics" }
+nexa-symbols = { path = "../nexa-symbols" }
+nexa-types = { path = "../nexa-types" }
+nexa-ownership = { path = "../nexa-ownership" }
