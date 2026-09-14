@@ -1,217 +1,27 @@
-# Interface Pública da API - Nova Liguação de Programação NEXA
+# Interfaces do backend
 
-## Base URL
+[Índice](INDEX.md)
 
-```
-http://localhost:3001/api
-```
+Mapa resumido das rotas presentes em 14/09/2026. A API é interna e ainda não possui compromisso de estabilidade pública.
 
----
+No desktop, a porta é dinâmica e o cabeçalho de autenticação é `x-nexa-token`, gerenciado pelo aplicativo. Não é JWT. No standalone, a porta padrão é 3001 e a proteção depende do token configurado; esse modo não deve ser exposto como serviço público.
 
-## Autenticação
+| Método e caminho | Finalidade |
+|---|---|
+| GET /api/chat/status | Estado dos provedores. |
+| GET /api/chat/models | Modelos para o chat. |
+| GET /api/models | Inventário de modelos. |
+| POST /api/models/switch | Trocar modelo. |
+| GET /api/models/store | Catálogo remoto, com filtros q, sort e limit. |
+| GET /api/models/store/local | Modelos baixados e diretório. |
+| POST /api/models/store/download | Download com modelId e filename. |
+| GET /api/models/store/download/progress | Progresso dos downloads. |
+| GET /api/conversations | Listar conversas. |
+| POST /api/conversations | Criar conversa. |
+| POST /api/conversations/:id/messages | Enviar mensagem. |
+| GET /api/conversations/:id/activity | Atividade registrada. |
+| POST /api/conversations/:id/memory | Atualizar memória. |
+| POST /api/conversations/:id/cancel | Solicitar cancelamento. |
+| GET /api/skills | Listar skills. |
 
-### Header Required
-
-```
-Authorization: Bearer <JWT_TOKEN>
-Content-Type: application/json
-```
-
----
-
-## Endpoints de Vendas (`/api/vendas`)
-
-### GET /vendas
-
-Retorna lista de vendas paginadas.
-
-**Query Parameters:**
-| Parâmetro | Tipo | Descrição |
-|-----------|------|-----------|
-| page | integer (default: 1) | Página a ser retornada |
-| limit | integer (default: 20) | Quantidade de itens por página |
-| startDate | string (ISO date) | Filtro por data inicial |
-| endDate | string (ISO date) | Filtro por data final |
-
-**Response:**
-```json
-{
-  "data": [/* array of sale objects */],
-  "meta": {
-    "page": 1,
-    "limit": 20,
-    "total": 150
-  }
-}
-```
-
-### POST /vendas
-
-Cria nova venda.
-
-**Request Body:**
-```json
-{
-  "products": [/* array of product IDs */],
-  "subtotal": 150.00,
-  "discount?: 10.00"
-}
-```
-
-**Response:** `201 Created`
-```json
-{
-  "id": "uuid-here",
-  "status": "completed",
-  "total_amount": 140.00,
-  "created_at": "2026-09-02T10:30:00Z"
-}
-```
-
-### PUT /vendas/:id
-
-Atualiza venda existente.
-
-**Request Body:**
-```json
-{
-  "status": "completed",
-  "discount": 15.00,
-  "notes?: "Cliente preferencial"
-}
-```
-
-### DELETE /vendas/:id
-
-Exclui venda (soft delete).
-
----
-
-## Endpoints de Estoque (`/api/estoque`)
-
-### GET /estoque
-
-Retorna lista de produtos paginada.
-
-**Query Parameters:**
-| Parâmetro | Tipo | Descrição |
-|-----------|------|-----------|
-| page | integer (default: 1) | Página a ser retornada |
-| limit | integer (default: 20) | Quantidade de itens por página |
-| search | string | Busca parcial no nome |
-
-**Response:**
-```json
-{
-  "data": [/* array of product objects */],
-  "meta": {
-    "page": 1,
-    "limit": 20,
-    "total": 45
-  }
-}
-```
-
-### POST /estoque
-
-Cadastra novo produto.
-
-**Request Body:**
-```json
-{
-  "name": "Exemplo Produto",
-  "description?: "Descrição detalhada",
-  "price": 199.90,
-  "quantity": 50,
-  "restock_threshold": 10
-}
-```
-
-**Response:** `201 Created`
-```json
-{
-  "id": "uuid-here",
-  "name": "Exemplo Produto",
-  "price": 199.90,
-  "quantity": 50,
-  "in_stock": true
-}
-```
-
-### PUT /estoque/:id
-
-Atualiza produto.
-
-**Request Body:**
-```json
-{
-  "name": "Novo Nome",
-  "price": 179.90,
-  "quantity": 75,
-  "restock_threshold?: 20
-}
-```
-
-### POST /estoque/:id/restock
-
-Avisa reposição de estoque.
-
-**Request Body:**
-```json
-{
-  "quantity_added": 30,
-  "reason?: "Compra externa"
-}
-```
-
----
-
-## Erros da API
-
-| Código | Descrição |
-|--------|-----------|
-| `400` | Bad Request - Dados inválidos |
-| `401` | Unauthorized - Token inválido ou expirado |
-| `403` | Forbidden - Permissão negada |
-| `404` | Not Found - Recurso não encontrado |
-| `500` | Internal Server Error |
-
-**Response padrão de erro:**
-```json
-{
-  "success": false,
-  "error": {
-    "message": "Descrição do erro",
-    "code": "VALIDATION_ERROR"
-  }
-}
-```
-
----
-
-## Exemplo de Uso (cURL)
-
-### Criar Venda
-```bash
-curl -X POST http://localhost:3001/api/vendas \
-  -H "Authorization: Bearer YOUR_TOKEN" \
-  -H "Content-Type: application/json" \
-  -d '{
-    "products": ["uuid-1", "uuid-2"],
-    "subtotal": 150.00,
-    "discount": 10.00
-  }'
-```
-
-### Listar Produtos
-```bash
-curl -X GET http://localhost:3001/api/estoque?page=1&limit=10 \
-  -H "Authorization: Bearer YOUR_TOKEN"
-```
-
----
-
-## Notas Importantes
-
-⚠️ **Versão Atual**: v1.0.0-beta  
-📝 Última atualização: 2026-09-02
+Consulte os handlers em backend/src/server.js e backend/src/routes/ para formatos completos. Rotas legadas de execução direta e escrita foram desativadas; as mudanças do agente passam pelo fluxo de ações da conversa.

@@ -1,232 +1,62 @@
-# Guia de Desenvolvimento - Nova Liguação de Programação NEXA
+# Guia de desenvolvimento
 
-## Pré-requisitos
+[Índice](INDEX.md) · [Contribuir](../CONTRIBUTING.md)
 
-- **Node.js** v18+ (LTS)
-- **Docker** e **Docker Compose**
-- **Git**
-- **Pnpm** ou **npm**
+Comandos conferidos nos manifestos em 14/09/2026. Esta revisão não valida a instalação em máquina limpa.
 
----
+## Preparação
 
-## Estrutura do Projeto
+Use Git, npm e Node.js compatível com o Vite instalado: `^20.19.0 || >=22.12.0`. O fluxo desktop tem foco em Windows. O frontend usa JavaScript, HTML, CSS e Vite; Docker, React, Prisma e PostgreSQL não são requisitos.
 
-```bash
-nexa/
-├── frontend/        # Aplicação React
-│   ├── package.json
-│   └── vite.config.ts
-├── backend/         # API Express
-│   ├── package.json
-│   └── prisma/
-│       └── schema.prisma
-└── docker-compose.yml
+```powershell
+git clone https://github.com/WAGNERMBBRAGA/NEXA.git
+cd NEXA
+npm ci
+npm --prefix backend ci
+npm --prefix frontend ci
 ```
 
----
+## Motor e inicialização
 
-## Inicialização Local (Desenvolvimento)
+O clone não inclui binários ou modelos. Disponibilize `llama-server.exe` e as bibliotecas do mesmo pacote em `llama.cpp/bin/`. A distribuição e versão do motor ainda precisam ser formalizadas; não misture DLLs de pacotes diferentes.
 
-### Opção 1: Docker Compose (Recomendado)
+O destino padrão de download é `D:\models\huggingface`. Para usar uma pasta disponível em outro computador, na raiz do projeto:
 
-```bash
-# Clone o repositório
-git clone <repository-url> nexa
-
-# Entre no diretório
-cd nexa
-
-# Inicie os serviços
-docker-compose up -d
-
-# Acesse frontend (porta 5173)
-http://localhost:5173
-
-# Acesse backend API (porta 3001)
-http://localhost:3001/api/vendas
+```powershell
+$env:NEXA_MODELS_DIR = Join-Path $env:USERPROFILE 'models'
+New-Item -ItemType Directory -Force -Path $env:NEXA_MODELS_DIR
+npm run desktop
 ```
 
-### Opção 2: Desenvolvimento Manual
+O comando constrói o frontend e abre o Electron, que inicia seu backend em uma porta local livre. O motor local é necessário para GGUF; provedores externos são configurados na interface.
 
-#### Backend (Node.js/Express)
+## Navegador
 
-```bash
-cd backend
-npm install
+Em um terminal com o destino de modelos configurado, execute `npm --prefix backend start`. Em outro, execute `npm --prefix frontend run dev -- --host 127.0.0.1`.
 
-# Iniciar servidor de desenvolvimento
-npm run dev
+Abra o endereço informado pelo Vite, normalmente `http://localhost:5173`. O proxy aponta para `http://localhost:3001`; `NEXA_BACKEND_URL` permite ajustá-lo. O script `iniciar-nexa.bat` contém caminhos específicos de outra máquina e não é um instalador universal.
 
-# Ou com Prisma migrations
-npx prisma migrate dev
-npx prisma generate
-node server.js
+## Verificar e empacotar
+
+```powershell
+npm --prefix backend test
+npm run build:frontend
 ```
 
-#### Frontend (React + Vite)
+Para alterações no agente, teste também um pedido pequeno com um modelo real e confira arquivos e ações. Testes automatizados não comprovam sozinhos a execução de uma tarefa completa.
 
-```bash
-cd frontend
-npm install
+Após preparar o motor e validar o desktop, `npm run package:win` gera o instalador NSIS em `dist/`. O manifesto inclui `llama.cpp/bin/**`; verifique a presença e o funcionamento do motor e valide em máquina limpa antes de publicar. Não distribua conversas ou credenciais.
 
-# Desenvolvimento com hot-reload
-npm run dev
+## Linguagem experimental
 
-# Build para produção
-npm run build
+`rust-toolchain.toml` seleciona Rust stable GNU para Windows e exige linker compatível. A configuração local `.cargo/config.toml` não é versionada.
+
+```powershell
+cargo test --workspace
+cargo fmt --check
+cargo clippy --workspace --all-targets -- -D warnings
 ```
 
----
+Esses comandos não foram executados nesta revisão documental. Consulte a [auditoria histórica](PROJECT_CURRENT_STATE.md) para limites registrados da toolchain.
 
-## Database Setup
-
-### Migrations
-
-```bash
-# Gerar novas migrations
-npx prisma migrate dev --name add_new_field
-
-# Reversar migration
-npx prisma migrate revert
-
-# Gerar tipos TypeScript
-npx prisma generate
-
-# Reset database (com cuidado!)
-npx prisma migrate reset
-```
-
----
-
-## Development Workflow
-
-### 1. Criando Novo Endpoint
-
-**Backend:**
-
-```bash
-cd backend
-
-# Adicionar novo arquivo de controller
-touch src/controllers/novo-endpoint.controller.js
-
-# Registrar endpoint em routes
-src/routes/novo-endpoint.route.js:
-import { controller } from './novo-endpoint.controller';
-export const router = express.Router((req, res, next) => {
-  // ... configuration
-});
-```
-
-**Frontend:**
-
-- Adicionar nova página em `frontend/src/pages/`
-- Criar API service em `frontend/src/services/`
-- Link com React Router
-
----
-
-### 2. Criando Novo Modelo (Prisma)
-
-```prisma
-// prisma/schema.prisma
-model NovoModelo {
-  id        String   @id @default(auto()) @map("@id") @db.Uuid
-  nome      String
-  descricao? String
-  
-  @@map("novos_modelos")
-}
-```
-
-Gerar migrations e tipos:
-```bash
-npx prisma migrate dev --name add_novo_modelo
-npx prisma generate
-```
-
----
-
-### 3. Debugging
-
-**Backend (Node.js):**
-
-- Inspeção de heap: `--inspect=9222`
-- Logs: `DEBUG=* express:*`
-
-**Frontend:**
-
-- DevTools do Chrome/Firefox
-- React Developer Tools
-- Vite built-in hot reload
-
----
-
-## Deploy Production
-
-### Docker (Recomendado)
-
-```bash
-# Build e subir
-docker-compose up -d --build
-
-# Verificar logs
-docker-compose logs -f backend
-docker-compose logs -f frontend
-```
-
-### Frontend Build
-
-```bash
-cd frontend
-npm run build
-# Arquivos estão em dist/ para deploy
-```
-
----
-
-## Conventions & Style Guides
-
-### Backend (Node.js)
-
-- **NOMES DE ARQUIVOS**: kebab-case (`user-controller.js`)
-- **NOMES DE VARIÁVEIS**: camelCase (`userName`, `isReady`)
-- **TYPESCRIPT**: Optional com `?` (`name?: string`)
-
-### Frontend (React)
-
-- **COMPONENTS**: PascalCase (`UserProfile`, `Button`)
-- **VARIÁVEIS E CONSTANTES**: camelCase (`userProfile`, `MAX_RETRIES: 5`)
-- **HOOKS**: prefixado com `use` (`useDataFetcher`)
-
----
-
-## Troubleshooting
-
-| Problema | Solução |
-|----------|---------|
-| Port already in use | Change port numbers in docker-compose.yml |
-| Prisma not generating | Run `npx prisma generate` again |
-| Frontend build failing | Check console for Vite errors |
-| Database connection failed | Verify PostgreSQL is running and accessible |
-
----
-
-## Recursos Úteis
-
-- [React Documentation](https://react.dev)
-- [Express.js Docs](https://expressjs.com/)
-- [Prisma Guide](https://www.prisma.io/docs)
-- [Docker Compose Reference](https://docs.docker.com/compose/reference/)
-
----
-
-## Contribuição
-
-Para contribuir com o projeto:
-
-1. Fork o repositório
-2. Crie uma branch (`git checkout -b feature/nome`)
-3. Faça as alterações
-4. Teste localmente
-5. Envie um Pull Request
+O `.gitignore` mantém builds, dependências, modelos e dados privados fora do Git, preservando-os no disco. Revise `git status` e `git diff --cached` antes de enviar alterações.

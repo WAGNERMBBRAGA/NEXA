@@ -1,15 +1,19 @@
-# Documentação do Projeto - Nova Liguação de Programação NEXA
+# Documentação do NEXA AI
 
-## Índice Geral
+[Apresentação](../README.md)
 
-| Seção | Arquivo | Status |
-|-------|---------|--------|
-| [🏠 Home](./INDEX.md) | Índice Principal | ✅ |
-| [🏗️ Arquitetura](./ARCHITECTURE.md) | Estrutura do Sistema | 🚧 |
-| [🔌 Interfaces](./INTERFACES.md) | APIs Públicas | ⏳ |
-| [👨‍💻 Developer Guide](./DEVELOPER_GUIDE.md) | Guia de Desenvolvimento | ⏳ |
-| [📍 Estado atual](./PROJECT_CURRENT_STATE.md) | Auditoria e limites verificados do repositório | ✅ |
+## Para usuários
 
----
+- [Guia do usuário](GUIA_DO_USUARIO.md)
+- [Solução de problemas](SOLUCAO_DE_PROBLEMAS.md)
+- [Visão e evolução](VISAO_E_EVOLUCAO.md)
 
-## Última Atualização: 2026-09-02
+## Para colaboradores
+
+- [Como contribuir](../CONTRIBUTING.md)
+- [Guia de desenvolvimento](DEVELOPER_GUIDE.md)
+- [Arquitetura](ARCHITECTURE.md)
+- [Interfaces do backend](INTERFACES.md)
+- [Auditoria histórica de 06/09/2026](PROJECT_CURRENT_STATE.md)
+
+Documentação revisada em 14/09/2026 a partir do código. A auditoria histórica foi preservada; seus testes não foram repetidos nesta revisão.

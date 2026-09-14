@@ -1,25 +1,11 @@
-# NEXA Backend Server
+# Backend do NEXA AI
 
-## Setup Instructions
+API Express para conversas, projetos, modelos e ações do agente.
 
-1. **Install dependencies:**
-```bash
-npm install
-```
+Consulte o [guia de desenvolvimento](../docs/DEVELOPER_GUIDE.md) para preparar dependências e destino de modelos. Na raiz, use `npm --prefix backend ci` e `npm --prefix backend start`. Para testes: `npm --prefix backend test`.
 
-2. **Configure Ollama (optional):**
-   - Start Ollama: `ollama serve`
-   - Pull models: `ollama pull llama3.2`
+A porta standalone padrão é 3001. O desktop inicia seu backend em uma porta local livre. Ollama não é requisito para o fluxo GGUF com llama.cpp integrado.
 
-3. **Start the server:**
-```bash
-npm start
-```
-
-The API will be available at `http://localhost:3001`
-
-## Available Endpoints
-
-- `/api/chat/status` - Check AI service status and available providers
-- `/api/chat/models` - Get list of available models for selector dropdown  
-- `/api/chat` (POST) - Send prompt and get response from AI
+- [Arquitetura](../docs/ARCHITECTURE.md)
+- [Interfaces](../docs/INTERFACES.md)
+- [Guia do usuário](../docs/GUIA_DO_USUARIO.md)
